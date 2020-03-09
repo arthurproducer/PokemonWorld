@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@drawable/background_trainner3"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:textSize="22sp"
+                android:textColor="#FFEB3B"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/pokemon_solid"
+                android:text="@string/form_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle" android:layout_marginTop="24dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="24dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp"/>
+        <TextView
+                android:text="@string/label_name"
+                android:textColor="#FFF"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle"
+                app:layout_constraintTop_toTopOf="@+id/ivPokemonForm"
+                app:layout_constraintEnd_toStartOf="@+id/ivPokemonForm"
+                android:layout_marginEnd="8dp"/>
+        <TextView
+                tools:text="Charizard"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:textColor="#FFF"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPokemonNameForm"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintEnd_toEndOf="@+id/textView6"/>
+
+        <Button
+                tools:text="@string/label_first_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvFirstType"
+                app:layout_constraintStart_toStartOf="@+id/tvTitle"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/tvPokemonNameForm"/>
+        <Button
+                tools:text="@string/label_second_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSecondType"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/tvFirstType" android:layout_marginStart="4dp"
+                app:layout_constraintTop_toTopOf="@+id/tvFirstType"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFirstType"/>
+
+        <ImageView
+                android:padding="8dp"
+                android:background="@drawable/background_pokemon_form"
+                android:layout_width="@dimen/img_default_pokemon_details"
+                android:layout_height="@dimen/img_default_pokemon_details"
+                app:srcCompat="@drawable/charizard"
+                android:id="@+id/ivPokemonForm"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvTitle"/>
+
+        <View android:layout_width="0dp" android:layout_height="50dp"
+              android:background="#FFEB3B"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              android:id="@+id/view_yellow_line"
+              app:layout_constraintHorizontal_bias="0.0"
+              app:layout_constraintTop_toBottomOf="@id/tvFirstType"
+              android:layout_marginTop="12dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/view_yellow_line">
+            <!--HP-->
+            <ImageView
+                    style="@style/form_label_icon"
+                    app:srcCompat="@drawable/ic_ps"
+                    android:id="@+id/ivHP"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                    android:text="@string/label_hp"
+                    style="@style/form_label_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvHP"
+                    app:layout_constraintStart_toEndOf="@+id/ivHP"
+                    app:layout_constraintTop_toTopOf="@+id/ivHP"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivHP"
+                    android:layout_marginStart="4dp"/>
+            <TextView
+                    style="@style/form_label_value"
+                    tools:text="78"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvHPValue"
+                    app:layout_constraintTop_toTopOf="@+id/tvHP"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvHP"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            <SeekBar
+                    style="@style/form_seekbar_HP"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sbHP"
+                    android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/tvHP"
+                    android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="@+id/tvHPValue"/>
+
+            <!--Attack-->
+            <TextView
+                    android:text="@string/label_attack"
+                    style="@style/form_label_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAttack"
+                    app:layout_constraintStart_toEndOf="@+id/imgAttack" android:layout_marginStart="4dp"
+                    app:layout_constraintTop_toTopOf="@+id/imgAttack"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgAttack"/>
+            <SeekBar
+                    style="@style/form_seekbar_ATK"
+                    android:id="@+id/sbAttack"
+                    android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvAttack"
+                    app:layout_constraintEnd_toEndOf="@+id/tvAttackValue"/>
+            <TextView
+                    tools:text="84"
+                    style="@style/form_label_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAttackValue"
+                    app:layout_constraintTop_toTopOf="@+id/tvAttack"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvAttack"
+                    app:layout_constraintEnd_toEndOf="@+id/tvHPValue"/>
+            <ImageView
+                    style="@style/form_label_icon"
+                    app:srcCompat="@drawable/ic_attack"
+                    android:id="@+id/imgAttack"
+                    app:layout_constraintTop_toBottomOf="@+id/sbHP" android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="@+id/ivHP"/>
+
+
+            <!--Defense-->
+            <TextView
+                    android:text="@string/label_defense"
+                    style="@style/form_label_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDefense"
+                    app:layout_constraintTop_toTopOf="@+id/imgDefense"
+                    app:layout_constraintStart_toEndOf="@+id/imgDefense" android:layout_marginStart="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgDefense"/>
+            <SeekBar
+                    style="@style/form_seekbar_DEF"
+                    android:id="@+id/sbDefense"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDefense" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="@+id/tvDefenseValue"/>
+            <TextView
+                    tools:text="78"
+                    style="@style/form_label_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDefenseValue" app:layout_constraintEnd_toEndOf="@+id/tvAttackValue"
+                    app:layout_constraintTop_toTopOf="@+id/tvDefense"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvDefense"/>
+            <ImageView
+                    style="@style/form_label_icon"
+                    app:srcCompat="@drawable/ic_defense"
+                    android:id="@+id/imgDefense" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/sbAttack"
+                    app:layout_constraintStart_toStartOf="@+id/imgAttack"/>
+
+            <!--Sp.Attack-->
+            <TextView
+                    android:text="@string/label_sp_attack"
+                    style="@style/form_label_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvSPAttack"
+                    app:layout_constraintStart_toStartOf="@+id/tvDefense"
+                    app:layout_constraintTop_toTopOf="@+id/imgSPAttack"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgSPAttack" android:layout_marginStart="4dp"/>
+            <SeekBar
+                    style="@style/form_seekbar_ATK"
+                    android:id="@+id/sbSPAttack"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSPAttack"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="@+id/tvSPAttackValue"/>
+            <TextView
+                    android:id="@+id/tvSPAttackValue"
+                    tools:text="109"
+                    style="@style/form_label_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/tvDefenseValue"
+                    app:layout_constraintTop_toTopOf="@+id/tvSPAttack"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvSPAttack"/>
+            <ImageView
+                    style="@style/form_label_icon"
+                    app:srcCompat="@drawable/ic_attack"
+                    android:id="@+id/imgSPAttack"
+                    app:layout_constraintTop_toBottomOf="@+id/sbDefense" android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="@+id/imgDefense"/>
+
+            <!--Sp.Defense-->
+            <ImageView
+                    style="@style/form_label_icon"
+                    app:srcCompat="@drawable/ic_defense"
+                    android:id="@+id/imgSPDefense" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/sbSPAttack"
+                    app:layout_constraintStart_toStartOf="@+id/imgSPAttack"/>
+            <TextView
+                    android:text="@string/label_sp_defense"
+                    style="@style/form_label_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvSPDefense"
+                    app:layout_constraintTop_toTopOf="@+id/imgSPDefense"
+                    app:layout_constraintStart_toEndOf="@+id/imgSPDefense" android:layout_marginStart="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgSPDefense"/>
+            <SeekBar
+                    style="@style/form_seekbar_DEF"
+                    android:id="@+id/sbSPDefense"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSPDefense" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_height="18dp"
+                    app:layout_constraintEnd_toEndOf="@+id/tvSPDefenseValue"/>
+            <TextView
+                    tools:text="85"
+                    style="@style/form_label_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvSPDefenseValue" app:layout_constraintEnd_toEndOf="@+id/tvDefenseValue"
+                    app:layout_constraintTop_toTopOf="@+id/tvSPDefense"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvSPDefense"/>
+
+            <!--Speed-->
+            <ImageView
+                    style="@style/form_label_icon" app:srcCompat="@drawable/ic_velocity"
+                    android:id="@+id/imgSpeed" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/sbSPDefense"
+                    app:layout_constraintStart_toStartOf="@+id/imgSPDefense"
+            />
+            <TextView
+                    android:text="@string/label_speed"
+                    style="@style/form_label_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvSpeed"
+                    app:layout_constraintStart_toStartOf="@+id/tvDefense"
+                    app:layout_constraintTop_toTopOf="@+id/imgSpeed"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgSpeed" android:layout_marginStart="4dp"/>
+            <SeekBar
+                    style="@style/form_seekbar_ATK"
+                    android:id="@+id/sbSpeed"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSpeed" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="@+id/tvSpeedValue"/>
+
+            <TextView
+                    tools:text="100"
+                    style="@style/form_label_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvSpeedValue" app:layout_constraintEnd_toEndOf="@+id/tvDefenseValue"
+                    app:layout_constraintTop_toTopOf="@+id/tvSpeed"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvSpeed"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

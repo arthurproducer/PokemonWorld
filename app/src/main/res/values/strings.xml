@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pokemon World</string>
+    <string name="include_permission_button">Habilitar permissão</string>
+    <string name="label_save">Salvar</string>
+    <string name="label_first_type">Fire</string>
+    <string name="label_second_type">Flying</string>
+    <string name="label_speed">Speed</string>
+    <string name="label_defense">Defense</string>
+    <string name="label_attack">Attack</string>
+    <string name="label_sp_defense">Sp.Defense</string>
+    <string name="label_sp_attack">Sp.Attack</string>
+    <string name="label_hp">HP</string>
+    <string name="label_name">Nome:</string>
+    <string name="form_title">P O K É D A D O S</string>
+</resources>
