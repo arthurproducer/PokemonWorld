@@ -9,7 +9,7 @@ import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import br.com.arthursales.pokemonworld.R
-import br.com.arthursales.pokemonworld.view.form.DetailPokemonActivity
+import br.com.arthursales.pokemonworld.view.details.DetailPokemonActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_list_pokemons.*
 import kotlinx.android.synthetic.main.include_loading.*
@@ -48,6 +48,7 @@ class ListPokemonActivity : AppCompatActivity() {
             rvPokemons.adapter = ListPokemonsAdapter(it, picasso) {
                 val intent = Intent(this, DetailPokemonActivity::class.java)
                 intent.putExtra("POKEMON", it.url.substringAfter("pokemon/").substringBefore("/"))
+                intent.putExtra("SCREEN","GENERAL_LIST")
                 Log.i("POKEMON",it.url.substringAfter("pokemon/").substringBefore("/"))
                 startActivity(intent)
                 finish()

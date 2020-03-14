@@ -35,5 +35,4 @@ interface PokemonRepository {
         onComplete:(Pokemon?) -> Unit,
         onError:(Throwable) -> Unit
     )
-
 }

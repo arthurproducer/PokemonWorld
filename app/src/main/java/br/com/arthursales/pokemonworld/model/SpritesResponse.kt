@@ -5,8 +5,15 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class SpritesResponse (
-    val back_default : String,
-    val back_shiny : String,
-    val front_default : String,
-    val front_shiny : String
-) : Parcelable
+    var back_default : String?,
+    var back_shiny : String?,
+    var front_default : String?,
+    var front_shiny : String?
+) : Parcelable {
+    constructor() :this(
+        back_default = null,
+        back_shiny = null,
+        front_default = null,
+        front_shiny =null
+        )
+}

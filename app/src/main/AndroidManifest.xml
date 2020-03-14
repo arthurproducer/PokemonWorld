@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <uses-feature
             android:name="android.hardware.camera"
@@ -20,6 +22,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/FullScreen">
+        <activity android:name=".view.listFavoritePokemon.ListFavoritePokemonActivity">
+        </activity>
         <activity android:name=".view.listpokemon.ListPokemonActivity">
         </activity>
         <activity android:name=".view.splash.SplashActivity">
@@ -31,9 +35,7 @@
         </activity>
         <activity android:name=".view.scan.ScanActivity">
         </activity>
-        <activity android:name=".view.form.DetailPokemonActivity">
-        </activity>
-        <activity android:name=".view.detail.DetailActivity">
+        <activity android:name=".view.details.DetailPokemonActivity">
         </activity>
         <activity android:name=".view.main.MainActivity">
         </activity>

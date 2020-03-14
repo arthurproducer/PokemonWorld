@@ -5,7 +5,8 @@ import br.com.arthursales.pokemonworld.api.PokemonService
 import br.com.arthursales.pokemonworld.api.interceptor.AuthInterceptor
 import br.com.arthursales.pokemonworld.repository.PokemonRepository
 import br.com.arthursales.pokemonworld.repository.PokemonRepositoryImpl
-import br.com.arthursales.pokemonworld.view.form.DetailPokemonViewModel
+import br.com.arthursales.pokemonworld.view.details.DetailPokemonViewModel
+import br.com.arthursales.pokemonworld.view.listFavoritePokemon.ListFavoritePokemonViewModel
 import br.com.arthursales.pokemonworld.view.listpokemon.ListPokemonsViewModel
 import br.com.arthursales.pokemonworld.view.splash.SplashViewModel
 import com.facebook.stetho.okhttp3.StethoInterceptor
@@ -35,13 +36,13 @@ val viewModelModule = module {
     viewModel { SplashViewModel(get()) }
     viewModel { DetailPokemonViewModel(get()) }
     viewModel { ListPokemonsViewModel(get()) }
+    viewModel { ListFavoritePokemonViewModel() }
 }
 
 
 private fun createNetworkClient(okHttpClient: OkHttpClient): Retrofit {
     return Retrofit.Builder()
         .client(okHttpClient)
-//        .baseUrl("https://pokedexdx.herokuapp.com")
         .baseUrl("https://pokeapi.co")
         .addConverterFactory(GsonConverterFactory.create())
         .build()

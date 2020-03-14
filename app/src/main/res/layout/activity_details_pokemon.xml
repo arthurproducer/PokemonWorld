@@ -64,7 +64,7 @@
 
         <ImageView
                 android:padding="8dp"
-                android:background="@drawable/background_pokemon_form"
+                android:background="@drawable/background_pokemon_details"
                 android:layout_width="@dimen/img_default_pokemon_details"
                 android:layout_height="@dimen/img_default_pokemon_details"
                 app:srcCompat="@drawable/charizard"
@@ -292,5 +292,13 @@
                     app:layout_constraintBottom_toBottomOf="@+id/tvSpeed"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_favorite_border"
+                android:id="@+id/btSaveFavorite"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+                app:layout_constraintEnd_toEndOf="@+id/ivPokemonForm"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

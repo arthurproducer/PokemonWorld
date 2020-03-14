@@ -1,29 +1,27 @@
-package br.com.arthursales.pokemonworld.view.form
+package br.com.arthursales.pokemonworld.view.details
 
+import android.database.Cursor
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.SeekBar
-import android.widget.TextView
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import br.com.arthursales.pokemonworld.R
 import br.com.arthursales.pokemonworld.model.Pokemon
 import br.com.arthursales.pokemonworld.model.PokemonGenericResponse
-import br.com.arthursales.pokemonworld.model.TypesResponse
+import br.com.arthursales.pokemonworld.sqlite.*
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_details_pokemon.*
-import kotlinx.android.synthetic.main.pokemon_list_item.view.*
+import kotlinx.android.synthetic.main.pokemon_list_item.*
 import org.koin.android.ext.android.inject
 import org.koin.android.viewmodel.ext.android.viewModel
-import java.lang.reflect.Type
 
 class DetailPokemonActivity : AppCompatActivity() {
 
     val detailPokemonViewModel: DetailPokemonViewModel by viewModel()
     val picasso: Picasso by inject()
 
-    lateinit var pokemon : Pokemon
+    lateinit var pokemon : Pokemon //TODO OLD
     lateinit var pokemonId : String
     lateinit var pokemonType : PokemonGenericResponse
 
@@ -36,6 +34,13 @@ class DetailPokemonActivity : AppCompatActivity() {
             Toast.makeText(this, it, Toast.LENGTH_LONG).show()
         })
 
+        btSaveFavorite.setOnClickListener {
+            //TODO Colocar um radio Buttion
+            //TODO Tratar a troca do ícone e a remoção dos favoritos
+
+            detailPokemonViewModel.insertSQLLite(pokemonId,this)
+            btSaveFavorite.setImageResource(R.drawable.ic_favorite)
+        }
 //        btSaveForm.setOnClickListener {
 //            pokemon.attack = sbAttack.progress
 //            pokemon.defense = sbDefense.progress
@@ -46,13 +51,57 @@ class DetailPokemonActivity : AppCompatActivity() {
 //        }
     }
 
+    private fun pokemonFromCursor(cursor: Cursor){
+        val id = cursor.getInt(cursor.getColumnIndex(COLUMN_ID))
+        tvTitle.text = id.toString()
+        val name = cursor.getString(cursor.getColumnIndex(COLUMN_NAME))
+        tvPokemonNameForm.text = name
+        val type1 = cursor.getString(cursor.getColumnIndex(COLUMN_TYPE_1))
+        tvFirstType.text = type1
+        val type2 = cursor.getString(cursor.getColumnIndex(COLUMN_TYPE_2))
+        if(!type2.isNullOrEmpty()){
+            tvSecondType.visibility = View.VISIBLE
+            tvSecondType.text = type2
+        }
+        val hp = cursor.getInt(cursor.getColumnIndex(COLUMN_STATS_HP))
+        tvHPValue.text = hp.toString()
+        sbHP.progress = hp
+        val attack = cursor.getInt(cursor.getColumnIndex(COLUMN_STATS_ATTACK))
+        tvAttackValue.text = attack.toString()
+        sbAttack.progress = attack
+        val defense = cursor.getInt(cursor.getColumnIndex(COLUMN_STATS_DEFENSE))
+        tvDefenseValue.text = defense.toString()
+        sbDefense.progress = defense
+        val spattack = cursor.getInt(cursor.getColumnIndex(COLUMN_STATS_SPATTACK))
+        tvSPAttackValue.text = spattack.toString()
+        sbSPAttack.progress = spattack
+        val spdefense = cursor.getInt(cursor.getColumnIndex(COLUMN_STATS_SPDEFENSE))
+        tvSPDefenseValue.text = spdefense.toString()
+        sbSPDefense.progress = spdefense
+        val speed = cursor.getInt(cursor.getColumnIndex(COLUMN_STATS_SPEED))
+        tvSpeedValue.text = speed.toString()
+        sbSpeed.progress = speed
+        val sprite = cursor.getString(cursor.getColumnIndex(COLUMN_SPRITE_FRONT_DEFAULT))
+        picasso.load(sprite).into(ivPokemon)
+    }
+
     private fun setValues() {
         pokemonId = intent.getStringExtra("POKEMON")
 
-        detailPokemonViewModel.getPokemonDetails(pokemonId)
+        if(intent.getStringExtra("Activity") != null && intent.getStringExtra("ACTIVITY").equals("Favorite")){
+            //TODO
+            val cursor = detailPokemonViewModel.showSQLLite(pokemonId,this)
+            while(cursor.moveToNext()) {
+                pokemonFromCursor(cursor)
+            }
+            cursor.close()
+            btSaveFavorite.visibility = View.GONE
+        }else{
+            detailPokemonViewModel.getPokemonDetails(pokemonId)
+        }
 
         detailPokemonViewModel.pokemonDetails.observe(this, Observer { pokemon ->
-            tvTitle.text = pokemon.id //TODO Colocar um formato #000
+            tvTitle.text = pokemon.id.toString() //TODO Colocar um formato #000
             tvPokemonNameForm.text = pokemon.name
 
             //Tratar os tipos
@@ -68,7 +117,7 @@ class DetailPokemonActivity : AppCompatActivity() {
                     }
                 } })
 
-            picasso.load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png").into(ivPokemonForm)
+            picasso.load(pokemon.sprites.front_default).into(ivPokemonForm)
 
             //Tratar os Status
             detailPokemonViewModel.pokemonStats.observe(this, Observer {
@@ -100,39 +149,6 @@ class DetailPokemonActivity : AppCompatActivity() {
                      }
                  }
                 } })
-
-
-        })
-//
-//        tvPokemonNameForm.text = pokemon.name
-//
-//        picasso.load("https://pokedexdx.herokuapp.com${pokemon.imageURL}").into(ivPokemonForm)
-//
-//        sbAttack.progress = pokemon.attack
-//        sbDefense.progress = pokemon.defense
-//        sbPS.progress = pokemon.ps
-//        sbVelocity.progress = pokemon.velocity
-//
-//        tvAttackValue.text = pokemon.attack.toString()
-//        tvDefenseValue.text = pokemon.defense.toString()
-//        tvPSValue.text = pokemon.ps.toString()
-//        tvVelocityValue.text = pokemon.velocity.toString()
-//
-//        setListener(sbAttack, tvAttackValue)
-//        setListener(sbDefense, tvDefenseValue)
-//        setListener(sbVelocity, tvVelocityValue)
-//        setListener(sbPS, tvPSValue)
-    }
-
-    private fun setListener(seekBar: SeekBar, textView: TextView) {
-        seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                textView.text = progress.toString()
-            }
-
-            override fun onStartTrackingTouch(seekBar: SeekBar?) {}
-
-            override fun onStopTrackingTouch(seekBar: SeekBar?) {}
         })
     }
 }

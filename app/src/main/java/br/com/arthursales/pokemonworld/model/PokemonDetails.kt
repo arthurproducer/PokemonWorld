@@ -5,10 +5,19 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class PokemonDetails(
-    val id: String,
+    val id: Int,
     val name: String,
-    val abilities : List<AbilitiesResponse>,
+    val abilities : List<AbilitiesResponse>?,
     val sprites : SpritesResponse,
-    val stats : List<StatsResponse>,
-    val types : List<TypesResponse>
-) : Parcelable
+    val stats : List<StatsResponse>?,
+    val types : List<TypesResponse>?
+) : Parcelable {
+        constructor(id: Int, name: String, sprites: SpritesResponse): this(
+            id,
+            name,
+            null,
+            sprites,
+            null,
+            null
+    )
+}
