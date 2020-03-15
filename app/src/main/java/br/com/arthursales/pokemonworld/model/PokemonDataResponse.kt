@@ -6,7 +6,7 @@ import kotlinx.android.parcel.Parcelize
 
 
 @Parcelize
-data class PokemonResponseData(
+data class PokemonDataResponse(
     @SerializedName("count")
     val total_number : String,
     @SerializedName("next")

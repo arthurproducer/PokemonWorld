@@ -12,4 +12,13 @@
     <string name="label_hp">HP</string>
     <string name="label_name">Nome:</string>
     <string name="form_title">P O K É D A D O S</string>
+    <string name="what_is_your_email">Qual o seu email?</string>
+
+
+    <string name="hint_login">Login</string>
+    <string name="hint_password">Senha</string>
+    <string name="hint_email">E-mail</string>
+    <string name="register_link">Não tem conta ainda? Cadastre-se</string>
+    <string name="forgetPassword">Esqueceu a senha?</string>
+    <string name="signIn">Logar</string>
 </resources>

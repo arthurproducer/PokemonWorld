@@ -16,7 +16,7 @@ interface PokemonService {
     ) : Call<PokemonResponseOld>
 
     @GET("/api/v2/pokemon?limit=100")
-    fun getPokemons() : Call<PokemonResponseData>
+    fun getPokemons() : Call<PokemonDataResponse>
 
     @GET("/api/v2/pokemon/{id}")
     fun getPokemonDetails(@Path("id") id: String) : Call<PokemonDetails>

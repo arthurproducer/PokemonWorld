@@ -11,11 +11,11 @@ class PokemonRepositoryImpl(
 ) : PokemonRepository {
 
     override fun getPokemonDetails(
-        pokemonId: String,
+        id: String,
         onComplete: (PokemonDetails?) -> Unit,
         onError: (Throwable?) -> Unit
     ) {
-        pokemonService.getPokemonDetails(pokemonId)
+        pokemonService.getPokemonDetails(id)
             .enqueue(object: Callback<PokemonDetails>{
                 override fun onFailure(call: Call<PokemonDetails>, t: Throwable) {
                     onError(t)
@@ -35,12 +35,12 @@ class PokemonRepositoryImpl(
         onComplete: (List<PokemonGenericResponse>?) -> Unit,
         onError: (Throwable) -> Unit) {
         pokemonService.getPokemons()
-            .enqueue(object : Callback<PokemonResponseData> {
-                override fun onFailure(call: Call<PokemonResponseData>, t: Throwable) {
+            .enqueue(object : Callback<PokemonDataResponse> {
+                override fun onFailure(call: Call<PokemonDataResponse>, t: Throwable) {
                     onError(t)
                 }
 
-                override fun onResponse(call: Call<PokemonResponseData>, response: Response<PokemonResponseData>) {
+                override fun onResponse(call: Call<PokemonDataResponse>, response: Response<PokemonDataResponse>) {
                     if (response.isSuccessful) {
                         onComplete(response.body()?.pokemons ?: listOf())
                     } else {

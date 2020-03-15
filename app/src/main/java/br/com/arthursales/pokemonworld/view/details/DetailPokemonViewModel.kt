@@ -8,6 +8,18 @@ import androidx.lifecycle.ViewModel
 import br.com.arthursales.pokemonworld.model.*
 import br.com.arthursales.pokemonworld.repository.PokemonRepository
 import br.com.arthursales.pokemonworld.sqlite.*
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_ID
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_NAME
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_SPRITE_FRONT_DEFAULT
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_STATS_ATTACK
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_STATS_DEFENSE
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_STATS_HP
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_STATS_SPATTACK
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_STATS_SPDEFENSE
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_STATS_SPEED
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_TYPE_1
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_TYPE_2
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.TABLE_POKEMON
 
 class DetailPokemonViewModel(
     val pokemonRepository: PokemonRepository

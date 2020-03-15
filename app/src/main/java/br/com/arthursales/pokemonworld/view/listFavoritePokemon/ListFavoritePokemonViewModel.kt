@@ -4,14 +4,15 @@ import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteException
 import android.util.Log
-import android.view.View
-import br.com.arthursales.pokemonworld.model.*
-import br.com.arthursales.pokemonworld.repository.SQLRepository
-import br.com.arthursales.pokemonworld.sqlite.*
-import kotlinx.android.synthetic.main.activity_details_pokemon.*
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import br.com.arthursales.pokemonworld.repository.PokemonRepository
+import br.com.arthursales.pokemonworld.model.PokemonDetails
+import br.com.arthursales.pokemonworld.model.SpritesResponse
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_ID
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_NAME
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_SPRITE_FRONT_DEFAULT
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.TABLE_POKEMON
+import br.com.arthursales.pokemonworld.sqlite.PokemonSqlHelper
 import br.com.arthursales.pokemonworld.sqlite.PokemonSqlHelper.Companion.SQL_CREATE_ENTRIES
 
 class ListFavoritePokemonViewModel : ViewModel(){
@@ -47,8 +48,6 @@ class ListFavoritePokemonViewModel : ViewModel(){
         }
         cursor?.close()
         db.close()
-        Log.i("FAVORITEPOKEMON",listFavoritePokemon.value.toString())
-        Log.i("FAVORITEPOKEMONNAME",listFavoritePokemon.value?.get(0)?.name)
 
         return cursor
     }

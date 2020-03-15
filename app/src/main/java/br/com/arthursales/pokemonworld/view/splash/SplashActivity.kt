@@ -17,7 +17,8 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        splashViewModel.checkHealth()
+        splashViewModel.checkHealthPokemon()
+        splashViewModel.checkHealthUser()
 
         splashViewModel.messageError.observe(this, Observer {
             if(it == "") {

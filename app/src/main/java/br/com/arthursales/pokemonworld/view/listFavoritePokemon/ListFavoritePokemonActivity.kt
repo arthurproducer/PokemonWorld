@@ -9,6 +9,9 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import br.com.arthursales.pokemonworld.R
 import br.com.arthursales.pokemonworld.sqlite.*
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_ID
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_NAME
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_SPRITE_FRONT_DEFAULT
 import br.com.arthursales.pokemonworld.view.details.DetailPokemonActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_list_favorite_pokemon.*
@@ -59,14 +62,6 @@ class ListFavoritePokemonActivity : AppCompatActivity() {
             rvFavoritePokemons.layoutManager = GridLayoutManager(this, 3)
         })
 
-    }
-
-    private fun pokemonFromCursor(cursor: Cursor){
-        while(cursor.moveToNext()){
-            val id = cursor.getInt(cursor.getColumnIndex(COLUMN_ID))
-            val name = cursor.getString(cursor.getColumnIndex(COLUMN_NAME))
-            val sprite = cursor.getString(cursor.getColumnIndex(COLUMN_SPRITE_FRONT_DEFAULT))
-        }
     }
 }
 

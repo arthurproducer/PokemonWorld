@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import br.com.arthursales.pokemonworld.R
 import br.com.arthursales.pokemonworld.view.listFavoritePokemon.ListFavoritePokemonActivity
 import br.com.arthursales.pokemonworld.view.listpokemon.ListPokemonActivity
+import br.com.arthursales.pokemonworld.view.login.LoginActivity
 import br.com.arthursales.pokemonworld.view.scan.ScanActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btPokedex.setOnClickListener {
-            startActivity(Intent(this, ScanActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
         }
 
         btPokemonList.setOnClickListener {
