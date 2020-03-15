@@ -1,6 +1,7 @@
 package br.com.arthursales.pokemonworld.view.login
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.inputmethod.EditorInfo
@@ -13,11 +14,14 @@ import br.com.arthursales.pokemonworld.util.Base64Custom.decodificarBase64
 import br.com.arthursales.pokemonworld.view.listpokemon.ListPokemonActivity
 import br.com.arthursales.pokemonworld.view.main.MainActivity
 import kotlinx.android.synthetic.main.custom_login.*
+import org.koin.android.ext.android.inject
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class LoginActivity : AppCompatActivity() {
 
     private val loginViewModel: LoginViewModel by viewModel()
+    private val preferences: SharedPreferences by inject()
+
     lateinit var validUser: UserResponse
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,9 +52,12 @@ class LoginActivity : AppCompatActivity() {
                 if (loginViewModel.validateLogin(
                         edtEmail.text.toString(),
                         codificarBase64(edtPassword.text.toString()),
-                        this
-                    )
-                ) {
+                        this)) {
+                    val editor = preferences.edit()
+                    editor?.putLong("User_ID",validUser.id)
+                    editor?.apply()
+                    //TODO Verificar se já existe na tabela, caso contrário salvar
+                    //TODO Salvar o ID na tabela de pokemon
                     startActivity(Intent(this, MainActivity::class.java))
                 }else{
                     Toast.makeText(this, "Email ou senha invalidos!", Toast.LENGTH_LONG).show()

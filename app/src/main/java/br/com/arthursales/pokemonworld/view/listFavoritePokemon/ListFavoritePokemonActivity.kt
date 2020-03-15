@@ -1,12 +1,14 @@
 package br.com.arthursales.pokemonworld.view.listFavoritePokemon
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.database.Cursor
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import br.com.arthursales.pokemonworld.R
 import br.com.arthursales.pokemonworld.sqlite.*
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_ID
@@ -22,7 +24,7 @@ import org.koin.android.viewmodel.ext.android.viewModel
 class ListFavoritePokemonActivity : AppCompatActivity() {
 
     val listFavoritePokemonViewModel : ListFavoritePokemonViewModel by viewModel()
-
+    val preferences : SharedPreferences by inject()
     val picasso: Picasso by inject()
 
 
@@ -30,7 +32,7 @@ class ListFavoritePokemonActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_favorite_pokemon)
 
-        listFavoritePokemonViewModel.showSQLLite(this)
+        listFavoritePokemonViewModel.showSQLLite(preferences.getLong("User_ID",0),this)
         rvFavoritePokemons.adapter?.notifyDataSetChanged()
         //pokemonFromCursor(cursor!!)
 //

@@ -11,6 +11,7 @@ import br.com.arthursales.pokemonworld.model.SpritesResponse
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_ID
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_NAME
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_SPRITE_FRONT_DEFAULT
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_USER_ID
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.TABLE_POKEMON
 import br.com.arthursales.pokemonworld.sqlite.PokemonSqlHelper
 import br.com.arthursales.pokemonworld.sqlite.PokemonSqlHelper.Companion.SQL_CREATE_ENTRIES
@@ -22,14 +23,18 @@ class ListFavoritePokemonViewModel : ViewModel(){
     val pokemon = MutableLiveData<PokemonDetails?>()
     val messageError = MutableLiveData<String>()
 
-    fun showSQLLite(context: Context): Cursor? {
+    fun showSQLLite(id: Long?,context: Context): Cursor? {
         val helper = PokemonSqlHelper(context)
         var cursor: Cursor? = null
+        var args : Array<String?>?
         listFavoritePokemon.value = mutableListOf()
         var sql = "SELECT * FROM $TABLE_POKEMON"
+            sql += " WHERE $COLUMN_USER_ID LIKE ?"
+            args = arrayOf(id.toString())
+
         val db = helper.readableDatabase
         try {
-            cursor = db.rawQuery(sql, null)
+            cursor = db.rawQuery(sql, args)
             Log.i("BDSucess", sql)
             Log.i("BDSucess", cursor.toString())
         }catch (e : SQLiteException){
@@ -40,10 +45,7 @@ class ListFavoritePokemonViewModel : ViewModel(){
         while (cursor.moveToNext()){
             pokemon.value = pokemonFromCursor(cursor)
             listFavoritePokemon.value?.add(pokemon.value)
-            //listFavoritePokemon.value.a = mutableListOf(pokemonFromCursor(cursor))
-            Log.i("FAVORITEPOKEMONin",listFavoritePokemon.value.toString())
-            Log.i("FAVORITEPOKEMONNAMEin",listFavoritePokemon.value?.get(0)?.name)
-        } }else{
+          } }else{
             //TODO tratar lista vazia
         }
         cursor?.close()

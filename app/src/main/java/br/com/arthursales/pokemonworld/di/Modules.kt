@@ -1,6 +1,8 @@
 package br.com.arthursales.pokemonworld.di
 
+import android.app.Application
 import android.content.Context
+import android.content.SharedPreferences
 import br.com.arthursales.pokemonworld.api.PokemonService
 import br.com.arthursales.pokemonworld.api.UserService
 import br.com.arthursales.pokemonworld.api.interceptor.AuthInterceptor
@@ -19,6 +21,7 @@ import com.squareup.picasso.OkHttp3Downloader
 import com.squareup.picasso.Picasso
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
+import org.koin.android.ext.koin.androidApplication
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
@@ -47,12 +50,20 @@ val repositoryModule = module {
 
 val viewModelModule = module {
     viewModel { SplashViewModel(get(),get()) }
-    viewModel { DetailPokemonViewModel(get()) }
+    viewModel { DetailPokemonViewModel(get(),get()) }
     viewModel { ListPokemonsViewModel(get()) }
     viewModel { ListFavoritePokemonViewModel() }
     viewModel {LoginViewModel(get())}
 }
 
+val sharedPreferencesModule = module {
+    single {
+        provideSettingsPreferences(androidApplication())
+    }
+}
+
+private fun provideSettingsPreferences(app: Application): SharedPreferences =
+    app.getSharedPreferences("User_ID", Context.MODE_PRIVATE)
 
 private fun createNetworkClient(okHttpClient: OkHttpClient,baseUrl : String): Retrofit {
     return Retrofit.Builder()

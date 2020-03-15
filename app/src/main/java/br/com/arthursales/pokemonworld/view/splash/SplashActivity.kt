@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import br.com.arthursales.pokemonworld.R
+import br.com.arthursales.pokemonworld.view.login.LoginActivity
 import br.com.arthursales.pokemonworld.view.main.MainActivity
 import org.koin.android.viewmodel.ext.android.viewModel
 
@@ -22,7 +23,7 @@ class SplashActivity : AppCompatActivity() {
 
         splashViewModel.messageError.observe(this, Observer {
             if(it == "") {
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, LoginActivity::class.java))
                 finish()
             } else {
                 Toast.makeText(this, it, Toast.LENGTH_LONG).show()

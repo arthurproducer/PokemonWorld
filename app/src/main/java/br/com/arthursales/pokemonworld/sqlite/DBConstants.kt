@@ -5,6 +5,7 @@ object DBPokemonWorld {
     const val DATABASE_VERSION = 1
     const val TABLE_POKEMON = "pokemondetails"
     const val COLUMN_ID = "id"
+    const val COLUMN_USER_ID = "user"
     const val COLUMN_NAME = "name"
     const val COLUMN_TYPE_1 = "type1"
     const val COLUMN_TYPE_2 = "type2"

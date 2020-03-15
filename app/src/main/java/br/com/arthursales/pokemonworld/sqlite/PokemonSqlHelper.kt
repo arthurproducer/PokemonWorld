@@ -15,6 +15,7 @@ import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_STATS_SPDEFE
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_STATS_SPEED
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_TYPE_1
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_TYPE_2
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_USER_ID
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.DATABASE_NAME
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.DATABASE_VERSION
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.TABLE_POKEMON
@@ -39,6 +40,7 @@ class PokemonSqlHelper (context : Context):
         val SQL_CREATE_ENTRIES =
             "CREATE TABLE $TABLE_POKEMON (" +
                     "${DBPokemonWorld.COLUMN_ID} INTEGER  PRIMARY KEY, " +
+                    "$COLUMN_USER_ID INTEGER NOT NULL, " +
                     "${DBPokemonWorld.COLUMN_NAME} TEXT NOT NULL, " +
                     "$COLUMN_TYPE_1 TEXT NOT NULL, " +
                     "$COLUMN_TYPE_2 TEXT," +

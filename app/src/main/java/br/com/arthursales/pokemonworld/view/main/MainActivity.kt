@@ -33,7 +33,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btClose.setOnClickListener {
-            finish()
+            startActivity(Intent(this, LoginActivity::class.java))
+            //TODO Deslogar o Usuário
         }
     }
 }

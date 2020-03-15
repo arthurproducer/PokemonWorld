@@ -3,6 +3,7 @@ package br.com.arthursales.pokemonworld
 import android.app.Application
 import br.com.arthursales.pokemonworld.di.networkModule
 import br.com.arthursales.pokemonworld.di.repositoryModule
+import br.com.arthursales.pokemonworld.di.sharedPreferencesModule
 import br.com.arthursales.pokemonworld.di.viewModelModule
 import com.facebook.stetho.Stetho
 import org.koin.android.ext.koin.androidContext
@@ -23,7 +24,8 @@ class MyApplication : Application() {
                 listOf(
                     networkModule,
                     repositoryModule,
-                    viewModelModule
+                    viewModelModule,
+                    sharedPreferencesModule
                 )
             )
         }

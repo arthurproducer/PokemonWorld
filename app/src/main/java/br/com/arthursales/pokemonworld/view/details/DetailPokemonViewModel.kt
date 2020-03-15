@@ -2,6 +2,7 @@ package br.com.arthursales.pokemonworld.view.details
 
 import android.content.ContentValues
 import android.content.Context
+import android.content.SharedPreferences
 import android.database.Cursor
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -19,10 +20,12 @@ import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_STATS_SPDEFE
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_STATS_SPEED
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_TYPE_1
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_TYPE_2
+import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_USER_ID
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.TABLE_POKEMON
 
 class DetailPokemonViewModel(
-    val pokemonRepository: PokemonRepository
+    val pokemonRepository: PokemonRepository,
+    val preferences: SharedPreferences
 ) : ViewModel() {
 
     val isLoading = MutableLiveData<Boolean>()
@@ -54,6 +57,7 @@ class DetailPokemonViewModel(
         val cv = ContentValues().apply {
             put(COLUMN_ID,id.toInt())
             put(COLUMN_NAME,pokemonDetails.value?.name)
+            put(COLUMN_USER_ID,preferences.getLong("User_ID",0))
             put(COLUMN_TYPE_1,getType(pokemonTypes.value,1))
             put(COLUMN_TYPE_2,getType(pokemonTypes.value,2))
             put(COLUMN_STATS_HP,getStats(pokemonStats.value,"hp"))
