@@ -15,22 +15,6 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             android:layout_marginTop="64dp" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
-    <Button
-            style="@style/custom_button"
-            android:textColor="#673AB7"
-            android:text="POKEDEX"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btPokedex"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="32dp"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="32dp"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintBottom_toTopOf="@+id/btPokemonList"
-            app:layout_constraintVertical_chainStyle="packed"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3"/>
 
     <Button
             style="@style/custom_button"
@@ -38,10 +22,13 @@
             android:text="VER TODOS POKÉMONS"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
             android:id="@+id/btPokemonList"
-            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/btPokedex"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
             app:layout_constraintBottom_toTopOf="@+id/btClose"
-            app:layout_constraintEnd_toEndOf="@+id/btPokedex" app:layout_constraintStart_toStartOf="@+id/btPokedex"/>
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.334"/>
     <Button
             style="@style/custom_button"
             android:textColor="#673AB7"
@@ -64,14 +51,12 @@
             android:id="@+id/btClose"
             android:layout_marginTop="32dp"
             app:layout_constraintTop_toBottomOf="@+id/btFavorites"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline2"
             app:layout_constraintEnd_toEndOf="@+id/btPokemonList"
             app:layout_constraintStart_toStartOf="@+id/btPokemonList"/>
      <TextView
             android:gravity="center"
             android:textColor="#FFF"
-            android:text="DESENVOLVIDO POR HEIDER LOPES\nPara fins educacionais"
+            android:text="DESENVOLVIDO POR ARTHUR SALES\nPara o Itaú"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView3" android:layout_marginBottom="8dp"
@@ -82,10 +67,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/guideline2"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="660dp"/>
+            app:layout_constraintGuide_end="71dp"/>
     <androidx.constraintlayout.widget.Guideline
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/guideline3"
-            android:orientation="horizontal" app:layout_constraintGuide_percent="0.2735978"/>
+            android:orientation="horizontal" app:layout_constraintGuide_percent="0.27"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
