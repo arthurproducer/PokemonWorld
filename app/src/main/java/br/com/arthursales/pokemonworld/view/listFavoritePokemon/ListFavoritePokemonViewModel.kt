@@ -29,26 +29,18 @@ class ListFavoritePokemonViewModel : ViewModel(){
         val db = helper.readableDatabase
         try {
             cursor = db.rawQuery(sql, null)
-            Log.i("BDSucess", sql)
-            Log.i("BDSucess", cursor.toString())
         }catch (e : SQLiteException){
             db.execSQL(SQL_CREATE_ENTRIES)
-            Log.i("BDError", sql)
         }
         if(cursor != null){
         while (cursor.moveToNext()){
             pokemon.value = pokemonFromCursor(cursor)
             listFavoritePokemon.value?.add(pokemon.value)
-            //listFavoritePokemon.value.a = mutableListOf(pokemonFromCursor(cursor))
-            Log.i("FAVORITEPOKEMONin",listFavoritePokemon.value.toString())
-            Log.i("FAVORITEPOKEMONNAMEin",listFavoritePokemon.value?.get(0)?.name)
         } }else{
             //TODO tratar lista vazia
         }
         cursor?.close()
         db.close()
-        Log.i("FAVORITEPOKEMON",listFavoritePokemon.value.toString())
-        Log.i("FAVORITEPOKEMONNAME",listFavoritePokemon.value?.get(0)?.name)
 
         return cursor
     }
