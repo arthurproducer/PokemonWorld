@@ -56,8 +56,6 @@ class LoginActivity : AppCompatActivity() {
                     val editor = preferences.edit()
                     editor?.putLong("User_ID",validUser.id)
                     editor?.apply()
-                    //TODO Verificar se já existe na tabela, caso contrário salvar
-                    //TODO Salvar o ID na tabela de pokemon
                     startActivity(Intent(this, MainActivity::class.java))
                 }else{
                     Toast.makeText(this, "Email ou senha invalidos!", Toast.LENGTH_LONG).show()
@@ -82,7 +80,7 @@ class LoginActivity : AppCompatActivity() {
                         } else {
                             tilEmail.error = "Login sem senha cadastrada! Cadastre uma senha para esse login!"
                             btnLogar.text = "Cadastrar Senha"
-                            tvLoginQuestion.text = "Qual vai ser sua senha?"
+                            tvLoginQuestion.text = getText(R.string.what_is_your_password)
                             btnLogar.isEnabled = true
                             tilEmail.isEnabled = false
                             return@Observer

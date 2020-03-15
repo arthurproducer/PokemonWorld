@@ -13,6 +13,7 @@
     <string name="label_name">Nome:</string>
     <string name="form_title">P O K É D A D O S</string>
     <string name="what_is_your_email">Qual o seu email?</string>
+    <string name="what_is_your_password">Qual vai ser a sua senha?</string>
 
 
     <string name="hint_login">Login</string>
@@ -21,4 +22,5 @@
     <string name="register_link">Não tem conta ainda? Cadastre-se</string>
     <string name="forgetPassword">Esqueceu a senha?</string>
     <string name="signIn">Logar</string>
+    <string name="developer_for">DESENVOLVIDO POR ARTHUR SALES Para o Itaú</string>
 </resources>

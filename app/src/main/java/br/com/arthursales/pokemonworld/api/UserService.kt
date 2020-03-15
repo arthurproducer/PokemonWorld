@@ -7,9 +7,8 @@ import retrofit2.http.GET
 
 interface UserService{
 
-    @GET("/api/users?page=1")
-    fun checkHealth() : Call<HealthResponse>
-
+//    @GET("/api/users?page=1")
+//    fun checkHealth() : Call<HealthResponse>
 
     @GET("/api/users?page=1")
     fun getAllUsers() : Call<UserDataResponse>

@@ -12,20 +12,20 @@ class SplashViewModel(
 
     val messageError = MutableLiveData<String>()
 
-    fun checkHealthPokemon() {
-        pokemonRepository.checkHealth(
-            onComplete = {
-                messageError.value = ""
-            }, onError = {
-                messageError.value = it.message
-            })
-    }
-    fun checkHealthUser() {
-        userRepository.checkHealth(
-            onComplete = {
-                messageError.value = ""
-            }, onError = {
-                messageError.value = it.message
-            })
-    }
+//    fun checkHealthPokemon() {
+//        pokemonRepository.checkHealth(
+//            onComplete = {
+//                messageError.value = ""
+//            }, onError = {
+//                messageError.value = it.message
+//            })
+//    }
+//    fun checkHealthUser() {
+//        userRepository.checkHealth(
+//            onComplete = {
+//                messageError.value = ""
+//            }, onError = {
+//                messageError.value = it.message
+//            })
+//    }
 }

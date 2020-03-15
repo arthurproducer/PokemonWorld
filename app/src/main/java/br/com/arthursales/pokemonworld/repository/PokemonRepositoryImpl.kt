@@ -91,25 +91,25 @@ class PokemonRepositoryImpl(
             })
     }
 
-    override fun checkHealth(
-        onComplete: () -> Unit,
-        onError: (t: Throwable) -> Unit
-    ) {
-        pokemonService
-            .checkHealth()
-            .enqueue(object : Callback<HealthResponse> {
-                override fun onFailure(call: Call<HealthResponse>, t: Throwable) {
-                    onError(t)
-                }
-
-                override fun onResponse(call: Call<HealthResponse>, response: Response<HealthResponse>) {
-                    if (response.isSuccessful) {
-                        onComplete()
-                    } else {
-                        onError(Throwable("Não foi possível realizar a requisição"))
-                    }
-                }
-            })
-
-    }
+//    override fun checkHealth(
+//        onComplete: () -> Unit,
+//        onError: (t: Throwable) -> Unit
+//    ) {
+//        pokemonService
+//            .checkHealth()
+//            .enqueue(object : Callback<HealthResponse> {
+//                override fun onFailure(call: Call<HealthResponse>, t: Throwable) {
+//                    onError(t)
+//                }
+//
+//                override fun onResponse(call: Call<HealthResponse>, response: Response<HealthResponse>) {
+//                    if (response.isSuccessful) {
+//                        onComplete()
+//                    } else {
+//                        onError(Throwable("Não foi possível realizar a requisição"))
+//                    }
+//                }
+//            })
+//
+//    }
 }

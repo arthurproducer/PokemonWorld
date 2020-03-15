@@ -6,8 +6,8 @@ import retrofit2.http.*
 
 interface PokemonService {
 
-    @GET("/api/v2")
-    fun checkHealth() : Call<HealthResponse>
+//    @GET("/api/v2")
+//    fun checkHealth() : Call<HealthResponse>
 
     @GET("/api/pokemon")
     fun getPokemons(

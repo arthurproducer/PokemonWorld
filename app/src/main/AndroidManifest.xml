@@ -38,9 +38,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".view.scan.ScanActivity">
-        </activity>
-        <activity android:name=".view.details.DetailPokemonActivity">
+        <activity android:name=".view.details.DetailPokemonActivity"
+                  android:theme="@style/FullScreen">
         </activity>
         <activity
                 android:name=".view.main.MainActivity"

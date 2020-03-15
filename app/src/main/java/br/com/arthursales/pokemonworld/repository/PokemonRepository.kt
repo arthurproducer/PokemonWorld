@@ -6,10 +6,9 @@ import br.com.arthursales.pokemonworld.model.PokemonGenericResponse
 
 interface PokemonRepository {
 
-    fun checkHealth(
-        onComplete:() -> Unit,
-        onError:(t: Throwable) -> Unit
-    )
+//    fun checkHealth(
+//        onComplete:() -> Unit,
+//        onError:(t: Throwable) -> Unit)
 
     fun getPokemons(
         onComplete:(List<PokemonGenericResponse>?) -> Unit,
@@ -28,7 +27,6 @@ interface PokemonRepository {
         onComplete: (PokemonDetails?) -> Unit,
         onError: (Throwable?) -> Unit
     )
-
 
     fun updatePokemon(
         pokemon: Pokemon,
