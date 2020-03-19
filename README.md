@@ -18,7 +18,6 @@ Dentro do aplicativo será exibido uma lista de pokemons dos quais o usuário po
 
 Aplicativo desenvolvido em Kotlin, utilizando androidX,SQLite banco de dados do android que permite salvar dados no próprio device,
 Koin para injeção de dependência, Retrofit para o webservice, Gson para parse do json, Stetho para debug das requests, Picasso para tratamento de imagem, RecyclerView para tratamento de listas, AAC(Android Architecture Components) para o uso de LiveData necessárias na arquitetura MVVM, por fim o Material Design do Google para uso de BottomBar,Toolbar e outros apetrechos para design.  
-Acopla-se a API(https://github.com/andreamll/ursolao-node-api) desenvolvida em Node JS, com base de dados MySQL, instanciada no AWS. 
 
 ###### Kotlin; SQLite; MVVM; Retrofit; Koin;
 
