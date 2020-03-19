@@ -22,6 +22,7 @@ class ListFavoritePokemonViewModel : ViewModel(){
     val messageError = MutableLiveData<String>()
 
     fun showSQLLite(context: Context): Cursor? {
+        isLoading.value = true
         val helper = PokemonSqlHelper(context)
         var cursor: Cursor? = null
         listFavoritePokemon.value = mutableListOf()
@@ -30,6 +31,7 @@ class ListFavoritePokemonViewModel : ViewModel(){
         try {
             cursor = db.rawQuery(sql, null)
         }catch (e : SQLiteException){
+            messageError.value = e.toString()
             db.execSQL(SQL_CREATE_ENTRIES)
         }
         if(cursor != null){
@@ -39,6 +41,7 @@ class ListFavoritePokemonViewModel : ViewModel(){
         } }else{
             //TODO tratar lista vazia
         }
+        isLoading.value = false
         cursor?.close()
         db.close()
 

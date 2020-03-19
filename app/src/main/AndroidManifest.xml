@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="br.com.arthursales.pokemonworld">
+        package="br.com.arthursales.pokemonworld">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-
-    <uses-feature
-            android:name="android.hardware.camera"
-            android:required="true"/>
-    <uses-feature
-            android:name="android.hardware.camera.autofocus"
-            android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
             android:name=".MyApplication"
@@ -22,23 +14,21 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/FullScreen">
-        <activity android:name=".view.listFavoritePokemon.ListFavoritePokemonActivity">
-        </activity>
-        <activity android:name=".view.listpokemon.ListPokemonActivity">
-        </activity>
+        <activity
+                android:name=".view.main.MainActivity"
+                android:launchMode="singleTop" />
+        <activity
+                android:name=".view.main.BottomListsActivity"
+                android:parentActivityName=".view.main.MainActivity" />
+
         <activity android:name=".view.splash.SplashActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.scan.ScanActivity">
-        </activity>
-        <activity android:name=".view.details.DetailPokemonActivity">
-        </activity>
-        <activity android:name=".view.main.MainActivity">
-        </activity>
+        <activity android:name=".view.details.DetailPokemonActivity"/>
     </application>
 
 </manifest>
