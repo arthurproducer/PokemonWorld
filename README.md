@@ -46,8 +46,6 @@ cd pokemonworld
 ### Listas de Pokemon
 ### Detalhes do Pokemon
 ### Pokemon Favoritos
-### Devolution
-### About
 
 ## Version
 
