@@ -40,7 +40,7 @@ cd pokemonworld
 ```
 
 ## Detalhando as telas
-| ![Page1](printscreen/Splash.png)  | ![Page2](iOS/Favorites.png) | ![Page3](iOS/Detail.png) |
+| ![Page1](printscreen/Splash.png)  | ![Page2](printscreen/Splash.png) | ![Page3](printscreen/Splash.png) |
 |:---:|:---:|:---:|
 | Lista de Personagens | Favoritos | Detalhes do Personagem |
 
