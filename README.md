@@ -56,13 +56,13 @@ Direciona o usuário para as demais telas do app e serve para que o mesmo possa 
 | Login | LoginInvalido | Cadastro de Senha |
 
 A tela de Login possibilita o acesso as demais funcionalidades do aplicativo. Para que o usuário possa se autenticar é necessário que seu e-mail esteja dentre os cadastrados na API da reqres.in, se estiver, será valido se existe alguma senha vinculada ao usuário no device, se não tiver o mesmo deve cadastra-la na tela de Cadastro de Senha. Uma vez com o Login e senha o acesso ao aplicativo é livre.
-######## OBS: o botão não tem conta ainda? Cadastre-se faz parte de uma melhoria integrada ao Firebase. Saiba mais ao final do READ.ME na parte de trabalhos futuros.
+###### OBS: o botão não tem conta ainda? Cadastre-se faz parte de uma melhoria integrada ao Firebase. Saiba mais ao final do READ.ME na parte de trabalhos futuros.
 
 ### Listas de Pokemon
 | ![Page1](printscreen/PokemonList.png)  | ![Page2](printscreen/PokemonFavorites.png) | ![Page3](printscreen/PokemonDetails.png) |
 |:---:|:---:|:---:|
 | Lista de Pokemon | Favoritos | Detalhes do Personagem |
-
+|Lista completa de todos os Pokemons, sendo exibido de 100 em 100.|Tela onde temos os pokemons favoritos de cada usuario.É possível visualizar esses pokemon mesmo offline.|Na Tela de detalhes temos diversas informações do Pokemon, vindas da  API.|
 
 ### Detalhes do Pokemon
 
