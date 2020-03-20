@@ -54,6 +54,7 @@ Direciona o usuário para as demais telas do app e serve para que o mesmo possa 
 | ![Page1](printscreen/Login.png)  | ![Page2](printscreen/LoginEmail.png) | ![Page3](printscreen/LoginRegisterPassword.png) |
 |:---:|:---:|:---:|
 | Login | LoginInvalido | Cadastro de Senha |
+
 A tela de Login possibilita o acesso as demais funcionalidades do aplicativo. Para que o usuário possa se autenticar é necessário que seu e-mail esteja dentre os cadastrados na API da reqres.in, se estiver, será valido se existe alguma senha vinculada ao usuário no device, se não tiver o mesmo deve cadastra-la na tela de Cadastro de Senha. Uma vez com o Login e senha o acesso ao aplicativo é livre.
 ######## OBS: o botão não tem conta ainda? Cadastre-se faz parte de uma melhoria integrada ao Firebase. Saiba mais ao final do READ.ME na parte de trabalhos futuros.
 
