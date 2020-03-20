@@ -42,7 +42,7 @@ cd pokemonworld
 ## Detalhando as telas
 
 ### Splash
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/Splash.png" height="680" width="540">
+<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/Splash.png" height="280" width="160">
 
 ### Login
 ### Listas de Pokemon
