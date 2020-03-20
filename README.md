@@ -40,6 +40,9 @@ cd pokemonworld
 ```
 
 ## Detalhando as telas
+| ![Page1](printscreen/Splash.png)  | ![Page2](iOS/Favorites.png) | ![Page3](iOS/Detail.png) |
+|:---:|:---:|:---:|
+| Lista de Personagens | Favoritos | Detalhes do Personagem |
 
 ### Splash
 <img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/Splash.png" height="160" width="100">
