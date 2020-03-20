@@ -59,17 +59,14 @@ A tela de Login possibilita o acesso as demais funcionalidades do aplicativo. Pa
 ###### OBS: o botão não tem conta ainda? Cadastre-se faz parte de uma melhoria integrada ao Firebase. Saiba mais ao final do READ.ME na parte de trabalhos futuros.
 
 ### Listas de Pokemon
-| ![Page1](printscreen/PokemonList.png)  | ![Page2](printscreen/PokemonFavorites.png) | ![Page3](printscreen/PokemonDetails.png) |
+| ![Page1](printscreen/PokemonList.png)  | ![Page2](printscreen/PokemonFavorites.png) | ![Page3](printscreen/PokemonDetailsBtFavorites.png) |
 |:---:|:---:|:---:|
 | Lista de Pokemon | Favoritos | Detalhes do Personagem |
 |Lista completa de todos os Pokemons, sendo exibido de 100 em 100.|Tela onde temos os pokemons favoritos de cada usuario.É possível visualizar esses pokemon mesmo offline.|Na Tela de detalhes temos diversas informações do Pokemon, vindas da  API.|
 
-### Detalhes do Pokemon
-
-
-### Pokemon Favoritos
-
-
+### Melhorias Mapeadas
+O Login passara ser intregrado com Firebase.
+Tudo que foi feito com SQLite recebera um upgrade com ROOM.
 
 ## Version
 
