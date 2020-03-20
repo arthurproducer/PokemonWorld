@@ -42,6 +42,7 @@ cd pokemonworld
 ## Detalhando as telas
 
 ### Splash
+Splash.png
 ### Login
 ### Listas de Pokemon
 ### Detalhes do Pokemon
