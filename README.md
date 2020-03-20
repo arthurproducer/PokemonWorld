@@ -45,9 +45,21 @@ cd pokemonworld
 <img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/Splash.png" height="160" width="100">
 
 ### Login
+<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/Login.png" height="160" width="100">
+
+### Main
+<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/Main.png" height="160" width="100">
+
 ### Listas de Pokemon
+<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonList.png" height="160" width="100">
+
 ### Detalhes do Pokemon
+<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonDetails.png" height="160" width="100">
+<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonDetailsBtFavorite.png" height="160" width="100">
+
 ### Pokemon Favoritos
+<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonFavorite.png" height="160" width="100">
+
 
 ## Version
 
