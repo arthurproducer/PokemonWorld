@@ -12,6 +12,10 @@
     <string name="label_hp">HP</string>
     <string name="label_name">Nome:</string>
     <string name="form_title">P O K É D A D O S</string>
+    <string name="tab_favorites">Favoritos</string>
+    <string name="tab_world">Lista completa</string>
+    <string name="bt_Previous">Anterior</string>
+    <string name="bt_Next">Próximo</string>
     <string name="what_is_your_email">Qual o seu email?</string>
     <string name="what_is_your_password">Qual vai ser a sua senha?</string>
 

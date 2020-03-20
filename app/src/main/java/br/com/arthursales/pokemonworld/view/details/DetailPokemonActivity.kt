@@ -23,6 +23,7 @@ import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_TYPE_1
 import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_TYPE_2
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_details_pokemon.*
+import kotlinx.android.synthetic.main.include_loading.*
 import kotlinx.android.synthetic.main.pokemon_list_item.*
 import org.koin.android.ext.android.inject
 import org.koin.android.viewmodel.ext.android.viewModel
@@ -40,6 +41,14 @@ class DetailPokemonActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details_pokemon)
         setValues()
+
+        detailPokemonViewModel.isLoading.observe(this, Observer {
+            if(it == true) {
+                containerLoading.visibility = View.VISIBLE
+            } else {
+                containerLoading.visibility = View.GONE
+            }
+        })
 
         detailPokemonViewModel.messageResponse.observe(this, Observer {
             Toast.makeText(this, it, Toast.LENGTH_LONG).show()
@@ -100,7 +109,6 @@ class DetailPokemonActivity : AppCompatActivity() {
         pokemonId = intent.getStringExtra("POKEMON")
 
         if(intent.getStringExtra("Activity") != null && intent.getStringExtra("ACTIVITY").equals("Favorite")){
-            //TODO
             val cursor = detailPokemonViewModel.showSQLLite(pokemonId,this)
             while(cursor.moveToNext()) {
                 pokemonFromCursor(cursor)

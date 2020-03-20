@@ -5,8 +5,6 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import br.com.arthursales.pokemonworld.R
-import br.com.arthursales.pokemonworld.view.listFavoritePokemon.ListFavoritePokemonActivity
-import br.com.arthursales.pokemonworld.view.listpokemon.ListPokemonActivity
 import br.com.arthursales.pokemonworld.view.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
@@ -20,11 +18,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btPokemonList.setOnClickListener {
-            startActivity(Intent(this, ListPokemonActivity::class.java))
+            startActivity(Intent(this, BottomListsActivity::class.java))
+
         }
 
         btFavorites.setOnClickListener {
-            startActivity(Intent(this, ListFavoritePokemonActivity::class.java))
+            startActivity(Intent(this, BottomListsActivity::class.java))
         }
 
         btClose.setOnClickListener {

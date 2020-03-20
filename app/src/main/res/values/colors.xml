@@ -1,7 +1,13 @@
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#E49C0C</color>
+    <color name="colorPrimary">#2264b8</color>
+    <color name="colorPrimaryDark">#a70100</color>
+    <color name="colorAccent">#ffca00</color>
+
+<!--    <color name="colorEnable">#ffca00</color>-->
+<!--    <color name="colorDisable">#cfa200</color>-->
+
+    <color name="colorEnable">#a70100</color>
+    <color name="colorDisable">#000000</color>
 
     <color name="colorTextButton">#E49C0C</color>
     <color name="colorBgButton">#FFF</color>
