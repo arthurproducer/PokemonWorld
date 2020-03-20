@@ -65,8 +65,8 @@ A tela de Login possibilita o acesso as demais funcionalidades do aplicativo. Pa
 |Lista completa de todos os Pokemons, sendo exibido de 100 em 100.|Tela onde temos os pokemons favoritos de cada usuario.É possível visualizar esses pokemon mesmo offline.|Na Tela de detalhes temos diversas informações do Pokemon, vindas da  API.|
 
 ### Melhorias Mapeadas
-O Login passara ser intregrado com Firebase.
-Tudo que foi feito com SQLite recebera um upgrade com ROOM.
+* O Login passara ser intregrado com Firebase.
+* Tudo que foi feito com SQLite recebera um upgrade com ROOM.
 
 ## Version
 
