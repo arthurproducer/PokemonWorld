@@ -42,7 +42,7 @@ cd pokemonworld
 ## Detalhando as telas
 
 ### Splash
-![Uploading Splash.png...]()
+<img src="/printscreen/Splash.png"height="300" width="300>
 ### Login
 ### Listas de Pokemon
 ### Detalhes do Pokemon
