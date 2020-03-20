@@ -45,26 +45,25 @@ cd pokemonworld
 | Splash | Login | Menu Principal |
 
 ### Splash
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/Splash.png" height="160" width="100">
 
 ### Login
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/Login.png" height="160" width="100">
+| ![Page1](printscreen/Login.png)  | ![Page2](printscreen/LoginEmail.png) | ![Page3](printscreen/LoginRegisterPassword.png) |
+|:---:|:---:|:---:|
+| Login | LoginInvalido | Cadastro de Senha |
 
 ### Main
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/Main.png" height="160" width="100">
 
 ### Listas de Pokemon
-| ![Page1](printscreen/PokemonList.png)  | ![Page2](printscreen/PokemonDetails.png) | ![Page3](printscreen/PokemonDetailsBtFavorite.png) |
+| ![Page1](printscreen/PokemonList.png)  | ![Page2](printscreen/PokemonFavorites.png) | ![Page3](printscreen/PokemonDetails.png) |
 |:---:|:---:|:---:|
-| Lista de Personagens | Favoritos | Detalhes do Personagem |
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonList.png" height="160" width="100">
+| Lista de Pokemon | Favoritos | Detalhes do Personagem |
+
 
 ### Detalhes do Pokemon
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonDetails.png" height="160" width="100">
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonDetailsBtFavorite.png" height="160" width="100">
+
 
 ### Pokemon Favoritos
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonFavorites.png" height="160" width="100">
+
 
 
 ## Version
