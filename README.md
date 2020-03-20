@@ -40,9 +40,9 @@ cd pokemonworld
 ```
 
 ## Detalhando as telas
-| ![Page1](printscreen/Splash.png)  | ![Page2](printscreen/Splash.png) | ![Page3](printscreen/Splash.png) |
+| ![Page1](printscreen/Splash.png)  | ![Page2](printscreen/Login.png) | ![Page3](printscreen/Main.png) |
 |:---:|:---:|:---:|
-| Lista de Personagens | Favoritos | Detalhes do Personagem |
+| Splash | Login | Menu Principal |
 
 ### Splash
 <img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/Splash.png" height="160" width="100">
@@ -54,6 +54,9 @@ cd pokemonworld
 <img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/Main.png" height="160" width="100">
 
 ### Listas de Pokemon
+| ![Page1](printscreen/PokemonList.png)  | ![Page2](printscreen/PokemonDetails.png) | ![Page3](printscreen/PokemonDetailsBtFavorite.png) |
+|:---:|:---:|:---:|
+| Lista de Personagens | Favoritos | Detalhes do Personagem |
 <img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonList.png" height="160" width="100">
 
 ### Detalhes do Pokemon
@@ -61,7 +64,7 @@ cd pokemonworld
 <img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonDetailsBtFavorite.png" height="160" width="100">
 
 ### Pokemon Favoritos
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonFavorite.png" height="160" width="100">
+<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonFavorites.png" height="160" width="100">
 
 
 ## Version
