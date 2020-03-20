@@ -2,16 +2,14 @@ package br.com.arthursales.pokemonworld.view.login
 
 import android.content.Intent
 import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.inputmethod.EditorInfo
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import br.com.arthursales.pokemonworld.R
 import br.com.arthursales.pokemonworld.model.UserResponse
 import br.com.arthursales.pokemonworld.util.Base64Custom.codificarBase64
-import br.com.arthursales.pokemonworld.util.Base64Custom.decodificarBase64
-import br.com.arthursales.pokemonworld.view.listpokemon.ListPokemonActivity
 import br.com.arthursales.pokemonworld.view.main.MainActivity
 import kotlinx.android.synthetic.main.custom_login.*
 import org.koin.android.ext.android.inject

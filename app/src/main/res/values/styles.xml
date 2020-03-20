@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -52,7 +52,6 @@
         <item name="android:max">200</item>
         <item name="android:progress">109</item>
     </style>
-
 
     <style name="form_label_icon">
         <item name="android:tint">#FFF</item>
