@@ -1,4 +1,15 @@
-package br.com.arthursales.pokemonworld.sqlite
+package br.com.arthursales.pokemonworld.util
+
+object SQL{
+    const val SQL_WHERE = "WHERE"
+    const val SQL_LIKE = "LIKE"
+    const val SQL_AND = "AND"
+    const val SQL_TYPE_INTEGER = "INTEGER"
+    const val SQL_TYPE_TEXT = "TEXT"
+    const val SQL_TYPE_BLOB = "BLOB"
+    const val SQL_NOT_NULL = "NOT NULL"
+    const val SQL_PRIMARY_KEY = "PRIMARY KEY"
+}
 
 object DBPokemonWorld {
     const val DATABASE_NAME = "dbPokemonWorld"
@@ -29,5 +40,4 @@ object DBUsers{
     const val COLUMN_FIRST_NAME = "firstname"
     const val COLUMN_LAST_NAME = "lastname"
     const val COLUMN_PHOTO_URL = "photo"
-
 }

@@ -11,9 +11,9 @@ import kotlinx.android.synthetic.main.pokemon_list_item.view.*
 
 
 class ListFavoritePokemonAdapter(
-    val pokemons: List<PokemonDetails?>,
-    val picasso: Picasso,
-    val clickListener: (PokemonDetails?) -> Unit
+    private val pokemons: List<PokemonDetails?>,
+    private val picasso: Picasso,
+    private val clickListener: (PokemonDetails?) -> Unit
 ) : RecyclerView.Adapter<ListFavoritePokemonAdapter.FavoritePokemonViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FavoritePokemonViewHolder {

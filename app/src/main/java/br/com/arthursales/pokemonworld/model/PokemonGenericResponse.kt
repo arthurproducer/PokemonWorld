@@ -6,6 +6,6 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class PokemonGenericResponse (
-    val name : String,
+    var name : String?,
     val url : String
 ) : Parcelable

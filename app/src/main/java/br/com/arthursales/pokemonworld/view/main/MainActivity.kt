@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import br.com.arthursales.pokemonworld.R
+import br.com.arthursales.pokemonworld.util.Keys.PREFERENCES_USER_ID
 import br.com.arthursales.pokemonworld.view.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
@@ -28,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         btClose.setOnClickListener {
             val editor = preferences.edit()
-            editor?.putLong("User_ID",0)
+            editor?.putLong(PREFERENCES_USER_ID,0)
             editor?.apply()
             startActivity(Intent(this, LoginActivity::class.java))
             //TODO Deslogar o Usuário

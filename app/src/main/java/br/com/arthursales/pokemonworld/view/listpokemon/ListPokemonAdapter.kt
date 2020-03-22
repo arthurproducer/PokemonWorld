@@ -11,9 +11,9 @@ import kotlinx.android.synthetic.main.pokemon_list_item.view.*
 
 
 class ListPokemonsAdapter(
-    val pokemons: List<PokemonGenericResponse>,
-    val picasso: Picasso,
-    val clickListener: (PokemonGenericResponse) -> Unit
+    private val listPokemon: List<PokemonGenericResponse>,
+    private val picasso: Picasso,
+    private val clickListener: (PokemonGenericResponse) -> Unit
 ) : RecyclerView.Adapter<ListPokemonsAdapter.PokemonViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PokemonViewHolder {
@@ -21,10 +21,10 @@ class ListPokemonsAdapter(
         return PokemonViewHolder(view)
     }
     override fun getItemCount(): Int {
-        return pokemons.size
+        return listPokemon.size
     }
     override fun onBindViewHolder(holder: PokemonViewHolder, position: Int) {
-        val pokemon = pokemons[position]
+        val pokemon = listPokemon[position]
         holder.bindView(pokemon,position+1, picasso, clickListener)
     }
 
@@ -36,7 +36,7 @@ class ListPokemonsAdapter(
                      clickListener: (PokemonGenericResponse) -> Unit) = with(itemView) {
             tvPokemonName.text = pokemon.name
             tvPokemonNumber.text = position.toString()
-            picasso.load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${position}.png").into(ivPokemon)
+            picasso.load(pokemon.url).into(ivPokemon)
 
             setOnClickListener { clickListener(pokemon) }
         }

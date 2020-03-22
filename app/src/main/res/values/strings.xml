@@ -23,8 +23,16 @@
     <string name="hint_login">Login</string>
     <string name="hint_password">Senha</string>
     <string name="hint_email">E-mail</string>
+    <string name="bt_register_password">"Cadastrar Senha"</string>
     <string name="register_link">Não tem conta ainda? Cadastre-se</string>
-    <string name="forgetPassword">Esqueceu a senha?</string>
+    <string name="forget_password">Esqueceu a senha?</string>
     <string name="signIn">Logar</string>
+    <string name="success_password">Senha salva com sucesso!</string>
+    <string name="error_email_or_pass_wrong">Email ou senha invalidos!</string>
+    <string name="error_email_without_password">Login sem senha cadastrada! Cadastre uma senha para esse login!</string>
+    <string name="error_email">Esse email não está cadastrado para essa aplicação! Tente outro email!</string>
+
+    <string name="error_api">Não foi possível realizar a requisição</string>
+
     <string name="developer_for">DESENVOLVIDO POR ARTHUR SALES \n Para o Itaú</string>
 </resources>

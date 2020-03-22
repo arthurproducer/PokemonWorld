@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import br.com.arthursales.pokemonworld.R
 import br.com.arthursales.pokemonworld.model.UserResponse
 import br.com.arthursales.pokemonworld.util.Base64Custom.codificarBase64
+import br.com.arthursales.pokemonworld.util.Keys.PREFERENCES_USER_ID
 import br.com.arthursales.pokemonworld.view.main.MainActivity
 import kotlinx.android.synthetic.main.custom_login.*
 import org.koin.android.ext.android.inject
@@ -19,8 +20,7 @@ class LoginActivity : AppCompatActivity() {
 
     private val loginViewModel: LoginViewModel by viewModel()
     private val preferences: SharedPreferences by inject()
-
-    lateinit var validUser: UserResponse
+    private lateinit var validUser: UserResponse
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,14 +31,15 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btnLogar.setOnClickListener {
-            if (btnLogar.text == "Cadastrar Senha") {
+            if (btnLogar.text == getText(R.string.bt_register_password)) {
                 if (!edtPassword.text.isNullOrEmpty()) {
                     loginViewModel.insertSQLLite(
                         validUser,
                         codificarBase64(edtPassword.text.toString()),
                         this
                     )
-                    Toast.makeText(this, "Senha salva com sucesso!", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, getText(R.string.success_password), Toast.LENGTH_LONG).show()
+                    tvLoginQuestion.text = getText(R.string.what_is_your_email)
                     btnLogar.text = getText(R.string.signIn)
                     tilEmail.isErrorEnabled = false
                     tilEmail.isEnabled = true
@@ -52,11 +53,11 @@ class LoginActivity : AppCompatActivity() {
                         codificarBase64(edtPassword.text.toString()),
                         this)) {
                     val editor = preferences.edit()
-                    editor?.putLong("User_ID",validUser.id)
+                    editor?.putLong(PREFERENCES_USER_ID,validUser.id)
                     editor?.apply()
                     startActivity(Intent(this, MainActivity::class.java))
                 }else{
-                    Toast.makeText(this, "Email ou senha invalidos!", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, getText(R.string.error_email_or_pass_wrong), Toast.LENGTH_LONG).show()
                 }
             }
         }
@@ -76,15 +77,15 @@ class LoginActivity : AppCompatActivity() {
                             tilEmail.isEnabled = false
                             return@Observer
                         } else {
-                            tilEmail.error = "Login sem senha cadastrada! Cadastre uma senha para esse login!"
-                            btnLogar.text = "Cadastrar Senha"
+                            tilEmail.error = getText(R.string.error_email_without_password)
+                            btnLogar.text = getText(R.string.bt_register_password)
                             tvLoginQuestion.text = getText(R.string.what_is_your_password)
                             btnLogar.isEnabled = true
                             tilEmail.isEnabled = false
                             return@Observer
                         }
                     } else {
-                        tilEmail.error = "Esse email não está cadastrado para essa aplicação! Tente outro email!"
+                        tilEmail.error = getText(R.string.error_email)
                     }
                 }
             }

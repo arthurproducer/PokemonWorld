@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import br.com.arthursales.pokemonworld.model.PokemonGenericResponse
 import br.com.arthursales.pokemonworld.repository.PokemonRepository
 
-class ListPokemonsViewModel(val pokemonRepository: PokemonRepository) : ViewModel(){
+class ListPokemonsViewModel(private val pokemonRepository: PokemonRepository) : ViewModel(){
 
     val isLoading = MutableLiveData<Boolean>()
     val pokemons = MutableLiveData<List<PokemonGenericResponse>>()

@@ -3,18 +3,19 @@ package br.com.arthursales.pokemonworld.view.listFavoritePokemon
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteException
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import br.com.arthursales.pokemonworld.model.PokemonDetails
 import br.com.arthursales.pokemonworld.model.SpritesResponse
-import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_ID
-import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_NAME
-import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_SPRITE_FRONT_DEFAULT
-import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.COLUMN_USER_ID
-import br.com.arthursales.pokemonworld.sqlite.DBPokemonWorld.TABLE_POKEMON
+import br.com.arthursales.pokemonworld.util.DBPokemonWorld.COLUMN_ID
+import br.com.arthursales.pokemonworld.util.DBPokemonWorld.COLUMN_NAME
+import br.com.arthursales.pokemonworld.util.DBPokemonWorld.COLUMN_SPRITE_FRONT_DEFAULT
+import br.com.arthursales.pokemonworld.util.DBPokemonWorld.COLUMN_USER_ID
+import br.com.arthursales.pokemonworld.util.DBPokemonWorld.TABLE_POKEMON
 import br.com.arthursales.pokemonworld.sqlite.PokemonSqlHelper
 import br.com.arthursales.pokemonworld.sqlite.PokemonSqlHelper.Companion.SQL_CREATE_ENTRIES
+import br.com.arthursales.pokemonworld.util.SQL.SQL_LIKE
+import br.com.arthursales.pokemonworld.util.SQL.SQL_WHERE
 
 class ListFavoritePokemonViewModel : ViewModel() {
 
@@ -30,14 +31,12 @@ class ListFavoritePokemonViewModel : ViewModel() {
             val args: Array<String?>?
             listFavoritePokemon.value = mutableListOf()
             var sql = "SELECT * FROM $TABLE_POKEMON"
-            sql += " WHERE $COLUMN_USER_ID LIKE ?"
+            sql += " $SQL_WHERE $COLUMN_USER_ID $SQL_LIKE ?"
             args = arrayOf(id.toString())
 
             val db = helper.readableDatabase
             try {
                 cursor = db.rawQuery(sql, args)
-                Log.i("BDSucess", sql)
-                Log.i("BDSucess", cursor.toString())
             } catch (e: SQLiteException) {
                 messageError.value = e.toString()
                 db.execSQL(SQL_CREATE_ENTRIES)

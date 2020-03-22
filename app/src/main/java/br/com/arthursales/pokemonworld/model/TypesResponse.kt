@@ -8,4 +8,9 @@ import kotlinx.android.parcel.Parcelize
 data class TypesResponse (
     var slot: Int,
     var type: PokemonGenericResponse
-) : Parcelable
+) : Parcelable {
+    constructor() :this(
+        0,
+         PokemonGenericResponse(null,"")
+    )
+}

@@ -8,6 +8,7 @@ import android.os.Handler
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import br.com.arthursales.pokemonworld.R
+import br.com.arthursales.pokemonworld.util.Keys.PREFERENCES_USER_ID
 import br.com.arthursales.pokemonworld.view.login.LoginActivity
 import br.com.arthursales.pokemonworld.view.main.MainActivity
 import org.koin.android.ext.android.inject
@@ -15,9 +16,7 @@ import org.koin.android.viewmodel.ext.android.viewModel
 
 class SplashActivity : AppCompatActivity() {
 
-    val splashViewModel: SplashViewModel by viewModel()
     private val preferences: SharedPreferences by inject()
-
     private val WAIT_TIME = 3500L
 
 
@@ -25,38 +24,28 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-//        splashViewModel.checkHealthPokemon()
-//        splashViewModel.checkHealthUser()
 
-        val saveID = preferences.getLong("User_ID",0)
+        val saveID = preferences.getLong(PREFERENCES_USER_ID,0)
         if(saveID.toInt() == 0){
             showSplash()
         }else{
             showMain()
         }
-//        splashViewModel.messageError.observe(this, Observer {
-//            if(it == "") {
-//                startActivity(Intent(this, LoginActivity::class.java))
-//                finish()
-//            } else {
-//                Toast.makeText(this, it, Toast.LENGTH_LONG).show()
-//            }
-//        })
     }
 
-    fun showSplash() {
+    private fun showSplash() {
         Handler().postDelayed({
             showLogin()
         }, WAIT_TIME)
     }
 
-    fun showLogin() {
+    private fun showLogin() {
         val intent = Intent(this@SplashActivity, LoginActivity::class.java)
         startActivity(intent)
         finish()
     }
 
-    fun showMain() {
+    private fun showMain() {
         val intent = Intent(this@SplashActivity, MainActivity::class.java)
         startActivity(intent)
         finish()

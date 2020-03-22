@@ -16,7 +16,7 @@
             android:fontFamily="@font/pokemon_solid"
             android:gravity="center"
             android:text="@string/what_is_your_email"
-            android:textColor="#000000"
+            android:textColor="@android:color/black"
             android:textSize="22sp"
             android:textStyle="normal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +76,7 @@
             android:id="@+id/forgetPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/forgetPassword"
+            android:text="@string/forget_password"
             app:layout_constraintEnd_toEndOf="@+id/tilPassword"
             app:layout_constraintTop_toBottomOf="@+id/tilPassword" />
 

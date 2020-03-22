@@ -13,8 +13,11 @@ import br.com.arthursales.pokemonworld.repository.UserRepositoryImpl
 import br.com.arthursales.pokemonworld.view.details.DetailPokemonViewModel
 import br.com.arthursales.pokemonworld.view.listFavoritePokemon.ListFavoritePokemonViewModel
 import br.com.arthursales.pokemonworld.view.listpokemon.ListPokemonsViewModel
-import br.com.arthursales.pokemonworld.view.splash.SplashViewModel
-import br.com.arthursales.pokemonworld.util.Constants
+import br.com.arthursales.pokemonworld.util.Constants.POKEMON_URL
+import br.com.arthursales.pokemonworld.util.Constants.USER_URL
+import br.com.arthursales.pokemonworld.util.Keys.POKEMON_URL_KEY
+import br.com.arthursales.pokemonworld.util.Keys.USER_URL_KEY
+import br.com.arthursales.pokemonworld.util.Keys.PREFERENCES_USER_ID
 import br.com.arthursales.pokemonworld.view.login.LoginViewModel
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.squareup.picasso.OkHttp3Downloader
@@ -33,13 +36,13 @@ import java.util.concurrent.TimeUnit
 val networkModule = module {
     single<Interceptor> { AuthInterceptor() }
     single { createOkhttpClientAuth(get()) }
-    single { createNetworkClient(get(),get(named("pokemonURL"))).create(PokemonService::class.java) }
-    single { createNetworkClient(get(),get(named("userURL"))).create(UserService::class.java) }
+    single { createNetworkClient(get(),get(named(POKEMON_URL_KEY))).create(PokemonService::class.java) }
+    single { createNetworkClient(get(),get(named(USER_URL_KEY))).create(UserService::class.java) }
 
     single { createPicassoAuth(get(), get()) }
 
-    single(named("pokemonURL")) { Constants.pokemonURL }
-    single(named("userURL")) { Constants.userURL }
+    single(named(POKEMON_URL_KEY)) { POKEMON_URL }
+    single(named(USER_URL_KEY)) { USER_URL }
 
 }
 
@@ -49,7 +52,6 @@ val repositoryModule = module {
 }
 
 val viewModelModule = module {
-    viewModel { SplashViewModel(get(),get()) }
     viewModel { DetailPokemonViewModel(get(),get()) }
     viewModel { ListPokemonsViewModel(get()) }
     viewModel { ListFavoritePokemonViewModel() }
@@ -63,7 +65,7 @@ val sharedPreferencesModule = module {
 }
 
 private fun provideSettingsPreferences(app: Application): SharedPreferences =
-    app.getSharedPreferences("User_ID", Context.MODE_PRIVATE)
+    app.getSharedPreferences(PREFERENCES_USER_ID, Context.MODE_PRIVATE)
 
 private fun createNetworkClient(okHttpClient: OkHttpClient,baseUrl : String): Retrofit {
     return Retrofit.Builder()
