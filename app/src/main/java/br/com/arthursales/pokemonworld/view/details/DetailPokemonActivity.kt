@@ -105,7 +105,6 @@ class DetailPokemonActivity : AppCompatActivity() {
         })
 
         btSaveFavorite.setOnClickListener {
-            //TODO Colocar um radio Buttion
             //TODO Tratar a troca do ícone e a remoção dos favoritos
 
             detailPokemonViewModel.insertSQLLite(pokemonId,this)

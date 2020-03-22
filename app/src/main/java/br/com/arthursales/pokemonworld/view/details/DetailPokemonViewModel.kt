@@ -159,8 +159,10 @@ class DetailPokemonViewModel(
     private fun setType(slot: Int, name: String) {
         val typesResponse = TypesResponse()
 
-        typesResponse.slot = slot
-        typesResponse.type.name = name
+        if(name != ""){
+            typesResponse.slot = slot
+            typesResponse.type.name = name
+        }
 
         pokemonTypes.value?.add(typesResponse)
 
