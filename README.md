@@ -17,7 +17,7 @@ Dentro do aplicativo será exibido uma lista de pokemons dos quais o usuário po
 ## Características Técnicas
 
 Aplicativo desenvolvido em Kotlin, utilizando androidX,SQLite banco de dados do android que permite salvar dados no próprio device,
-Koin para injeção de dependência, Retrofit para o webservice, Gson para parse do json, Stetho para debug das requests, Picasso para tratamento de imagem, RecyclerView para tratamento de listas, AAC(Android Architecture Components) para o uso de LiveData necessárias na arquitetura MVVM, por fim o Material Design do Google para uso de BottomBar,Toolbar e outros apetrechos para design.  
+Koin para injeção de dependência, Retrofit para o webservice, Gson para parse do json, Stetho para debug das requests,Base64 para criptografar senha, Picasso para tratamento de imagem, RecyclerView para tratamento de listas, AAC(Android Architecture Components) para o uso de LiveData necessárias na arquitetura MVVM, por fim o Material Design do Google para uso de BottomBar,Toolbar e outros apetrechos para design.  
 
 ###### Kotlin; SQLite; MVVM; Retrofit; Koin;
 
@@ -45,27 +45,28 @@ cd pokemonworld
 | Splash | Login | Menu Principal |
 
 ### Splash
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/Splash.png" height="160" width="100">
-
-### Login
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/Login.png" height="160" width="100">
+A tela Splash é a mais simples das telas, sua função é direcionar o usuário que já está logado direto para a tela principal ou envia-lo para a tela de Login caso não esteja logado.
 
 ### Main
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/Main.png" height="160" width="100">
+Direciona o usuário para as demais telas do app e serve para que o mesmo possa voltar a tela de Login. Ganhara novas funcionalidades nas próximas versões.
+
+### Login
+| ![Page1](printscreen/Login.png)  | ![Page2](printscreen/LoginEmail.png) | ![Page3](printscreen/LoginRegisterPassword.png) |
+|:---:|:---:|:---:|
+| Login | LoginInvalido | Cadastro de Senha |
+
+A tela de Login possibilita o acesso as demais funcionalidades do aplicativo. Para que o usuário possa se autenticar é necessário que seu e-mail esteja dentre os cadastrados na API da reqres.in, se estiver, será valido se existe alguma senha vinculada ao usuário no device, se não tiver o mesmo deve cadastra-la na tela de Cadastro de Senha. Uma vez com o Login e senha o acesso ao aplicativo é livre.
+###### OBS: o botão não tem conta ainda? Cadastre-se faz parte de uma melhoria integrada ao Firebase. Saiba mais ao final do READ.ME na parte de trabalhos futuros.
 
 ### Listas de Pokemon
-| ![Page1](printscreen/PokemonList.png)  | ![Page2](printscreen/PokemonDetails.png) | ![Page3](printscreen/PokemonDetailsBtFavorite.png) |
+| ![Page1](printscreen/PokemonList.png)  | ![Page2](printscreen/PokemonFavorites.png) | ![Page3](printscreen/PokemonDetailsBtFavorite.png) |
 |:---:|:---:|:---:|
-| Lista de Personagens | Favoritos | Detalhes do Personagem |
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonList.png" height="160" width="100">
+| Lista de Pokemon | Favoritos | Detalhes do Personagem |
+|Lista completa de todos os Pokemons, sendo exibido de 100 em 100.|Tela onde temos os pokemons favoritos de cada usuario.É possível visualizar esses pokemon mesmo offline.|Na Tela de detalhes temos diversas informações do Pokemon, vindas da  API.|
 
-### Detalhes do Pokemon
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonDetails.png" height="160" width="100">
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonDetailsBtFavorite.png" height="160" width="100">
-
-### Pokemon Favoritos
-<img src="https://github.com/arthurproducer/PokemonWorld/blob/login/with/SampleAPI/printscreen/PokemonFavorites.png" height="160" width="100">
-
+### Melhorias Mapeadas
+* O Login passara ser intregrado com Firebase.
+* Tudo que foi feito com SQLite recebera um upgrade com ROOM.
 
 ## Version
 
