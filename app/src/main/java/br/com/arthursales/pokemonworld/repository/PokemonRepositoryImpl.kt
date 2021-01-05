@@ -31,10 +31,12 @@ class PokemonRepositoryImpl(
             })
     }
 
-    override fun getPokemons(
-        onComplete: (List<PokemonGenericResponse>?) -> Unit,
-        onError: (Throwable) -> Unit) {
-        pokemonService.getPokemons()
+    override fun getAllPokemon(offset: Int?,
+                               limit: Int?,
+                               onLimits: (PokemonResponseData?) -> Unit,
+                               onComplete: (List<PokemonGenericResponse>?) -> Unit,
+                               onError: (Throwable) -> Unit) {
+        pokemonService.getAllPokemon(offset,limit)
             .enqueue(object : Callback<PokemonResponseData> {
                 override fun onFailure(call: Call<PokemonResponseData>, t: Throwable) {
                     onError(t)
@@ -42,6 +44,7 @@ class PokemonRepositoryImpl(
 
                 override fun onResponse(call: Call<PokemonResponseData>, response: Response<PokemonResponseData>) {
                     if (response.isSuccessful) {
+                        onLimits(response.body())
                         onComplete(response.body()?.pokemons ?: listOf())
                     } else {
                         onError(Throwable("Não foi possível realizar a requisição"))
@@ -68,28 +71,28 @@ class PokemonRepositoryImpl(
             })
     }
 
-    override fun getPokemons(
-        sort: String,
-        size: Int,
-        onComplete: (List<Pokemon>) -> Unit,
-        onError: (Throwable) -> Unit
-    ) {
-        pokemonService
-            .getPokemons(sort, size)
-            .enqueue(object : Callback<PokemonResponseOld> {
-                override fun onFailure(call: Call<PokemonResponseOld>, t: Throwable) {
-                    onError(t)
-                }
-
-                override fun onResponse(call: Call<PokemonResponseOld>, responseOld: Response<PokemonResponseOld>) {
-                    if (responseOld.isSuccessful) {
-                        onComplete(responseOld.body()?.pokemons ?: listOf())
-                    } else {
-                        onError(Throwable("Não foi possível realizar a requisição"))
-                    }
-                }
-            })
-    }
+//    override fun getPokemons(
+//        sort: String,
+//        size: Int,
+//        onComplete: (List<Pokemon>) -> Unit,
+//        onError: (Throwable) -> Unit
+//    ) {
+//        pokemonService
+//            .getPokemons(sort, size)
+//            .enqueue(object : Callback<PokemonResponseOld> {
+//                override fun onFailure(call: Call<PokemonResponseOld>, t: Throwable) {
+//                    onError(t)
+//                }
+//
+//                override fun onResponse(call: Call<PokemonResponseOld>, responseOld: Response<PokemonResponseOld>) {
+//                    if (responseOld.isSuccessful) {
+//                        onComplete(responseOld.body()?.pokemons ?: listOf())
+//                    } else {
+//                        onError(Throwable("Não foi possível realizar a requisição"))
+//                    }
+//                }
+//            })
+//    }
 
     override fun checkHealth(
         onComplete: () -> Unit,

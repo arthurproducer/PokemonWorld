@@ -9,14 +9,16 @@ interface PokemonService {
     @GET("/api/v2")
     fun checkHealth() : Call<HealthResponse>
 
-    @GET("/api/pokemon")
-    fun getPokemons(
-        @Query("sort") sort: String,
-        @Query("size") size: Int
-    ) : Call<PokemonResponseOld>
+//    @GET("/api/pokemon")
+//    fun getPokemons(
+//        @Query("sort") sort: String,
+//        @Query("size") size: Int
+//    ) : Call<PokemonResponseOld>
 
-    @GET("/api/v2/pokemon?limit=100")
-    fun getPokemons() : Call<PokemonResponseData>
+    @GET("/api/v2/pokemon")
+    fun getAllPokemon(
+        @Query("offset") offset: Int?,
+        @Query("limit") limit: Int?) : Call<PokemonResponseData>
 
     @GET("/api/v2/pokemon/{id}")
     fun getPokemonDetails(@Path("id") id: String) : Call<PokemonDetails>

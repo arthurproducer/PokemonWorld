@@ -3,6 +3,7 @@ package br.com.arthursales.pokemonworld.repository
 import br.com.arthursales.pokemonworld.model.Pokemon
 import br.com.arthursales.pokemonworld.model.PokemonDetails
 import br.com.arthursales.pokemonworld.model.PokemonGenericResponse
+import br.com.arthursales.pokemonworld.model.PokemonResponseData
 
 interface PokemonRepository {
 
@@ -11,17 +12,20 @@ interface PokemonRepository {
         onError:(t: Throwable) -> Unit
     )
 
-    fun getPokemons(
+    fun getAllPokemon(
+        offset: Int?,
+        limit: Int?,
+        onLimits: (PokemonResponseData?) -> Unit,
         onComplete:(List<PokemonGenericResponse>?) -> Unit,
         onError:(Throwable) -> Unit
     )
 
-    fun getPokemons(
-        sort: String,
-        size: Int,
-        onComplete:(List<Pokemon>) -> Unit,
-        onError:(Throwable) -> Unit
-    )
+//    fun getPokemons(
+//        sort: String,
+//        size: Int,
+//        onComplete:(List<Pokemon>) -> Unit,
+//        onError:(Throwable) -> Unit
+//    )
 
     fun getPokemonDetails(
         id: String,
