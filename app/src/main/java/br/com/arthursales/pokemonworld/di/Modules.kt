@@ -7,7 +7,7 @@ import br.com.arthursales.pokemonworld.repository.PokemonRepository
 import br.com.arthursales.pokemonworld.repository.PokemonRepositoryImpl
 import br.com.arthursales.pokemonworld.view.details.DetailPokemonViewModel
 import br.com.arthursales.pokemonworld.view.listFavoritePokemon.ListFavoritePokemonViewModel
-import br.com.arthursales.pokemonworld.view.listpokemon.ListPokemonsViewModel
+import br.com.arthursales.pokemonworld.view.listpokemon.ListPokemonViewModel
 import br.com.arthursales.pokemonworld.view.splash.SplashViewModel
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.squareup.picasso.OkHttp3Downloader
@@ -35,7 +35,7 @@ val repositoryModule = module {
 val viewModelModule = module {
     viewModel { SplashViewModel(get()) }
     viewModel { DetailPokemonViewModel(get()) }
-    viewModel { ListPokemonsViewModel(get()) }
+    viewModel { ListPokemonViewModel(get()) }
     viewModel { ListFavoritePokemonViewModel() }
 }
 

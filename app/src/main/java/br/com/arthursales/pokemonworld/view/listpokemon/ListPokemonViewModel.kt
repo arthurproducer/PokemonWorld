@@ -6,14 +6,11 @@ import androidx.lifecycle.ViewModel
 import br.com.arthursales.pokemonworld.model.PokemonGenericResponse
 import br.com.arthursales.pokemonworld.repository.PokemonRepository
 
-class ListPokemonsViewModel(val pokemonRepository: PokemonRepository) : ViewModel(){
+class ListPokemonViewModel(private val pokemonRepository: PokemonRepository) : ViewModel() {
 
     val isLoading = MutableLiveData<Boolean>()
     val listPokemon = MutableLiveData<List<PokemonGenericResponse>>()
     val messageError = MutableLiveData<String>()
-    private val _url = MutableLiveData<String>()
-    val url: LiveData<String>
-        get() = _url
 
     private val _next = MutableLiveData<String>()
     val next: LiveData<String>
@@ -23,7 +20,7 @@ class ListPokemonsViewModel(val pokemonRepository: PokemonRepository) : ViewMode
     val previous: LiveData<String>
         get() = _previous
 
-    fun getPokemons(offset: Int?, limit: Int?) {
+    fun getAllPokemon(offset: Int?, limit: Int?) {
         isLoading.value = true
         pokemonRepository.getAllPokemon(
             offset,

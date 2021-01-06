@@ -10,11 +10,11 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.pokemon_list_item.view.*
 
 
-class ListPokemonsAdapter(
-    val pokemons: List<PokemonGenericResponse>,
-    val picasso: Picasso,
-    val clickListener: (PokemonGenericResponse) -> Unit
-) : RecyclerView.Adapter<ListPokemonsAdapter.PokemonViewHolder>() {
+class ListPokemonAdapter(
+    private val pokemons: List<PokemonGenericResponse>,
+    private val picasso: Picasso,
+    private val clickListener: (PokemonGenericResponse) -> Unit
+) : RecyclerView.Adapter<ListPokemonAdapter.PokemonViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PokemonViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.pokemon_list_item, parent, false)
@@ -33,7 +33,7 @@ class ListPokemonsAdapter(
         fun bindView(pokemon: PokemonGenericResponse,
                      picasso: Picasso,
                      clickListener: (PokemonGenericResponse) -> Unit) = with(itemView) {
-            var number = pokemon.url.substringAfter("pokemon/").substringBefore('/')
+            val number = pokemon.url.substringAfter("pokemon/").substringBefore('/')
             tvPokemonNumber.text = number
             tvPokemonName.text = pokemon.name
 //            if(!pokemon.name.substringAfter('-',"").isNullOrEmpty()) {

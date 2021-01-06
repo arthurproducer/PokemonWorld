@@ -9,12 +9,6 @@ interface PokemonService {
     @GET("/api/v2")
     fun checkHealth() : Call<HealthResponse>
 
-//    @GET("/api/pokemon")
-//    fun getPokemons(
-//        @Query("sort") sort: String,
-//        @Query("size") size: Int
-//    ) : Call<PokemonResponseOld>
-
     @GET("/api/v2/pokemon")
     fun getAllPokemon(
         @Query("offset") offset: Int?,

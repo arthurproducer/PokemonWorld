@@ -1,7 +1,6 @@
 package br.com.arthursales.pokemonworld.view.listpokemon
 
 import android.content.Intent
-import android.opengl.Visibility
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -22,9 +21,9 @@ import org.koin.android.viewmodel.ext.android.viewModel
 
 class ListPokemonFragment : Fragment() {
 
-    val listPokemonViewModel : ListPokemonsViewModel by viewModel()
+    private val listPokemonViewModel: ListPokemonViewModel by viewModel()
 
-    val picasso: Picasso by inject()
+    private val picasso: Picasso by inject()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,16 +38,15 @@ class ListPokemonFragment : Fragment() {
         initializeListPokemonObserving()
 
         listPokemonViewModel.isLoading.observe(this, Observer {
-            if(it == true) {
+            if (it == true) {
                 containerLoading.visibility = View.VISIBLE
             } else {
                 containerLoading.visibility = View.GONE
             }
-
         })
 
         listPokemonViewModel.messageError.observe(this, Observer {
-            if(it != "") {
+            if (it != "") {
                 Toast.makeText(context, it, Toast.LENGTH_LONG).show()
             }
         })
@@ -61,41 +59,40 @@ class ListPokemonFragment : Fragment() {
             btPrevious.isEnabled = !it.isNullOrEmpty()
         })
 
-
         listPokemonViewModel.listPokemon.observe(this, Observer {
-            rvPokemons.adapter = ListPokemonsAdapter(it, picasso) {
+            rvPokemons.adapter = ListPokemonAdapter(it, picasso) { pokemon ->
                 val intent = Intent(activity, DetailPokemonActivity::class.java)
-                intent.putExtra("POKEMON", it.url.substringAfter("pokemon/").substringBefore("/"))
-                intent.putExtra("SCREEN","GENERAL_LIST")
-                Log.i("POKEMON",it.url.substringAfter("pokemon/").substringBefore("/"))
+                intent.putExtra(
+                    "POKEMON",
+                    pokemon.url.substringAfter("pokemon/").substringBefore("/")
+                )
+                intent.putExtra("SCREEN", "GENERAL_LIST")
+                Log.i("POKEMON", pokemon.url.substringAfter("pokemon/").substringBefore("/"))
                 startActivity(intent)
-//                finish()
             }
             rvPokemons.layoutManager = GridLayoutManager(context, 3)
         })
 
         btNext.setOnClickListener {
             val limit = listPokemonViewModel.next.value?.substringAfter("limit=")
-            val offset = listPokemonViewModel.next.value?.substringAfter("offset=")?.substringBefore('&')
-            listPokemonViewModel.getPokemons(offset?.toInt(),limit?.toInt())
+            val offset = listPokemonViewModel.next.value?.substringAfter("offset=")
+                ?.substringBefore('&')
+            listPokemonViewModel.getAllPokemon(offset?.toInt(), limit?.toInt())
         }
 
         btPrevious.setOnClickListener {
             val limit = listPokemonViewModel.previous.value?.substringAfter("limit=")
-            val offset = listPokemonViewModel.previous.value?.substringAfter("offset=")?.substringBefore('&')
-            listPokemonViewModel.getPokemons(offset?.toInt(),limit?.toInt())
+            val offset = listPokemonViewModel.previous.value?.substringAfter("offset=")
+                ?.substringBefore('&')
+
+            listPokemonViewModel.getAllPokemon(offset?.toInt(), limit?.toInt())
             //TODO Tratar retorno com botão anterior no final da lista, quando limit é menor do que 100
         }
     }
 
-    private fun initializeListPokemonObserving(){
-        val limit = listPokemonViewModel.previous.value?.substringAfter("limit=")
-        val offset = listPokemonViewModel.previous.value?.substringAfter("offset=")?.substringBefore('&')
-
-        if(listPokemonViewModel.previous.value.isNullOrEmpty()){
-            listPokemonViewModel.getPokemons(OFFSET_100_POKEMON,LIMIT_100_POKEMON)
-        } else {
-            listPokemonViewModel.getPokemons(offset?.toInt()?.times(100),limit?.toInt()?.times(100))
+    private fun initializeListPokemonObserving() {
+        if (listPokemonViewModel.previous.value.isNullOrEmpty()) {
+            listPokemonViewModel.getAllPokemon(OFFSET_100_POKEMON, LIMIT_100_POKEMON)
         }
     }
 

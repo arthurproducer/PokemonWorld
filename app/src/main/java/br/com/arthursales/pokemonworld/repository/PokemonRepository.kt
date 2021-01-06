@@ -8,24 +8,17 @@ import br.com.arthursales.pokemonworld.model.PokemonResponseData
 interface PokemonRepository {
 
     fun checkHealth(
-        onComplete:() -> Unit,
-        onError:(t: Throwable) -> Unit
+        onComplete: () -> Unit,
+        onError: (t: Throwable) -> Unit
     )
 
     fun getAllPokemon(
         offset: Int?,
         limit: Int?,
         onLimits: (PokemonResponseData?) -> Unit,
-        onComplete:(List<PokemonGenericResponse>?) -> Unit,
-        onError:(Throwable) -> Unit
+        onComplete: (List<PokemonGenericResponse>?) -> Unit,
+        onError: (Throwable) -> Unit
     )
-
-//    fun getPokemons(
-//        sort: String,
-//        size: Int,
-//        onComplete:(List<Pokemon>) -> Unit,
-//        onError:(Throwable) -> Unit
-//    )
 
     fun getPokemonDetails(
         id: String,
@@ -33,10 +26,9 @@ interface PokemonRepository {
         onError: (Throwable?) -> Unit
     )
 
-
     fun updatePokemon(
         pokemon: Pokemon,
-        onComplete:(Pokemon?) -> Unit,
-        onError:(Throwable) -> Unit
+        onComplete: (Pokemon?) -> Unit,
+        onError: (Throwable) -> Unit
     )
 }
