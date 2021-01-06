@@ -8,6 +8,11 @@
                 android:icon="@drawable/ic_world"
                 android:title="@string/tab_world"/>
         <item
+                android:id="@+id/action_teams"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/ic_pokeballs"
+                android:title="@string/tab_team"/>
+        <item
                 android:id="@+id/action_favorites"
                 app:showAsAction="ifRoom"
                 android:icon="@drawable/ic_favorite"

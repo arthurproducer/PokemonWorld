@@ -9,6 +9,7 @@ import br.com.arthursales.pokemonworld.view.details.DetailPokemonViewModel
 import br.com.arthursales.pokemonworld.view.listFavoritePokemon.ListFavoritePokemonViewModel
 import br.com.arthursales.pokemonworld.view.listpokemon.ListPokemonViewModel
 import br.com.arthursales.pokemonworld.view.splash.SplashViewModel
+import br.com.arthursales.pokemonworld.view.teams.TeamsPokemonViewModel
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.squareup.picasso.OkHttp3Downloader
 import com.squareup.picasso.Picasso
@@ -37,6 +38,8 @@ val viewModelModule = module {
     viewModel { DetailPokemonViewModel(get()) }
     viewModel { ListPokemonViewModel(get()) }
     viewModel { ListFavoritePokemonViewModel() }
+    viewModel { TeamsPokemonViewModel() }
+
 }
 
 
