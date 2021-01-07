@@ -9,4 +9,6 @@ data class PokemonTeams(
     val name: String,
     var game: String,
     var color: String
+//    val pokemons : List<PokemonDetails>
+//TODO incluir Lista dos Times (PokemonDetails)
 ) : Parcelable

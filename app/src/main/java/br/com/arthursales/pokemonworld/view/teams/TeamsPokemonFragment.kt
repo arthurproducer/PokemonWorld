@@ -25,18 +25,11 @@ import org.koin.android.viewmodel.ext.android.viewModel
 
 class TeamsPokemonFragment : Fragment() {
 
-
-    private val listFavoritePokemonViewModel : ListFavoritePokemonViewModel by viewModel()
+//    private val listFavoritePokemonViewModel : ListFavoritePokemonViewModel by viewModel()
 
     private val teamsPokemonViewModel : TeamsPokemonViewModel by viewModel()
 
     private val picasso: Picasso by inject()
-
-    companion object {
-        fun newInstance() = TeamsPokemonFragment()
-    }
-
-    private lateinit var viewModel: TeamsPokemonViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -48,24 +41,26 @@ class TeamsPokemonFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        listFavoritePokemonViewModel.showSQLLite(requireContext())
-        rvTeamPokemon.adapter?.notifyDataSetChanged()
+        teamsPokemonViewModel.getPokemonTeams("1")
 
-        listFavoritePokemonViewModel.isLoading.observe(this, Observer {
-            if(it == true) {
-                containerLoading.visibility = View.VISIBLE
-            } else {
-                containerLoading.visibility = View.GONE
-            }
-        })
+        teamsPokemonViewModel.showSQLLite(requireContext())
+//        rvTeamPokemon.adapter?.notifyDataSetChanged()
 
-        listFavoritePokemonViewModel.messageError.observe(this, Observer {
-            if(it != "") {
-                Toast.makeText(context, it, Toast.LENGTH_LONG).show()
-            }
-        })
+//        teamsPokemonViewModel.isLoadingTeams.observe(this, Observer {
+//            if(it == true) {
+//                containerLoading.visibility = View.VISIBLE
+//            } else {
+//                containerLoading.visibility = View.GONE
+//            }
+//        })
 
-        teamsPokemonViewModel.lendingProducts.observe(this, Observer {
+//        listFavoritePokemonViewModel.messageError.observe(this, Observer {
+//            if(it != "") {
+//                Toast.makeText(context, it, Toast.LENGTH_LONG).show()
+//            }
+//        })
+
+        teamsPokemonViewModel.listTeams.observe(this, Observer {
             rvPokemonTeams.adapter = TeamsPokemonAdapter(it, picasso)
 //            {
 //               if(it.situation == 1){
@@ -78,22 +73,16 @@ class TeamsPokemonFragment : Fragment() {
             rvPokemonTeams.layoutManager = LinearLayoutManager(context)
         })
 
-        listFavoritePokemonViewModel.listFavoritePokemon.observe(this, Observer {
-            rvTeamPokemon.adapter = ListFavoritePokemonAdapter(it.toList(), picasso) {
-                val intent = Intent(activity, DetailPokemonActivity::class.java)
-                intent.putExtra("POKEMON", it?.id.toString())
-                intent.putExtra("ACTIVITY", "Favorite")
-                startActivity(intent)
-            }
-            rvTeamPokemon.layoutManager = GridLayoutManager(context, 3)
-        })
+//        teamsPokemonViewModel.listFavoritePokemon.observe(this, Observer {
+//            rvTeamPokemon.adapter = ListFavoritePokemonAdapter(it.toList(), picasso) {
+//                val intent = Intent(activity, DetailPokemonActivity::class.java)
+//                intent.putExtra("POKEMON", it?.id.toString())
+//                intent.putExtra("ACTIVITY", "Favorite")
+//                startActivity(intent)
+//            }
+//            rvTeamPokemon.layoutManager = GridLayoutManager(context, 3)
+//        })
          //TODO Tratar chamada do que está em favoritos
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(TeamsPokemonViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
 }

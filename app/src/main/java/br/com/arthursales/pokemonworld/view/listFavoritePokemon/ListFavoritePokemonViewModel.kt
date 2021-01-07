@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModel
 import br.com.arthursales.pokemonworld.repository.PokemonRepository
 import br.com.arthursales.pokemonworld.sqlite.PokemonSqlHelper.Companion.SQL_CREATE_ENTRIES
 
-class ListFavoritePokemonViewModel : ViewModel(){
+open class ListFavoritePokemonViewModel : ViewModel(){
 
     val isLoading = MutableLiveData<Boolean>()
     val listFavoritePokemon = MutableLiveData<MutableList<PokemonDetails?>>()
