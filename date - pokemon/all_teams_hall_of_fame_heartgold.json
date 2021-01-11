@@ -1,0 +1,1040 @@
+{
+   "Jogos": {
+        "Platinum": {
+             "teams": {
+                "1": {
+                    "name": "Hall of Fame Platinum",
+                    "tier": "gen4",
+                    "pokemons": {
+                        "1": {
+                            "pokemon": "Garchomp",
+                            "item": "None",
+                            "OT": "Arthur",
+                            "ID no.": "16185",
+                            "shiny": false, 
+                            "ability": "Sand Veil",
+                            "level": 100,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "nature": "Mild",
+                            "moves": {
+                            "Surf": "Water",
+                            "Crunch": "Dark",
+                            "Dig": "Ground",
+                            "Dragon Rush": "Dragon"
+                            },
+                            "status": {
+                                "HP": 362,
+                                "Atk": 308,
+                                "Def": 240, 
+                                "SpA": 225,
+                                "SpD": 185,
+                                "Spe": 260
+                            },
+                            "first date": "18/04/2011"
+                        },
+                        "2": {
+                            "pokemon": "Infernape",
+                            "item": "None",
+                            "OT": "Arthur",
+                            "ID no.": "16185",
+                            "shiny": false,
+                            "ability": "Blaze",
+                            "level": 92,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "nature": "Bold",
+                            "moves": {
+                            "Fire Blast": "Fire",
+                            "Rock Climb": "Normal",
+                            "Close Combat": "Fighting",
+                            "Flare Blitz": "Fire"
+                            },
+                            "status": {
+                                "HP": 270,
+                                "Atk": 193,
+                                "Def": 242,
+                                "SpA": 223,
+                                "SpD": 156,
+                                "Spe": 245
+                            },
+                            "first date": "02/04/2011"
+                        },
+                        "3": {
+                            "pokemon": "Magnezone",
+                            "item": "None",
+                            "OT": "Arthur",
+                            "ID no.": "16185",
+                            "shiny": false,
+                            "ability": "Magnet Pull",
+                            "level": 69,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "nature": "Jolly",
+                            "moves": {
+                            "Discharge": "Electric",
+                            "Zap Cannon": "Electric",
+                            "Mirror Shot": "Steel",
+                            "Magnet Rise": "Electric"
+                            },
+                            "status": {
+                                "HP": 179,
+                                "Atk": 128,
+                                "Def": 216,
+                                "SpA": 176,
+                                "SpD": 142,
+                                "Spe": 136
+                            },
+                            "first date": "29/06/2011"
+                        },
+                        "4": {
+                            "pokemon": "Tropius",
+                            "item": "None",
+                            "OT": "Arthur",
+                            "ID no.": "16185",
+                            "shiny": false,
+                            "ability": "Chlorophyll",
+                            "level": 62,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "nature": "Calm",
+                            "moves": {
+                            "Magical Leaf": "Grass",
+                            "Fly": "Flying",
+                            "Rock Smash": "Fighting",
+                            "leaf Storm": "Grass"
+                            },
+                            "status": {
+                                "HP": 205,
+                                "Atk": 92,
+                                "Def": 153,
+                                "SpA": 109,
+                                "SpD": 147,
+                                "Spe": 81
+                            },
+                            "first date": "26/04/2011"
+                        },
+                        "5": {
+                            "pokemon": "Houndoom",
+                            "item": "None",
+                            "OT": "Arthur",
+                            "ID no.": "16185",
+                            "shiny": false,
+                            "ability": "Early Bird",
+                            "level": 65,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "nature": "Rash",
+                            "moves": {
+                            "Fire Fang": "Fire",
+                            "Crunch": "Dark",
+                            "Flamethrower": "Fire",
+                            "Strengh": "Normal"
+                            },
+                            "status": {
+                                "HP": 183,
+                                "Atk": 145,
+                                "Def": 120,
+                                "SpA": 178,
+                                "SpD": 109,
+                                "Spe": 144
+                            },
+                            "first date": "24/04/2011"
+                        },
+                        "6": {
+                            "pokemon": "Glalie",
+                            "item": "None",
+                            "OT": "Arthur",
+                            "ID no.": "16185",
+                            "shiny": false,
+                            "ability": "Inner Focus",
+                            "level": 60,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "nature": "Rash",
+                            "moves": {
+                            "Headbutt": "Normal",
+                            "Blizzard": "Ice",
+                            "Ice Fang": "Ice",
+                            "Crunch": "Dark"
+                            },
+                            "status": {
+                                "HP": 175,
+                                "Atk": 109,
+                                "Def": 149,
+                                "SpA": 127,
+                                "SpD": 101,
+                                "Spe": 121
+                            },
+                            "first date": "23/07/2011"
+                        }
+                    }
+                },
+                "2": {
+                    "name": "Honorable Mention",
+                    "tier": "gen4",
+                    "pokemons": {
+                        "1": {
+                            "pokemon": "Clefable",
+                            "item": "Leftvores",
+                            "OT": "Arthur",
+                            "ID no.": "",
+                            "shiny": false,
+                            "ability": "Unaware",
+                            "level": 99,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 248,
+                                "Atk": 0,
+                                "Def": 252,
+                                "SpA": 0,
+                                "SpD": 8,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 30,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Calm",
+                            "moves": {
+                            "Moonblast": "Fairy",
+                            "Heal Belt": "Normal",
+                            "Wish": "Normal",
+                            "Protect": "Normal"
+                            },
+                            "status": {
+                                "HP": 389,
+                                "Atk": 155,
+                                "Def": 242,
+                                "SpA": 223,
+                                "SpD": 236,
+                                "Spe": 154
+                            },
+                            "first date": "20/08/2015"
+                        },
+                        "2": {
+                            "pokemon": "Snorlax",
+                            "item": "Chesto Berry",
+                            "OT": "Arthur",
+                            "ID no.": "",
+                            "shiny": false,
+                            "ability": "Thick Fat",
+                            "level": 99,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 252,
+                                "Atk": 0,
+                                "Def": 148,
+                                "SpA": 0,
+                                "SpD": 108,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 30,
+                                "SpD": 31,
+                                "Spe": 3
+                            },
+                            "nature": "Relaxed",
+                            "moves": {
+                            "Stockpile": "Normal",
+                            "Power-Up Punch": "Fight",
+                            "Rest": "Psychic",
+                            "Body Slam": "Normal"
+                            },
+                            "status": {
+                                "HP": 518,
+                                "Atk": 253,
+                                "Def": 221,
+                                "SpA": 163,
+                                "SpD": 280,
+                                "Spe": 60
+                            },
+                            "first date": "26/08/2016"
+                        },
+                        "3": {
+                            "pokemon": "Venusaur",
+                            "item": "Venusarite",
+                            "shiny": false,
+                            "ability": "Chlorophyll",
+                            "level": 94,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 20
+                            },
+                            "nature": "Relaxed",
+                            "moves": {
+                            "Sleep Powder": "Grass",
+                            "Synthesis": "Grass",
+                            "Earthquake": "Ground",
+                            "Giga Drain": "Grass"
+                            },
+                            "status": {
+                                "HP": 342,
+                                "Atk": 188,
+                                "Def": 273,
+                                "SpA": 223,
+                                "SpD": 222,
+                                "Spe": 156
+                            },
+                            "first date": "11/08/2015"
+                        },
+                        "4": {
+                            "pokemon": "Skarmory",
+                            "item": "Shed Shell",
+                            "OT": "Arthur",
+                            "ID no.": "",
+                            "shiny": false,
+                            "ability": "Sturdy",
+                            "level": 91,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 228,
+                                "Atk": 0,
+                                "Def": 252,
+                                "SpA": 0,
+                                "SpD": 28,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 15,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Impish",
+                            "moves": {
+                            "Spikes": "Ground",
+                            "Roost": "Flying",
+                            "Brave Bird": "Flying",
+                            "Whirlwind": "Flying"
+                            },
+                            "status": {
+                                "HP": 299,
+                                "Atk": 178,
+                                "Def": 379,
+                                "SpA": 81,
+                                "SpD": 166,
+                                "Spe": 160
+                            },
+                            "first date": "09/08/2015"
+                        },
+                        "5": {
+                            "pokemon": "Heatran",
+                            "item": "Power Herb",
+                            "country": "GERMAN",
+                            "OT": "Delizzar",
+                            "ID no.": "",
+                            "shiny": false,
+                            "ability": "Flash Fire",
+                            "level": 98,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 252,
+                                "SpD": 4,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 19,
+                                "Atk": 26,
+                                "Def": 31,
+                                "SpA": 3,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Modest",
+                            "moves": {
+                            "Magma Storm": "Fire",
+                            "Earth Power": "Ground",
+                            "Taunt": "Dark",
+                            "Solar Beam": "Grass"
+                            },
+                            "status": {
+                                "HP": 304,
+                                "Atk": 185,
+                                "Def": 243,
+                                "SpA": 356,
+                                "SpD": 244,
+                                "Spe": 248
+                            },
+                            "first date": "27/12/2014"
+                        },
+                        "6": {
+                            "pokemon": "Gyarados",
+                            "item": "Leftovers",
+                            "OT": "Arthur",
+                            "ID no.": "",
+                            "ability": "Intimidate",
+                            "level": 92,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 88,
+                                "Atk": 200,
+                                "Def": 8,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 214
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Jolly",
+                            "moves": {
+                            "Bounce": "Flying",
+                            "Waterfall": "Water",
+                            "Substitute": "Normal",
+                            "Dragon Dance": "Dragon"
+                            },
+                            "status": {
+                                "HP": 325,
+                                "Atk": 309,
+                                "Def": 180,
+                                "SpA": 128,
+                                "SpD": 217,
+                                "Spe": 254
+                            },
+                            "first date": "24/08/2016"
+                        }
+                    }
+                }
+             }
+         },
+         "Diamond": {
+            "teams": {
+               "1": {
+                   "name": "Hall of Fame Diamond",
+                   "tier": "gen4",
+                   "pokemons": {
+                       "1": {
+                           "pokemon": "Garchomp",
+                           "item": "None",
+                           "OT": "Arthur",
+                           "ID no.": "16185",
+                           "shiny": false, 
+                           "ability": "Sand Veil",
+                           "level": 100,
+                           "gender": "F",
+                           "evs": {
+                               "HP": 0,
+                               "Atk": 0,
+                               "Def": 0,
+                               "SpA": 0,
+                               "SpD": 0,
+                               "Spe": 0
+                           },
+                           "ivs": {
+                               "HP": 0,
+                               "Atk": 0,
+                               "Def": 0,
+                               "SpA": 0,
+                               "SpD": 0,
+                               "Spe": 0
+                           },
+                           "nature": "Mild",
+                           "moves": {
+                           "Surf": "Water",
+                           "Crunch": "Dark",
+                           "Dig": "Ground",
+                           "Dragon Rush": "Dragon"
+                           },
+                           "status": {
+                               "HP": 362,
+                               "Atk": 308,
+                               "Def": 240, 
+                               "SpA": 225,
+                               "SpD": 185,
+                               "Spe": 260
+                           },
+                           "first date": "18/04/2011"
+                       },
+                       "2": {
+                           "pokemon": "Infernape",
+                           "item": "None",
+                           "OT": "Arthur",
+                           "ID no.": "16185",
+                           "shiny": false,
+                           "ability": "Blaze",
+                           "level": 92,
+                           "gender": "M",
+                           "evs": {
+                               "HP": 0,
+                               "Atk": 0,
+                               "Def": 0,
+                               "SpA": 0,
+                               "SpD": 0,
+                               "Spe": 0
+                           },
+                           "ivs": {
+                               "HP": 0,
+                               "Atk": 0,
+                               "Def": 0,
+                               "SpA": 0,
+                               "SpD": 0,
+                               "Spe": 0
+                           },
+                           "nature": "Bold",
+                           "moves": {
+                           "Fire Blast": "Fire",
+                           "Rock Climb": "Normal",
+                           "Close Combat": "Fighting",
+                           "Flare Blitz": "Fire"
+                           },
+                           "status": {
+                               "HP": 270,
+                               "Atk": 193,
+                               "Def": 242,
+                               "SpA": 223,
+                               "SpD": 156,
+                               "Spe": 245
+                           },
+                           "first date": "02/04/2011"
+                       },
+                       "3": {
+                           "pokemon": "Magnezone",
+                           "item": "None",
+                           "OT": "Arthur",
+                           "ID no.": "16185",
+                           "shiny": false,
+                           "ability": "Magnet Pull",
+                           "level": 69,
+                           "gender": "M",
+                           "evs": {
+                               "HP": 0,
+                               "Atk": 0,
+                               "Def": 0,
+                               "SpA": 0,
+                               "SpD": 0,
+                               "Spe": 0
+                           },
+                           "ivs": {
+                               "HP": 0,
+                               "Atk": 0,
+                               "Def": 0,
+                               "SpA": 0,
+                               "SpD": 0,
+                               "Spe": 0
+                           },
+                           "nature": "Jolly",
+                           "moves": {
+                           "Discharge": "Electric",
+                           "Zap Cannon": "Electric",
+                           "Mirror Shot": "Steel",
+                           "Magnet Rise": "Electric"
+                           },
+                           "status": {
+                               "HP": 179,
+                               "Atk": 128,
+                               "Def": 216,
+                               "SpA": 176,
+                               "SpD": 142,
+                               "Spe": 136
+                           },
+                           "first date": "29/06/2011"
+                       },
+                       "4": {
+                           "pokemon": "Tropius",
+                           "item": "None",
+                           "OT": "Arthur",
+                           "ID no.": "16185",
+                           "shiny": false,
+                           "ability": "Chlorophyll",
+                           "level": 62,
+                           "gender": "F",
+                           "evs": {
+                               "HP": 0,
+                               "Atk": 0,
+                               "Def": 0,
+                               "SpA": 0,
+                               "SpD": 0,
+                               "Spe": 0
+                           },
+                           "ivs": {
+                               "HP": 0,
+                               "Atk": 0,
+                               "Def": 0,
+                               "SpA": 0,
+                               "SpD": 0,
+                               "Spe": 0
+                           },
+                           "nature": "Calm",
+                           "moves": {
+                           "Magical Leaf": "Grass",
+                           "Fly": "Flying",
+                           "Rock Smash": "Fighting",
+                           "leaf Storm": "Grass"
+                           },
+                           "status": {
+                               "HP": 205,
+                               "Atk": 92,
+                               "Def": 153,
+                               "SpA": 109,
+                               "SpD": 147,
+                               "Spe": 81
+                           },
+                           "first date": "26/04/2011"
+                       },
+                       "5": {
+                           "pokemon": "Houndoom",
+                           "item": "None",
+                           "OT": "Arthur",
+                           "ID no.": "16185",
+                           "shiny": false,
+                           "ability": "Early Bird",
+                           "level": 65,
+                           "gender": "M",
+                           "evs": {
+                               "HP": 0,
+                               "Atk": 0,
+                               "Def": 0,
+                               "SpA": 0,
+                               "SpD": 0,
+                               "Spe": 0
+                           },
+                           "ivs": {
+                               "HP": 0,
+                               "Atk": 0,
+                               "Def": 0,
+                               "SpA": 0,
+                               "SpD": 0,
+                               "Spe": 0
+                           },
+                           "nature": "Rash",
+                           "moves": {
+                           "Fire Fang": "Fire",
+                           "Crunch": "Dark",
+                           "Flamethrower": "Fire",
+                           "Strengh": "Normal"
+                           },
+                           "status": {
+                               "HP": 183,
+                               "Atk": 145,
+                               "Def": 120,
+                               "SpA": 178,
+                               "SpD": 109,
+                               "Spe": 144
+                           },
+                           "first date": "24/04/2011"
+                       },
+                       "6": {
+                           "pokemon": "Glalie",
+                           "item": "None",
+                           "OT": "Arthur",
+                           "ID no.": "16185",
+                           "shiny": false,
+                           "ability": "Inner Focus",
+                           "level": 60,
+                           "gender": "M",
+                           "evs": {
+                               "HP": 0,
+                               "Atk": 0,
+                               "Def": 0,
+                               "SpA": 0,
+                               "SpD": 0,
+                               "Spe": 0
+                           },
+                           "ivs": {
+                               "HP": 0,
+                               "Atk": 0,
+                               "Def": 0,
+                               "SpA": 0,
+                               "SpD": 0,
+                               "Spe": 0
+                           },
+                           "nature": "Rash",
+                           "moves": {
+                           "Headbutt": "Normal",
+                           "Blizzard": "Ice",
+                           "Ice Fang": "Ice",
+                           "Crunch": "Dark"
+                           },
+                           "status": {
+                               "HP": 175,
+                               "Atk": 109,
+                               "Def": 149,
+                               "SpA": 127,
+                               "SpD": 101,
+                               "Spe": 121
+                           },
+                           "first date": "23/07/2011"
+                       }
+                   }
+               },
+               "2": {
+                   "name": "Honorable Mention",
+                   "tier": "gen4",
+                   "pokemons": {
+                       "1": {
+                           "pokemon": "Clefable",
+                           "item": "Leftvores",
+                           "OT": "Arthur",
+                           "ID no.": "",
+                           "shiny": false,
+                           "ability": "Unaware",
+                           "level": 99,
+                           "gender": "F",
+                           "evs": {
+                               "HP": 248,
+                               "Atk": 0,
+                               "Def": 252,
+                               "SpA": 0,
+                               "SpD": 8,
+                               "Spe": 0
+                           },
+                           "ivs": {
+                               "HP": 31,
+                               "Atk": 30,
+                               "Def": 31,
+                               "SpA": 31,
+                               "SpD": 31,
+                               "Spe": 31
+                           },
+                           "nature": "Calm",
+                           "moves": {
+                           "Moonblast": "Fairy",
+                           "Heal Belt": "Normal",
+                           "Wish": "Normal",
+                           "Protect": "Normal"
+                           },
+                           "status": {
+                               "HP": 389,
+                               "Atk": 155,
+                               "Def": 242,
+                               "SpA": 223,
+                               "SpD": 236,
+                               "Spe": 154
+                           },
+                           "first date": "20/08/2015"
+                       },
+                       "2": {
+                           "pokemon": "Snorlax",
+                           "item": "Chesto Berry",
+                           "OT": "Arthur",
+                           "ID no.": "",
+                           "shiny": false,
+                           "ability": "Thick Fat",
+                           "level": 99,
+                           "gender": "M",
+                           "evs": {
+                               "HP": 252,
+                               "Atk": 0,
+                               "Def": 148,
+                               "SpA": 0,
+                               "SpD": 108,
+                               "Spe": 0
+                           },
+                           "ivs": {
+                               "HP": 31,
+                               "Atk": 31,
+                               "Def": 31,
+                               "SpA": 30,
+                               "SpD": 31,
+                               "Spe": 3
+                           },
+                           "nature": "Relaxed",
+                           "moves": {
+                           "Stockpile": "Normal",
+                           "Power-Up Punch": "Fight",
+                           "Rest": "Psychic",
+                           "Body Slam": "Normal"
+                           },
+                           "status": {
+                               "HP": 518,
+                               "Atk": 253,
+                               "Def": 221,
+                               "SpA": 163,
+                               "SpD": 280,
+                               "Spe": 60
+                           },
+                           "first date": "26/08/2016"
+                       },
+                       "3": {
+                           "pokemon": "Venusaur",
+                           "item": "Venusarite",
+                           "shiny": false,
+                           "ability": "Chlorophyll",
+                           "level": 94,
+                           "gender": "M",
+                           "evs": {
+                               "HP": 0,
+                               "Atk": 0,
+                               "Def": 0,
+                               "SpA": 0,
+                               "SpD": 0,
+                               "Spe": 0
+                           },
+                           "ivs": {
+                               "HP": 31,
+                               "Atk": 31,
+                               "Def": 31,
+                               "SpA": 31,
+                               "SpD": 31,
+                               "Spe": 20
+                           },
+                           "nature": "Relaxed",
+                           "moves": {
+                           "Sleep Powder": "Grass",
+                           "Synthesis": "Grass",
+                           "Earthquake": "Ground",
+                           "Giga Drain": "Grass"
+                           },
+                           "status": {
+                               "HP": 342,
+                               "Atk": 188,
+                               "Def": 273,
+                               "SpA": 223,
+                               "SpD": 222,
+                               "Spe": 156
+                           },
+                           "first date": "11/08/2015"
+                       },
+                       "4": {
+                           "pokemon": "Skarmory",
+                           "item": "Shed Shell",
+                           "OT": "Arthur",
+                           "ID no.": "",
+                           "shiny": false,
+                           "ability": "Sturdy",
+                           "level": 91,
+                           "gender": "M",
+                           "evs": {
+                               "HP": 228,
+                               "Atk": 0,
+                               "Def": 252,
+                               "SpA": 0,
+                               "SpD": 28,
+                               "Spe": 0
+                           },
+                           "ivs": {
+                               "HP": 31,
+                               "Atk": 31,
+                               "Def": 31,
+                               "SpA": 15,
+                               "SpD": 31,
+                               "Spe": 31
+                           },
+                           "nature": "Impish",
+                           "moves": {
+                           "Spikes": "Ground",
+                           "Roost": "Flying",
+                           "Brave Bird": "Flying",
+                           "Whirlwind": "Flying"
+                           },
+                           "status": {
+                               "HP": 299,
+                               "Atk": 178,
+                               "Def": 379,
+                               "SpA": 81,
+                               "SpD": 166,
+                               "Spe": 160
+                           },
+                           "first date": "09/08/2015"
+                       },
+                       "5": {
+                           "pokemon": "Heatran",
+                           "item": "Power Herb",
+                           "country": "GERMAN",
+                           "OT": "Delizzar",
+                           "ID no.": "",
+                           "shiny": false,
+                           "ability": "Flash Fire",
+                           "level": 98,
+                           "gender": "F",
+                           "evs": {
+                               "HP": 0,
+                               "Atk": 0,
+                               "Def": 0,
+                               "SpA": 252,
+                               "SpD": 4,
+                               "Spe": 252
+                           },
+                           "ivs": {
+                               "HP": 19,
+                               "Atk": 26,
+                               "Def": 31,
+                               "SpA": 3,
+                               "SpD": 31,
+                               "Spe": 31
+                           },
+                           "nature": "Modest",
+                           "moves": {
+                           "Magma Storm": "Fire",
+                           "Earth Power": "Ground",
+                           "Taunt": "Dark",
+                           "Solar Beam": "Grass"
+                           },
+                           "status": {
+                               "HP": 304,
+                               "Atk": 185,
+                               "Def": 243,
+                               "SpA": 356,
+                               "SpD": 244,
+                               "Spe": 248
+                           },
+                           "first date": "27/12/2014"
+                       },
+                       "6": {
+                           "pokemon": "Gyarados",
+                           "item": "Leftovers",
+                           "OT": "Arthur",
+                           "ID no.": "",
+                           "ability": "Intimidate",
+                           "level": 92,
+                           "gender": "F",
+                           "evs": {
+                               "HP": 88,
+                               "Atk": 200,
+                               "Def": 8,
+                               "SpA": 0,
+                               "SpD": 0,
+                               "Spe": 214
+                           },
+                           "ivs": {
+                               "HP": 31,
+                               "Atk": 31,
+                               "Def": 31,
+                               "SpA": 31,
+                               "SpD": 31,
+                               "Spe": 31
+                           },
+                           "nature": "Jolly",
+                           "moves": {
+                           "Bounce": "Flying",
+                           "Waterfall": "Water",
+                           "Substitute": "Normal",
+                           "Dragon Dance": "Dragon"
+                           },
+                           "status": {
+                               "HP": 325,
+                               "Atk": 309,
+                               "Def": 180,
+                               "SpA": 128,
+                               "SpD": 217,
+                               "Spe": 254
+                           },
+                           "first date": "24/08/2016"
+                       }
+                   }
+               }
+            }
+        }
+     }
+}

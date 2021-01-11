@@ -1,0 +1,1901 @@
+{
+   "Jogos": {
+        "Alpha Sapphire": {
+             "teams": {
+                "1": {
+                    "name": "Battle Box",
+                    "tier": "gen6BattleSpotTriple",
+                    "pokemons": {
+                        "1": {
+                            "pokemon": "Togekiss",
+                            "item": "Safety Goggles",
+                            "OT": "Arthur",
+                            "ID no.": "00591",
+                            "shiny": false, 
+                            "ability": "Serene Grace",
+                            "level": 85,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 236,
+                                "Atk": 0,
+                                "Def": 194,
+                                "SpA": 0,
+                                "SpD": 18,
+                                "Spe": 60
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Calm",
+                            "moves": {
+                            "Air Slash": "Flying",
+                            "Tailwind": "Flying",
+                            "Follow Me": "Normal",
+                            "Roost": "Flying"
+                            },
+                            "status": {
+                                "HP": 316,
+                                "Atk": 104,
+                                "Def": 234, 
+                                "SpA": 235,
+                                "SpD": 253,
+                                "Spe": 180
+                            },
+                            "first date": "14/01/2019"
+                        },
+                        "2": {
+                            "pokemon": "Dragonite",
+                            "item": "Weakness Policy",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "shiny": false,                            "ability": "Multiscale",
+                            "level": 89,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 216,
+                                "Atk": 64,
+                                "Def": 0,
+                                "SpA": 8,
+                                "SpD": 228,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Adamant",
+                            "moves": {
+                            "Fire Punch": "Fire",
+                            "Dragon Claw": "Dragon",
+                            "Extreme Speed": "Normal",
+                            "Dragon Dance": "Dragon"
+                            },
+                            "status": {
+                                "HP": 336,
+                                "Atk": 313,
+                                "Def": 201,
+                                "SpA": 189,
+                                "SpD": 261,
+                                "Spe": 174
+                            },
+                            "first date": "29/07/2016"
+                        },
+                        "3": {
+                            "pokemon": "Bisharp",
+                            "item": "Focus Sash",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "shiny": false, 
+                            "ability": "Defiant",
+                            "level": 89,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 244,
+                                "Atk": 252,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 12,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 8,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Adamant",
+                            "moves": {
+                            "Iron Head": "Steel",
+                            "Sucker Punch": "Dark",
+                            "Swords Dance": "Normal",
+                            "Poison Jab": "Poison"
+                            },
+                            "status": {
+                                "HP": 296,
+                                "Atk": 342,
+                                "Def": 210,
+                                "SpA": 106,
+                                "SpD": 159,
+                                "Spe": 157
+                            },
+                            "first date": "29/07/2016"
+                        },
+                        "4": {
+                            "pokemon": "Tyranitar",
+                            "item": "Tyranitarite",
+                            "OT": "Arthur",
+                            "ID no.": "00591",
+                            "shiny": false, 
+                            "ability": "Sand Stream",
+                            "level": 88,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 252,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 4,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 17,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Adamant",
+                            "moves": {
+                            "Rock Slide": "Rock",
+                            "Dragon Dance": "Dragon",
+                            "Crunch": "Dark",
+                            "Protect": "Normal"
+                            },
+                            "status": {
+                                "HP": 301,
+                                "Atk": 355,
+                                "Def": 225,
+                                "SpA": 168,
+                                "SpD": 209,
+                                "Spe": 195
+                            },
+                            "first date": "14/01/2019"
+                        },
+                        "5": {
+                            "pokemon": "Talonflame",
+                            "item": "Choice Band",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "shiny": true, 
+                            "ability": "Gale Wings",
+                            "level": 93,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 252,
+                                "Def": 4,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 2,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Adamant",
+                            "moves": {
+                            "Flare Blitz": "Fire",
+                            "Steel Wing": "Steel",
+                            "U-turn": "Bug",
+                            "Brave Bird": "Flying"
+                            },
+                            "status": {
+                                "HP": 276,
+                                "Atk": 267,
+                                "Def": 139,
+                                "SpA": 153,
+                                "SpD": 162,
+                                "Spe": 326
+                            },
+                            "first date": "09/08/2015"
+                        },
+                        "6": {
+                            "pokemon": "Swampert",
+                            "item": "Expert Belt",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "shiny": false, 
+                            "ability": "Torrent",
+                            "level": 91,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 234,
+                                "Atk": 0,
+                                "Def": 28,
+                                "SpA": 228,
+                                "SpD": 0,
+                                "Spe": 12
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Modest",
+                            "moves": {
+                            "Earth Power": "Ground",
+                            "Scald": "Water",
+                            "Wide Guard": "Fight",
+                            "Ice Beam": "Ice"
+                            },
+                            "status": {
+                                "HP": 364,
+                                "Atk": 209,
+                                "Def": 203,
+                                "SpA": 262,
+                                "SpD": 197,
+                                "Spe": 145
+                            },
+                            "first date": "28/07/2016"
+                        }
+                    }
+                },
+                "2": {
+                    "name": "Single OU First Team",
+                    "tier": "gen6ou",
+                    "pokemons": {
+                        "1": {
+                            "pokemon": "Clefable",
+                            "item": "Leftvores",
+                            "OT": "Arthur",
+                            "ID no.": "",
+                            "shiny": false,
+                            "ability": "Unaware",
+                            "level": 99,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 248,
+                                "Atk": 0,
+                                "Def": 252,
+                                "SpA": 0,
+                                "SpD": 8,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 30,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Calm",
+                            "moves": {
+                            "Moonblast": "Fairy",
+                            "Heal Belt": "Normal",
+                            "Wish": "Normal",
+                            "Protect": "Normal"
+                            },
+                            "status": {
+                                "HP": 389,
+                                "Atk": 155,
+                                "Def": 242,
+                                "SpA": 223,
+                                "SpD": 236,
+                                "Spe": 154
+                            },
+                            "first date": "20/08/2015"
+                        },
+                        "2": {
+                            "pokemon": "Snorlax",
+                            "item": "Chesto Berry",
+                            "OT": "Arthur",
+                            "ID no.": "",
+                            "shiny": false,
+                            "ability": "Thick Fat",
+                            "level": 99,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 252,
+                                "Atk": 0,
+                                "Def": 148,
+                                "SpA": 0,
+                                "SpD": 108,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 30,
+                                "SpD": 31,
+                                "Spe": 3
+                            },
+                            "nature": "Relaxed",
+                            "moves": {
+                            "Stockpile": "Normal",
+                            "Power-Up Punch": "Fight",
+                            "Rest": "Psychic",
+                            "Body Slam": "Normal"
+                            },
+                            "status": {
+                                "HP": 518,
+                                "Atk": 253,
+                                "Def": 221,
+                                "SpA": 163,
+                                "SpD": 280,
+                                "Spe": 60
+                            },
+                            "first date": "26/08/2016"
+                        },
+                        "3": {
+                            "pokemon": "Venusaur",
+                            "item": "Venusarite",
+                            "shiny": false,
+                            "ability": "Chlorophyll",
+                            "level": 94,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 20
+                            },
+                            "nature": "Relaxed",
+                            "moves": {
+                            "Sleep Powder": "Grass",
+                            "Synthesis": "Grass",
+                            "Earthquake": "Ground",
+                            "Giga Drain": "Grass"
+                            },
+                            "status": {
+                                "HP": 342,
+                                "Atk": 188,
+                                "Def": 273,
+                                "SpA": 223,
+                                "SpD": 222,
+                                "Spe": 156
+                            },
+                            "first date": "11/08/2015"
+                        },
+                        "4": {
+                            "pokemon": "Skarmory",
+                            "item": "Shed Shell",
+                            "OT": "Arthur",
+                            "ID no.": "",
+                            "shiny": false,
+                            "ability": "Sturdy",
+                            "level": 91,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 228,
+                                "Atk": 0,
+                                "Def": 252,
+                                "SpA": 0,
+                                "SpD": 28,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 15,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Impish",
+                            "moves": {
+                            "Spikes": "Ground",
+                            "Roost": "Flying",
+                            "Brave Bird": "Flying",
+                            "Whirlwind": "Flying"
+                            },
+                            "status": {
+                                "HP": 299,
+                                "Atk": 178,
+                                "Def": 379,
+                                "SpA": 81,
+                                "SpD": 166,
+                                "Spe": 160
+                            },
+                            "first date": "09/08/2015"
+                        },
+                        "5": {
+                            "pokemon": "Heatran",
+                            "item": "Power Herb",
+                            "country": "GERMAN",
+                            "OT": "Delizzar",
+                            "ID no.": "",
+                            "shiny": false,
+                            "ability": "Flash Fire",
+                            "level": 98,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 252,
+                                "SpD": 4,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 19,
+                                "Atk": 26,
+                                "Def": 31,
+                                "SpA": 3,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Modest",
+                            "moves": {
+                            "Magma Storm": "Fire",
+                            "Earth Power": "Ground",
+                            "Taunt": "Dark",
+                            "Solar Beam": "Grass"
+                            },
+                            "status": {
+                                "HP": 304,
+                                "Atk": 185,
+                                "Def": 243,
+                                "SpA": 356,
+                                "SpD": 244,
+                                "Spe": 248
+                            },
+                            "first date": "27/12/2014"
+                        },
+                        "6": {
+                            "pokemon": "Gyarados",
+                            "item": "Leftovers",
+                            "OT": "Arthur",
+                            "ID no.": "",
+                            "ability": "Intimidate",
+                            "level": 92,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 88,
+                                "Atk": 200,
+                                "Def": 8,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 214
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Jolly",
+                            "moves": {
+                            "Bounce": "Flying",
+                            "Waterfall": "Water",
+                            "Substitute": "Normal",
+                            "Dragon Dance": "Dragon"
+                            },
+                            "status": {
+                                "HP": 325,
+                                "Atk": 309,
+                                "Def": 180,
+                                "SpA": 128,
+                                "SpD": 217,
+                                "Spe": 254
+                            },
+                            "first date": "24/08/2016"
+                        }
+                    }
+                },
+                "3": {
+                    "name": "Single OU Team 2 Option",
+                    "tier": "gen6ou",
+                    "pokemons": {
+                        "1": {
+                            "pokemon": "Clefable",
+                            "item": "Leftvores",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "shiny": false,
+                            "ability": "Unaware",
+                            "level": 71,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 248,
+                                "Atk": 0,
+                                "Def": 252,
+                                "SpA": 0,
+                                "SpD": 8,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Bold",
+                            "moves": {
+                            "Flamethrower": "Fire",
+                            "Calm Mind": "Psychic",
+                            "Moonlight": "Fairy",
+                            "Moonblast": "Fairy"
+                            },
+                            "status": {
+                                "HP": 281,
+                                "Atk": 113,
+                                "Def": 192,
+                                "SpA": 161,
+                                "SpD": 156,
+                                "Spe": 112
+                            },
+                            "first date": "28/10/2015"
+                        },
+                        "2": {
+                            "pokemon": "Snorlax",
+                            "item": "Chesto Berry",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "shiny": false,
+                            "ability": "Immunity",
+                            "level": 75,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 252,
+                                "Atk": 0,
+                                "Def": 150,
+                                "SpA": 0,
+                                "SpD": 108,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 21,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Impish",
+                            "moves": {
+                            "Stockpile": "Normal",
+                            "Power-Up Punch": "Fight",
+                            "Rest": "Psychic",
+                            "Crunch": "Dark"
+                            },
+                            "status": {
+                                "HP": 388,
+                                "Atk": 193,
+                                "Def": 168,
+                                "SpA": 112,
+                                "SpD": 213,
+                                "Spe": 73
+                            },
+                            "first date": "26/08/2016"
+                        },
+                        "3": {
+                            "pokemon": "Zapdos",
+                            "item": "Expert Belt",
+                            "OT": "Feefee",
+                            "ID no.": "44070",
+                            "shiny": false,
+                            "ability": "Pressure",
+                            "level": 75,
+                            "gender": "N/A",
+                            "evs": {
+                                "HP": 248,
+                                "Atk": 0,
+                                "Def": 44,
+                                "SpA": 50,
+                                "SpD": 148,
+                                "Spe": 20
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 2,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Bold",
+                            "moves": {
+                            "Thunderbolt": "Electric",
+                            "Roar": "Normal",
+                            "Thunder Wave": "Electric",
+                            "Roost": "Normal"
+                            },
+                            "status": {
+                                "HP": 289,
+                                "Atk": 126,
+                                "Def": 180,
+                                "SpA": 225,
+                                "SpD": 191,
+                                "Spe": 182
+                            },
+                            "first date": "24/10/2014"
+                        },
+                        "4": {
+                            "pokemon": "Magnezone",
+                            "item": "Choice Scarf",
+                            "shiny": true,
+                            "OT": "Duzzle",
+                            "ID no.": "13625",
+                            "ability": "Magnet Pull",
+                            "level": 100,
+                            "gender": "n/a",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 4,
+                                "SpA": 252,
+                                "SpD": 0,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 30,
+                                "Def": 31,
+                                "SpA": 30,
+                                "SpD": 31,
+                                "Spe": 30
+                            },
+                            "nature": "Timid",
+                            "moves": {
+                            "Volt Switch": "Electric",
+                            "Flash Cannon": "Steel",
+                            "Thunderbolt": "Electric",
+                            "Hidden Power ()": "Normal"
+                            },
+                            "status": {
+                                "HP": 281,
+                                "Atk": 157,
+                                "Def": 267,
+                                "SpA": 358,
+                                "SpD": 216,
+                                "Spe": 239
+                            },
+                            "first date": "28/04/2016"
+                        },
+                        "5": {
+                            "pokemon": "Rotom-Wash",
+                            "item": "Leftvores",
+                            "OT": "Joao",
+                            "ID no.": "51168",
+                            "shiny": true,
+                            "ability": "Levitate",
+                            "level": 100,
+                            "gender": "n/a",
+                            "evs": {
+                                "HP": 252,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 134,
+                                "SpD": 126,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 0,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Modest",
+                            "moves": {
+                            "ElectroWeb": "Electric",
+                            "Will-O-Wisp": "Fire",
+                            "Hydro Pump": "Water",
+                            "Thunderbolt": "Electric"
+                            },
+                            "status": {
+                                "HP": 304,
+                                "Atk": 121,
+                                "Def": 250,
+                                "SpA": 306,
+                                "SpD": 281,
+                                "Spe": 208
+                            },
+                            "first date": "30/12/2014"
+                        },
+                        "6": {
+                            "pokemon": "Excadrill",
+                            "item": "Life Orb",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "ability": "Mold Breaker",
+                            "level": 61,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 252,
+                                "Def": 4,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 26,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Adamant",
+                            "moves": {
+                            "Earthquake": "Ground",
+                            "Rock Slide": "Rock",
+                            "Iron Head": "Steel",
+                            "Rapid Spin": "Normal"
+                            },
+                            "status": {
+                                "HP": 224,
+                                "Atk": 249,
+                                "Def": 94,
+                                "SpA": 75,
+                                "SpD": 103,
+                                "Spe": 169
+                            },
+                            "first date": "11/08/2015"
+                        }
+                    }
+                },
+                "4": {
+                    "name": "Single OU Team 3 Option",
+                    "tier": "gen6ou",
+                    "pokemons": {
+                        "1": {
+                            "pokemon": "Bisharp",
+                            "item": "Focus Sash",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "shiny": false,
+                            "ability": "Defiant",
+                            "level": 61,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 4,
+                                "Atk": 252,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Jolly",
+                            "moves": {
+                            "Swords Dance": "Normal",
+                            "Iron Head": "Steel",
+                            "Sucker Punch": "Dark",
+                            "Stone Edge": "Rock"
+                            },
+                            "status": {
+                                "HP": 169,
+                                "Atk": 214,
+                                "Def": 146,
+                                "SpA": 87,
+                                "SpD": 109,
+                                "Spe": 161
+                            },
+                            "first date": "18/10/2015"
+                        },
+                        "2": {
+                            "pokemon": "Venusaur",
+                            "item": "Venusaurite",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "shiny": false,
+                            "ability": "Chlorophyll",
+                            "level": 60,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 252,
+                                "Atk": 0,
+                                "Def": 252,
+                                "SpA": 4,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 17,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Relaxed",
+                            "moves": {
+                            "Sludge Bomb": "Poison",
+                            "Sleep Powder": "Grass",
+                            "Synthesis": "Grass",
+                            "Giga Drain": "Grass"
+                            },
+                            "status": {
+                                "HP": 221,
+                                "Atk": 113,
+                                "Def": 177,
+                                "SpA": 144,
+                                "SpD": 143,
+                                "Spe": 107
+                            },
+                            "first date": "15/08/2015"
+                        },
+                        "3": {
+                            "pokemon": "Conkeldurr",
+                            "item": "Assault Vest",
+                            "OT": "Matias",
+                            "ID no.": "22037",
+                            "shiny": false,
+                            "ability": "Iron Fist",
+                            "level": 60,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 4,
+                                "Atk": 252,
+                                "Def": 252,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 25,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Adamant",
+                            "moves": {
+                            "Drain Punch": "Fighting",
+                            "Mach Punch": "Fighting",
+                            "Ice Punch": "Ice",
+                            "Knock Off": "Dark"
+                            },
+                            "status": {
+                                "HP": 215,
+                                "Atk": 251,
+                                "Def": 175,
+                                "SpA": 77,
+                                "SpD": 101,
+                                "Spe": 77
+                            },
+                            "first date": "10/10/2015"
+                        },
+                        "4": {
+                            "pokemon": "Heatran",
+                            "item": "Air Balloon",
+                            "shiny": false,
+                            "OT": "Dr. Bodki",
+                            "ID no.": "61580",
+                            "ability": "Flash Fire",
+                            "level": 60,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 4,
+                                "SpA": 252,
+                                "SpD": 0,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 20,
+                                "Def": 8,
+                                "SpA": 5,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Quirky",
+                            "moves": {
+                            "Stealth Rock": "Rock",
+                            "Earth Power": "Ground",
+                            "Hidden Power [Ice]": "Normal",
+                            "Lava  Plume": "Fire"
+                            },
+                            "status": {
+                                "HP": 197,
+                                "Atk": 125,
+                                "Def": 137,
+                                "SpA": 201,
+                                "SpD": 150,
+                                "Spe": 153
+                            },
+                            "first date": "05/01/2015"
+                        },
+                        "5": {
+                            "pokemon": "Metagross",
+                            "item": "Metagrossite",
+                            "OT": "Duzzle",
+                            "ID no.": "02773",
+                            "shiny": true,
+                            "ability": "Clear Body",
+                            "level": 100,
+                            "gender": "n/a",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 252,
+                                "Def": 4,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Jolly",
+                            "moves": {
+                            "Hammer Arm": "Fighting",
+                            "Zen Headbutt": "Psychic",
+                            "Meteor Mash": "Steel",
+                            "Ice Punch": "Ice"
+                            },
+                            "status": {
+                                "HP": 301,
+                                "Atk": 369,
+                                "Def": 297,
+                                "SpA": 203,
+                                "SpD": 216,
+                                "Spe": 262
+                            },
+                            "first date": "04/02/2016"
+                        },
+                        "6": {
+                            "pokemon": "Garchomp",
+                            "item": "Lum Berry",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "shiny": false,
+                            "ability": "Rough Skin",
+                            "level": 69,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 4,
+                                "Atk": 252,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 24,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Jolly",
+                            "moves": {
+                            "Earthquake": "Ground",
+                            "Fire Fang": "Fire",
+                            "Sword Dance": "Normal",
+                            "Dragon Claw": "Dragon"
+                            },
+                            "status": {
+                                "HP": 250,
+                                "Atk": 249,
+                                "Def": 157,
+                                "SpA": 117,
+                                "SpD": 143,
+                                "Spe": 231
+                            },
+                            "first date": "30/08/2015"
+                        }
+                    }
+                },
+                "5": {
+                    "name": "Single OU Team 4 Option",
+                    "tier": "gen6ou",
+                    "pokemons": {
+                        "1": {
+                            "pokemon": "Sableye",
+                            "item": "Sablenite",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "shiny": false,
+                            "ability": "Prankster",
+                            "level": 51,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 252,
+                                "Atk": 0,
+                                "Def": 252,
+                                "SpA": 0,
+                                "SpD": 4,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 0,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Bold",
+                            "moves": {
+                            "Calm Mind": "Psychic",
+                            "Shadow Ball ": "Ghost",
+                            "Will-O-Wisp  ": "Fire",
+                            "Recover": "Normal"
+                            },
+                            "status": {
+                                "HP": 159,
+                                "Atk": 74,
+                                "Def": 141,
+                                "SpA": 87,
+                                "SpD": 87,
+                                "Spe": 71
+                            },
+                            "first date": "19/09/2016"
+                        },
+                        "2": {
+                            "pokemon": "Starmie",
+                            "item": "Leftovers",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "shiny": false,
+                            "ability": "Natural Cure",
+                            "level": 59,
+                            "gender": "n/a",
+                            "evs": {
+                                "HP": 248,
+                                "Atk": 32,
+                                "Def": 0,
+                                "SpA": 4,
+                                "SpD": 0,
+                                "Spe": 224
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 0,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Timid",
+                            "moves": {
+                            "Scald": "Water",
+                            "Recover": "Normal",
+                            "Rapid Spin": "Normal",
+                            "Ice Beam": "Ice"
+                            },
+                            "status": {
+                                "HP": 192,
+                                "Atk": 87,
+                                "Def": 128,
+                                "SpA": 141,
+                                "SpD": 123,
+                                "Spe": 213
+                            },
+                            "first date": "22/08/2015"
+                        },
+                        "3": {
+                            "pokemon": "Landorus-Therian",
+                            "item": "Choice Scarf",
+                            "OT": "Safira f",
+                            "ID no.": "14271",
+                            "shiny": true,
+                            "ability": "Intimidate",
+                            "level": 50,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 4,
+                                "Atk": 252,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 0,
+                                "Atk": 31,
+                                "Def": 0,
+                                "SpA": 31,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "nature": "Adamant",
+                            "moves": {
+                            "Earthquake": "Ground",
+                            "U-turn": "Bug",
+                            "Stealth Rock": "Rock",
+                            "Knock Off": "Dark"
+                            },
+                            "status": {
+                                "HP": 164,
+                                "Atk": 216,
+                                "Def": 110,
+                                "SpA": 112,
+                                "SpD": 100,
+                                "Spe": 143
+                            },
+                            "first date": "26/12/2014"
+                        },
+                        "4": {
+                            "pokemon": "Drapion",
+                            "item": "Black Sludge",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "shiny": false,
+                            "ability": "Battle Armor",
+                            "level": 47,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 248,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 216,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 0,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Careful",
+                            "moves": {
+                            "Taunt": "Dark",
+                            "Toxic Spikes": "Poison",
+                            "Knock Off ": "Dark",
+                            "Pursuit": "Dark"
+                            },
+                            "status": {
+                                "HP": 166,
+                                "Atk": 104,
+                                "Def": 122,
+                                "SpA": 57,
+                                "SpD": 126,
+                                "Spe": 114
+                            },
+                            "first date": "08/09//2016"
+                        },
+                        "5": {
+                            "pokemon": "Breloom",
+                            "item": "Focus Sash",
+                            "OT": "Squadooosh",
+                            "ID no.": "16769",
+                            "shiny": true,
+                            "ability": "Technician",
+                            "level": 53,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 252,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 4,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Jolly",
+                            "moves": {
+                            "Bullet Seed": "Grass",
+                            "Spore": "Grass",
+                            "Rock Tomb": "Rock",
+                            "Mach Punch": "Fighting"
+                            },
+                            "status": {
+                                "HP": 143,
+                                "Atk": 192,
+                                "Def": 106,
+                                "SpA": 76,
+                                "SpD": 85,
+                                "Spe": 141
+                            },
+                            "first date": "17/10/2015"
+                        },
+                        "6": {
+                            "pokemon": "Dragonite",
+                            "item": "None",
+                            "OT": "Matias",
+                            "ID no.": "22037",
+                            "shiny": false,
+                            "ability": "Inner Focus",
+                            "level": 59,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 0,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Impish",
+                            "moves": {
+                            "Thunder Punch": "Electric",
+                            "Dragon Rush": "Dragon",
+                            "Hurricane": "Flying",
+                            "Fire Punch": "Fire"
+                            },
+                            "status": {
+                                "HP": 194,
+                                "Atk": 218,
+                                "Def": 148,
+                                "SpA": 119,
+                                "SpD": 178,
+                                "Spe": 117
+                            },
+                            "first date": "23/07/2015"
+                        }
+                    }
+                },
+                "6": {
+                    "name": "Single OU Other Options 1",
+                    "tier": "gen6ou",
+                    "pokemons": {
+                        "1": {
+                            "pokemon": "Bellossom",
+                            "nickname": "Erika",
+                            "item": "None",
+                            "OT": "Berwin",
+                            "ID no.": "42094",
+                            "shiny": true,
+                            "ability": "Chlorophyll",
+                            "level": 52,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 0,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Modest",
+                            "moves": {
+                            "Sweet Scent": "Normal",
+                            "Giga Drain ": "Grass",
+                            "MoonBlast": "Fairy",
+                            "Sludge Bomb": "Poison"
+                            },
+                            "status": {
+                                "HP": 188,
+                                "Atk": 90,
+                                "Def": 119,
+                                "SpA": 161,
+                                "SpD": 125,
+                                "Spe": 73
+                            },
+                            "first date": "24/06/2015"
+                        },
+                        "2": {
+                            "pokemon": "Blaziken",
+                            "item": "Life Orb",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "shiny": false,
+                            "ability": "Speed Boost",
+                            "level": 52,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 252,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 0,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Adamant",
+                            "moves": {
+                            "Hone Claws": "Dark",
+                            "Stone Edge": "Rock",
+                            "Low Kick": "Fighting",
+                            "Protect": "Normal"
+                            },
+                            "status": {
+                                "HP": 161,
+                                "Atk": 195,
+                                "Def": 88,
+                                "SpA": 121,
+                                "SpD": 94,
+                                "Spe": 137
+                            },
+                            "first date": "07/09/2015"
+                        },
+                        "3": {
+                            "pokemon": "Gliscor",
+                            "item": "Toxic Orb",
+                            "OT": "Matias",
+                            "ID no.": "22037",
+                            "shiny": false,
+                            "ability": "Poison Heal",
+                            "level": 65,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 244,
+                                "Atk": 0,
+                                "Def": 8,
+                                "SpA": 0,
+                                "SpD": 200,
+                                "Spe": 56
+                            },
+                            "ivs": {
+                                "HP": 0,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Hardy",
+                            "moves": {
+                            "Earthquake": "Ground",
+                            "Rock Slide": "Rock",
+                            "Protect": "Normal",
+                            "Taunt": "Dark"
+                            },
+                            "status": {
+                                "HP": 176,
+                                "Atk": 148,
+                                "Def": 228,
+                                "SpA": 83,
+                                "SpD": 122,
+                                "Spe": 189
+                            },
+                            "first date": "26/07/2015"
+                        },
+                        "4": {
+                            "pokemon": "Feraligatr",
+                            "item": "Life Orb",
+                            "OT": "Quartz",
+                            "ID no.": "37360",
+                            "shiny": false,
+                            "ability": "Sheer Force",
+                            "level": 60,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 144,
+                                "Atk": 252,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 116
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 0,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Adamant",
+                            "moves": {
+                            "Dragon Dance": "Dragon",
+                            "Aqua Jet": "Water",
+                            "Ice Punch ": "Ice",
+                            "Crunch": "Dark"
+                            },
+                            "status": {
+                                "HP": 212,
+                                "Atk": 205,
+                                "Def": 131,
+                                "SpA": 106,
+                                "SpD": 123,
+                                "Spe": 134
+                            },
+                            "first date": "03/07/2015"
+                        },
+                        "5": {
+                            "pokemon": "Scizor",
+                            "item": "None",
+                            "OT": "Joao",
+                            "ID no.": "38599",
+                            "shiny": true,
+                            "ability": "Technician",
+                            "level": 60,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 252,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 4,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 0,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Adamant",
+                            "moves": {
+                            "Bullet Punch": "Steel",
+                            "Iron Head": "Steel",
+                            "Night Slash": "Dark",
+                            "X-Scissor": "Bug"
+                            },
+                            "status": {
+                                "HP": 173,
+                                "Atk": 204,
+                                "Def": 148,
+                                "SpA": 85,
+                                "SpD": 125,
+                                "Spe": 117
+                            },
+                            "first date": "11/06/2014"
+                        },
+                        "6": {
+                            "pokemon": "Goodra",
+                            "item": "None",
+                            "OT": "Matias",
+                            "ID no.": "22037",
+                            "shiny": false,
+                            "ability": "Sap Slipper",
+                            "level": 58,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Calm",
+                            "moves": {
+                            "Thunder": "Electric",
+                            "Dragon Pulse": "Dragon",
+                            "Rain Dance": "Water",
+                            "Ice Beam": "Ice"
+                            },
+                            "status": {
+                                "HP": 190,
+                                "Atk": 124,
+                                "Def": 104,
+                                "SpA": 187,
+                                "SpD": 256,
+                                "Spe": 115
+                            },
+                            "first date": "19/08/2015"
+                        }
+                    }
+                },
+                "7": {
+                    "name": "Single OU Other Options 2",
+                    "tier": "gen6ou",
+                    "pokemons": {
+                        "1": {
+                            "pokemon": "Swampert",
+                            "item": "None",
+                            "OT": "Matias",
+                            "ID no.": "22037",
+                            "shiny": false,
+                            "ability": "Torrent",
+                            "level": 65,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 0,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Adamant",
+                            "moves": {
+                            "Rock Slide": "Rock",
+                            "Waterfall": "Water",
+                            "Protect": "Normal",
+                            "Earthquake": "Ground"
+                            },
+                            "status": {
+                                "HP": 225,
+                                "Atk": 229,
+                                "Def": 183,
+                                "SpA": 119,
+                                "SpD": 142,
+                                "Spe": 103
+                            },
+                            "first date": "30/08/2015"
+                        },
+                        "2": {
+                            "pokemon": "Talonflame",
+                            "item": "Sharp Beak",
+                            "OT": "Arthur",
+                            "ID no.": "03954",
+                            "shiny": false,
+                            "ability": "Gale Wings",
+                            "level": 64,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 252,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 4,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 0,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Jolly",
+                            "moves": {
+                            "Swords Dance": "Normal",
+                            "Flare Blitz": "Fire",
+                            "Brave Bird": "Flying",
+                            "U-turn": "Bug"
+                            },
+                            "status": {
+                                "HP": 193,
+                                "Atk": 168,
+                                "Def": 115,
+                                "SpA": 100,
+                                "SpD": 113,
+                                "Spe": 248
+                            },
+                            "first date": "18/10/2015"
+                        }
+                    }
+                },
+                "8": {
+                    "name": "Gifs | Trade",
+                    "tier": "gen6ou",
+                    "pokemons": {
+                        "1": {
+                            "pokemon": "Sylveon",
+                            "item": "Choice Specs",
+                            "OT": "Vinicius",
+                            "ID no.": "57295",
+                            "shiny": true,
+                            "ability": "Pixilate",
+                            "level": 100,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Modest",
+                            "moves": {
+                            "Hyper Voice": "Normal",
+                            "Psyshock": "Psychic",
+                            "Shadow Ball": "Ghost",
+                            "Calm Mind": "Psychic"
+                            },
+                            "status": {
+                                "HP": 391,
+                                "Atk": 149,
+                                "Def": 166,
+                                "SpA": 349,
+                                "SpD": 295,
+                                "Spe": 160
+                            },
+                            "first date": "16/06/2014"
+                        },
+                        "2": {
+                            "pokemon": "Espeon",
+                            "item": "None",
+                            "OT": "Vinicius",
+                            "ID no.": "57295",
+                            "shiny": false,
+                            "ability": "Magic Bounce",
+                            "level": 100,
+                            "gender": "F",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Timid",
+                            "moves": {
+                            "Shadow Ball": "Ghost",
+                            "Morning Sun": "Normal",
+                            "Dazzling Gleam": "Fairy",
+                            "Psychic": "Psychic"
+                            },
+                            "status": {
+                                "HP": 271,
+                                "Atk": 148,
+                                "Def": 155,
+                                "SpA": 359,
+                                "SpD": 227,
+                                "Spe": 350
+                            },
+                            "first date": "16/06/2014"
+                        },
+                        "3": {
+                            "pokemon": "Gigalith",
+                            "item": "None",
+                            "OT": "Joey",
+                            "ID no.": "60294",
+                            "shiny": true,
+                            "ability": "Sturdy",
+                            "level": 100,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Adamant",
+                            "moves": {
+                            "Explosion": "Normal",
+                            "Stealth Rock": "Rock",
+                            "Curse": "Ghost",
+                            "Rock Blast": "Rock"
+                            },
+                            "status": {
+                                "HP": 374,
+                                "Atk": 405,
+                                "Def": 297,
+                                "SpA": 140,
+                                "SpD": 196,
+                                "Spe": 86
+                            },
+                            "first date": "08/03/2015"
+                        },
+                        "4": {
+                            "pokemon": "Feraligatr",
+                            "item": "Life Orb",
+                            "OT": "Quartz",
+                            "ID no.": "37360",
+                            "shiny": false,
+                            "ability": "Sheer Force",
+                            "level": 60,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 144,
+                                "Atk": 252,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 116
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 0,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Adamant",
+                            "moves": {
+                            "Dragon Dance": "Dragon",
+                            "Aqua Jet": "Water",
+                            "Ice Punch ": "Ice",
+                            "Crunch": "Dark"
+                            },
+                            "status": {
+                                "HP": 212,
+                                "Atk": 205,
+                                "Def": 131,
+                                "SpA": 106,
+                                "SpD": 123,
+                                "Spe": 134
+                            },
+                            "first date": "03/07/2015"
+                        },
+                        "5": {
+                            "pokemon": "Scizor",
+                            "item": "None",
+                            "OT": "Joao",
+                            "ID no.": "38599",
+                            "shiny": true,
+                            "ability": "Technician",
+                            "level": 60,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 252,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 4,
+                                "Spe": 252
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 0,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Adamant",
+                            "moves": {
+                            "Bullet Punch": "Steel",
+                            "Iron Head": "Steel",
+                            "Night Slash": "Dark",
+                            "X-Scissor": "Bug"
+                            },
+                            "status": {
+                                "HP": 173,
+                                "Atk": 204,
+                                "Def": 148,
+                                "SpA": 85,
+                                "SpD": 125,
+                                "Spe": 117
+                            },
+                            "first date": "11/06/2014"
+                        },
+                        "6": {
+                            "pokemon": "Goodra",
+                            "item": "None",
+                            "OT": "Matias",
+                            "ID no.": "22037",
+                            "shiny": false,
+                            "ability": "Sap Slipper",
+                            "level": 58,
+                            "gender": "M",
+                            "evs": {
+                                "HP": 0,
+                                "Atk": 0,
+                                "Def": 0,
+                                "SpA": 0,
+                                "SpD": 0,
+                                "Spe": 0
+                            },
+                            "ivs": {
+                                "HP": 31,
+                                "Atk": 31,
+                                "Def": 31,
+                                "SpA": 31,
+                                "SpD": 31,
+                                "Spe": 31
+                            },
+                            "nature": "Calm",
+                            "moves": {
+                            "Thunder": "Electric",
+                            "Dragon Pulse": "Dragon",
+                            "Rain Dance": "Water",
+                            "Ice Beam": "Ice"
+                            },
+                            "status": {
+                                "HP": 190,
+                                "Atk": 124,
+                                "Def": 104,
+                                "SpA": 187,
+                                "SpD": 256,
+                                "Spe": 115
+                            },
+                            "first date": "19/08/2015"
+                        }
+                    }
+                }
+             }
+         }
+     }
+}
