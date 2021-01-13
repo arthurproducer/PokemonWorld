@@ -1,33 +1,24 @@
 package br.com.arthursales.pokemonworld.view.teams
 
-import android.content.Intent
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.lifecycle.Observer
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import br.com.arthursales.pokemonworld.R
-import br.com.arthursales.pokemonworld.view.details.DetailPokemonActivity
-import br.com.arthursales.pokemonworld.view.listFavoritePokemon.ListFavoritePokemonAdapter
-import br.com.arthursales.pokemonworld.view.listFavoritePokemon.ListFavoritePokemonViewModel
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.custom_cardview_teams.*
-import kotlinx.android.synthetic.main.include_loading.*
-import kotlinx.android.synthetic.main.teams_pokemon_fragment.*
+import kotlinx.android.synthetic.main.pokemon_teams_fragment.*
 import org.koin.android.ext.android.inject
 import org.koin.android.viewmodel.ext.android.viewModel
 
-class TeamsPokemonFragment : Fragment() {
+class PokemonTeamsFragment : Fragment() {
 
 //    private val listFavoritePokemonViewModel : ListFavoritePokemonViewModel by viewModel()
 
-    private val teamsPokemonViewModel : TeamsPokemonViewModel by viewModel()
+    private val pokemonTeamsViewModel : PokemonTeamsViewModel by viewModel()
 
     private val picasso: Picasso by inject()
 
@@ -35,15 +26,14 @@ class TeamsPokemonFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.teams_pokemon_fragment, container, false)
+        return inflater.inflate(R.layout.pokemon_teams_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        teamsPokemonViewModel.getPokemonTeams("1")
+        pokemonTeamsViewModel.getPokemonTeams()
 
-        teamsPokemonViewModel.showSQLLite(requireContext())
 //        rvTeamPokemon.adapter?.notifyDataSetChanged()
 
 //        teamsPokemonViewModel.isLoadingTeams.observe(this, Observer {
@@ -60,8 +50,8 @@ class TeamsPokemonFragment : Fragment() {
 //            }
 //        })
 
-        teamsPokemonViewModel.listTeams.observe(this, Observer {
-            rvPokemonTeams.adapter = TeamsPokemonAdapter(it, picasso)
+        pokemonTeamsViewModel.listTeams.observe(this, Observer {
+            rvPokemonTeams.adapter = PokemonTeamsAdapter(it, picasso)
 //            {
 //               if(it.situation == 1){
 //                    Toast.makeText(context,"Item emprestado não pode ser alterado!",Toast.LENGTH_LONG).show()

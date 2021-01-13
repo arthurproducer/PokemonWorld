@@ -1,6 +1,5 @@
 package br.com.arthursales.pokemonworld.view.teams
 
-import android.content.ClipData.Item
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,26 +8,23 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.RecycledViewPool
 import br.com.arthursales.pokemonworld.R
 import br.com.arthursales.pokemonworld.model.PokemonTeams
-import br.com.arthursales.pokemonworld.view.listFavoritePokemon.ListFavoritePokemonAdapter
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.custom_cardview_teams.view.*
 
 
-class TeamsPokemonAdapter(
+class PokemonTeamsAdapter(
     private val pokemonTeams: List<PokemonTeams>,
-    private val picasso: Picasso ) : RecyclerView.Adapter<VHTeamsPokemon>() {
+    private val picasso: Picasso ) : RecyclerView.Adapter<VHPokemonTeams>() {
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VHTeamsPokemon {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VHPokemonTeams {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.custom_cardview_teams, parent, false)
-        val vh = VHTeamsPokemon(v)
-
-        return vh
+        return VHPokemonTeams(v)
     }
 
     override fun getItemCount(): Int = pokemonTeams.size
 
-    override fun onBindViewHolder(holder: VHTeamsPokemon, position: Int) {
+    override fun onBindViewHolder(holder: VHPokemonTeams, position: Int) {
         val pokemonTeams = pokemonTeams[position]
         val viewPool = RecycledViewPool()
         holder.bindView(pokemonTeams, picasso, viewPool)
@@ -36,7 +32,7 @@ class TeamsPokemonAdapter(
 
 }
 
-class VHTeamsPokemon(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class VHPokemonTeams(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
 //    lateinit var itemLongClickListener : ItemLongClickListener
 
@@ -50,12 +46,12 @@ class VHTeamsPokemon(itemView: View) : RecyclerView.ViewHolder(itemView) {
         // Create layout manager with initial prefetch item count
         // Create layout manager with initial prefetch item count
         //TODO Utilizar RecyclerViewPool para incluir uma recycler view dentro de outra
-//        val layoutManager = LinearLayoutManager(
-//            itemView.rvTeamPokemon.context,
-//            LinearLayoutManager.VERTICAL,
-//            false
-//        )
-//        layoutManager.initialPrefetchItemCount = item.getSubItemList().size()
+        val layoutManager = LinearLayoutManager(
+            itemView.rvTeamPokemon.context,
+            LinearLayoutManager.VERTICAL,
+            false
+        )
+//        layoutManager.initialPrefetchItemCount = pokemonTeams.getSubItemList().size() //TODO get SubItem Size
 //
 //        // Create sub item view adapter
 //        // Create sub item view adapter
