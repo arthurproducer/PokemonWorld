@@ -12,7 +12,7 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.item_pokemon_teams.view.*
 
 class TeamPokemonAdapter(
-    private val pokemonTeams: List<PokemonTeams>,
+    private val pokemonTeams: PokemonTeams,
     private val picasso: Picasso
 ): RecyclerView.Adapter<TeamPokemonAdapter.VHTeamPokemon>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VHTeamPokemon {
@@ -21,14 +21,15 @@ class TeamPokemonAdapter(
         return VHTeamPokemon(v)
     }
 
-    override fun getItemCount(): Int = pokemonTeams.size
+    override fun getItemCount(): Int = pokemonTeams.pokemons.size
 
     override fun onBindViewHolder(holder: VHTeamPokemon, position: Int) {
-        val pokemon = pokemonTeams[position]
-        picasso.load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/${pokemon.pokemons[position].number}.png")
+        val pokemon = pokemonTeams.pokemons[position]
+        picasso.load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-vii/icons/${pokemon.number}.png")
             .into(holder.ivPoke)
-        holder.tvName.text = pokemon.pokemons[position].name
-        holder.tvPokemonNumber.text = pokemon.pokemons[position].number.toString()
+
+        holder.tvName.text = pokemon.name
+        holder.tvPokemonNumber.text = pokemon.number.toString()
     }
 
     inner class VHTeamPokemon(itemView: View): RecyclerView.ViewHolder(itemView){

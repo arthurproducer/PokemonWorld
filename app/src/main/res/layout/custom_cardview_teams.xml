@@ -6,7 +6,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.MaterialComponents.Light"
-
         app:cardCornerRadius="13dp"
         app:cardElevation="3dp"
         app:cardUseCompatPadding="true" android:id="@+id/materialCardView">
@@ -14,6 +13,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/constraintLayout"
             android:padding="0dp">
 
         <androidx.recyclerview.widget.RecyclerView
@@ -33,12 +33,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:fontFamily="@font/pokemon"
+                android:fontFamily="@font/pokemon_solid"
                 android:text="Tier"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/mainSubTitleColor"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/rvTeamPokemon"
                 app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -47,10 +47,10 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/pokemon_solid"
                 android:text="Time usado pokemon yellow"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/mainLogoColor"
                 android:textSize="12sp"
-                app:layout_constraintEnd_toStartOf="@+id/shortcutCardView"
-                app:layout_constraintStart_toEndOf="@+id/txtTier"
+                app:layout_constraintEnd_toStartOf="@+id/txtTier"
+                app:layout_constraintStart_toEndOf="@+id/shortcutCardView"
                 app:layout_constraintTop_toTopOf="@+id/txtTier" />
 
         <androidx.cardview.widget.CardView
@@ -61,13 +61,13 @@
                 android:layout_marginTop="8dp"
                 app:cardCornerRadius="10dp"
                 app:cardPreventCornerOverlap="true"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/rvTeamPokemon"
                 app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@mipmap/snorlax" />
+                    android:background="@drawable/alphalogo" />
 
         </androidx.cardview.widget.CardView>
 

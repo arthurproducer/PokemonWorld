@@ -10,13 +10,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 
 import br.com.arthursales.pokemonworld.R
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.include_loading.*
 import kotlinx.android.synthetic.main.pokemon_teams_fragment.*
 import org.koin.android.ext.android.inject
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class PokemonTeamsFragment : Fragment() {
-
-//    private val listFavoritePokemonViewModel : ListFavoritePokemonViewModel by viewModel()
 
     private val pokemonTeamsViewModel : PokemonTeamsViewModel by viewModel()
 
@@ -36,7 +35,7 @@ class PokemonTeamsFragment : Fragment() {
 
 //        rvTeamPokemon.adapter?.notifyDataSetChanged()
 
-//        teamsPokemonViewModel.isLoadingTeams.observe(this, Observer {
+//        pokemonTeamsViewModel.isLoadingTeams.observe(this, Observer {
 //            if(it == true) {
 //                containerLoading.visibility = View.VISIBLE
 //            } else {
@@ -52,27 +51,8 @@ class PokemonTeamsFragment : Fragment() {
 
         pokemonTeamsViewModel.listTeams.observe(this, Observer {
             rvPokemonTeams.adapter = PokemonTeamsAdapter(it, picasso)
-//            {
-//               if(it.situation == 1){
-//                    Toast.makeText(context,"Item emprestado não pode ser alterado!",Toast.LENGTH_LONG).show()
-//                }else{
-//                    val action = MyProductFragmentDirections.actionItemMyProductsToUpdateMyProductFragment(it)
-//                    view.findNavController().navigate(action)
-//                }
-//            }
             rvPokemonTeams.layoutManager = LinearLayoutManager(context)
         })
-
-//        teamsPokemonViewModel.listFavoritePokemon.observe(this, Observer {
-//            rvTeamPokemon.adapter = ListFavoritePokemonAdapter(it.toList(), picasso) {
-//                val intent = Intent(activity, DetailPokemonActivity::class.java)
-//                intent.putExtra("POKEMON", it?.id.toString())
-//                intent.putExtra("ACTIVITY", "Favorite")
-//                startActivity(intent)
-//            }
-//            rvTeamPokemon.layoutManager = GridLayoutManager(context, 3)
-//        })
-         //TODO Tratar chamada do que está em favoritos
     }
 
 }
