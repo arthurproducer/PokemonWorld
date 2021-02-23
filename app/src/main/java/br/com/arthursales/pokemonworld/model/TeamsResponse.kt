@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class PokemonTeamsResponseData(
-    @SerializedName("Alpha Sapphire")
-    val gamesListAlphaSapphire : List<PokemonTeams>
+data class TeamsResponse(
+    @SerializedName("Teams")
+    val teams : ArrayList<PokemonTeams>
 ) : Parcelable

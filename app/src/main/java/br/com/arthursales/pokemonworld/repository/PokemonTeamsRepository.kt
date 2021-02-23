@@ -5,7 +5,6 @@ import br.com.arthursales.pokemonworld.model.PokemonTeams
 
 interface PokemonTeamsRepository {
 
-    fun getPokemonTeams(
-    ) : List<PokemonTeams>
-
+    fun getAllPokemonTeams(
+    ) : ArrayList<PokemonTeams>
 }

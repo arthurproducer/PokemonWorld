@@ -13,10 +13,12 @@ class PokemonTeamsViewModel(private val pokemonTeamsRepository: PokemonTeamsRepo
     private val listPokemonTeams = mutableListOf<PokemonTeams>()
 
 
+
     fun getPokemonTeams() {
 //        isLoadingTeams.value = true
-        listPokemonTeams.addAll(pokemonTeamsRepository.getPokemonTeams())
+        listPokemonTeams.addAll(pokemonTeamsRepository.getAllPokemonTeams())
         listTeams.value = listPokemonTeams
+
+        }
 //        isLoadingTeams.value = false
-    }
 }

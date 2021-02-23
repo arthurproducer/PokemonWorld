@@ -50,8 +50,9 @@ class PokemonTeamsFragment : Fragment() {
 //        })
 
         pokemonTeamsViewModel.listTeams.observe(this, Observer {
-            rvPokemonTeams.adapter = PokemonTeamsAdapter(it, picasso)
-            rvPokemonTeams.layoutManager = LinearLayoutManager(context)
+                //TODO Ajustar Adapter
+                rvPokemonTeams.adapter = PokemonTeamsAdapter(it, picasso)
+                rvPokemonTeams.layoutManager = LinearLayoutManager(context)
         })
     }
 

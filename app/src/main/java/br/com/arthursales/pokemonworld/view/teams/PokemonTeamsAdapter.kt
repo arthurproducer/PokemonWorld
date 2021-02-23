@@ -1,17 +1,14 @@
 package br.com.arthursales.pokemonworld.view.teams
 
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.RecycledViewPool
 import br.com.arthursales.pokemonworld.R
 import br.com.arthursales.pokemonworld.model.PokemonTeams
-import com.airbnb.lottie.parser.ColorParser
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.custom_cardview_teams.view.*
 
@@ -28,6 +25,8 @@ class PokemonTeamsAdapter(
     override fun getItemCount(): Int = pokemonTeams.size
 
     override fun onBindViewHolder(holder: VHPokemonTeams, position: Int) {
+
+        //TODO tratar segundo position
         val subAdapter = TeamPokemonAdapter(pokemonTeams = pokemonTeams[position],picasso = picasso)
         val teamPokemon = pokemonTeams[position]
         val viewPool = RecycledViewPool()
@@ -56,9 +55,50 @@ class VHPokemonTeams(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
 //        materialCardView.setCardBackgroundColor(Color.parseColor(pokemonTeams.color))
 
-        materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorAlphaSapphire))
-        txtTier.text = pokemonTeams.tier
-        txtTeamName.text = pokemonTeams.name
+        when (pokemonTeams.game) {
+            "Diamond" -> {
+                imgGameLogo.setBackgroundResource(R.drawable.diamondlogo)
+                //TODO tratar imagem do game
+                materialCardView.setCardBackgroundColor(
+                    ContextCompat.getColor(
+                        context,
+                        R.color.colorDiamond
+                    )
+                )
+            }
+            "Platinum" -> {
+                imgGameLogo.setBackgroundResource(R.drawable.platinumlogo)
+                materialCardView.setCardBackgroundColor(
+                    ContextCompat.getColor(
+                        context,
+                        R.color.colorPlatinum
+                    )
+                )
+            }
+            "HeartGold" ->{
+                imgGameLogo.setBackgroundResource(R.drawable.heartgoldlogo)
+                materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorHeartGold))
+            }
+            "Black" ->{
+                imgGameLogo.setBackgroundResource(R.drawable.blacklogo)
+                materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorBlack))}
+            "Black 2" -> {
+                imgGameLogo.setBackgroundResource(R.drawable.black2logo)
+                materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorBlack2))}
+            "Y" -> {
+                imgGameLogo.setBackgroundResource(R.drawable.ylogo)
+                materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorY))}
+            "Alpha Sapphire" -> {
+                imgGameLogo.setBackgroundResource(R.drawable.alphalogo)
+                materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorAlphaSapphire))}
+            else ->
+            {
+                imgGameLogo.setBackgroundResource(R.drawable.alphalogo)
+                materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorPrimary))}
+        }
+
+            txtTier.text = pokemonTeams.tier
+            txtTeamName.text = pokemonTeams.name
 
     }
 }

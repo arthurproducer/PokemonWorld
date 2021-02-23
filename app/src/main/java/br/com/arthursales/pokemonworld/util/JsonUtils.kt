@@ -1,7 +1,7 @@
 package br.com.arthursales.pokemonworld.util
 
 import android.content.Context
-import br.com.arthursales.pokemonworld.model.PokemonTeamsResponseData
+import br.com.arthursales.pokemonworld.model.TeamsResponse
 import java.io.IOException
 import com.google.gson.Gson
 import java.io.InputStream
@@ -20,12 +20,12 @@ class JsonUtils {
     }
 }
 
-fun Context.getObjectFromJson(jsonFileName: String): PokemonTeamsResponseData {
+fun Context.getObjectFromJson(jsonFileName: String): TeamsResponse {
     val myJson =
         JsonUtils.inputStreamToString(
             this.assets.open(jsonFileName)
         )
-    return Gson().fromJson(myJson, PokemonTeamsResponseData::class.java)
+    return Gson().fromJson(myJson, TeamsResponse::class.java)
 }
 
 @Throws(IOException::class)

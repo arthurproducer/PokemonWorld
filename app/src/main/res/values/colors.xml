@@ -2,7 +2,17 @@
     <color name="colorPrimary">#2264b8</color>
     <color name="colorPrimaryDark">#a70100</color>
     <color name="colorAccent">#ffca00</color>
+
+
+    <!-- games colors Diamond # -->
+    <color name="colorDiamond">#3494dc</color>
+    <color name="colorPlatinum">#646464</color>
+    <color name="colorHeartGold">#fccd3f</color>
+    <color name="colorBlack">#bbb2b1</color>
+    <color name="colorBlack2">#6c6c6c</color>
+    <color name="colorY">#d31d34</color>
     <color name="colorAlphaSapphire">#385dc4</color>
+
 
 <!--    <color name="colorEnable">#ffca00</color>-->
 <!--    <color name="colorDisable">#cfa200</color>-->
