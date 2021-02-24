@@ -25,11 +25,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Swampert"
-            android:textColor="@color/colorAccent" app:layout_constraintTop_toBottomOf="@+id/tvPokemonNumber"
+            android:textColor="@color/colorTextView"
+            app:layout_constraintTop_toBottomOf="@+id/tvPokemonNumber"
             app:layout_constraintStart_toStartOf="@+id/tvPokemonNumber" app:layout_constraintEnd_toEndOf="@+id/tvPokemonNumber"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"/>
     <TextView
-            android:textColor="#CCC"
+            android:textColor="#000"
             android:text="#001"
             android:textSize="8sp"
             android:layout_width="0dp"

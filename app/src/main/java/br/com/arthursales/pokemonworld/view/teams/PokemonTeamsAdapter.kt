@@ -41,8 +41,6 @@ class VHPokemonTeams(itemView: View) : RecyclerView.ViewHolder(itemView) {
         picasso: Picasso,
         viewPool: RecycledViewPool,
         subAdapter: TeamPokemonAdapter) = with(itemView) {
-        //                             imgProduct.setImageResource(product.photo)
-//        picasso.load("https://pokedexdx.herokuapp.com${product.photo}").into(ivPokemon)
 
         //TODO Utilizar RecyclerViewPool para incluir uma recycler view dentro de outra
         val layoutManager = GridLayoutManager(
@@ -53,44 +51,53 @@ class VHPokemonTeams(itemView: View) : RecyclerView.ViewHolder(itemView) {
         rvTeamPokemon.adapter = subAdapter
         rvTeamPokemon.setRecycledViewPool(viewPool)
 
-//        materialCardView.setCardBackgroundColor(Color.parseColor(pokemonTeams.color))
-
         when (pokemonTeams.game) {
             "Diamond" -> {
                 imgGameLogo.setBackgroundResource(R.drawable.diamondlogo)
-                //TODO tratar imagem do game
                 materialCardView.setCardBackgroundColor(
-                    ContextCompat.getColor(
-                        context,
-                        R.color.colorDiamond
-                    )
-                )
+                    ContextCompat.getColor(context, R.color.colorDiamond))
+                txtTeamName.setTextColor(ContextCompat.getColor(context, R.color.colorDiamondSecundary))
+                txtTier.setTextColor(ContextCompat.getColor(context,R.color.colorDiamondTertiary))
+
             }
             "Platinum" -> {
                 imgGameLogo.setBackgroundResource(R.drawable.platinumlogo)
                 materialCardView.setCardBackgroundColor(
                     ContextCompat.getColor(
-                        context,
-                        R.color.colorPlatinum
-                    )
-                )
+                        context, R.color.colorPlatinum))
+                txtTeamName.setTextColor(ContextCompat.getColor(context, R.color.colorPlatinumSecundary))
+                txtTier.setTextColor(ContextCompat.getColor(context,R.color.colorPlatinumTertiary))
             }
             "HeartGold" ->{
                 imgGameLogo.setBackgroundResource(R.drawable.heartgoldlogo)
                 materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorHeartGold))
+                txtTeamName.setTextColor(ContextCompat.getColor(context, R.color.colorHeartGoldSecundary))
+                txtTier.setTextColor(ContextCompat.getColor(context,R.color.colorHeartGoldTertiary))
             }
             "Black" ->{
                 imgGameLogo.setBackgroundResource(R.drawable.blacklogo)
-                materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorBlack))}
+                materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorBlack))
+                txtTeamName.setTextColor(ContextCompat.getColor(context, R.color.colorBlackSecundary))
+                txtTier.setTextColor(ContextCompat.getColor(context,R.color.colorBlackPokeball))
+            }
             "Black 2" -> {
                 imgGameLogo.setBackgroundResource(R.drawable.black2logo)
-                materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorBlack2))}
+                materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorBlack2))
+                txtTeamName.setTextColor(ContextCompat.getColor(context, R.color.colorBlack2Secundary))
+                txtTier.setTextColor(ContextCompat.getColor(context,R.color.colorBlack2Tertiary))
+            }
             "Y" -> {
                 imgGameLogo.setBackgroundResource(R.drawable.ylogo)
-                materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorY))}
+                materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorY))
+                txtTeamName.setTextColor(ContextCompat.getColor(context, R.color.colorYSecundary))
+                txtTier.setTextColor(ContextCompat.getColor(context,R.color.colorYTertiary))
+            }
             "Alpha Sapphire" -> {
                 imgGameLogo.setBackgroundResource(R.drawable.alphalogo)
-                materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorAlphaSapphire))}
+                materialCardView.setCardBackgroundColor(ContextCompat.getColor(context,R.color.colorAlphaSapphire))
+                txtTeamName.setTextColor(ContextCompat.getColor(context, R.color.colorAlphaSapphireSecundary))
+                txtTier.setTextColor(ContextCompat.getColor(context,R.color.colorAlphaSapphireTertiary))
+            }
             else ->
             {
                 imgGameLogo.setBackgroundResource(R.drawable.alphalogo)
