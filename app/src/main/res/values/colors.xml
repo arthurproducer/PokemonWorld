@@ -5,7 +5,6 @@
     <color name="colorTextView">#000000</color>
 
 
-
     <!-- games colors Diamond # -->
     <color name="colorDiamond">#3494dc</color>
     <color name="colorDiamondSecundary">#044c94</color>
@@ -31,12 +30,10 @@
     <color name="colorBlackPokeball">#c33012</color>
 
 
-
     <color name="colorBlack2">#c4c4c4</color>
     <color name="colorBlack2Secundary">#1c1c1c</color>
     <color name="colorBlack2Tertiary">#0464b4</color>
     <color name="colorBlack2Pokeball">#d25340</color>
-
 
 
     <color name="colorY">#d31d34</color>
@@ -45,19 +42,14 @@
     <color name="colorYPokeball">#991b2d</color>
 
 
-
     <color name="colorAlphaSapphire">#385dc4</color>
     <color name="colorAlphaSapphireSecundary">#191aa1</color>
     <color name="colorAlphaSapphireTertiary">#d0dae9</color>
     <color name="colorAlphaSapphirePokeball">#c6363e</color>
 
 
-
-
-
-
     <!--    <color name="colorEnable">#ffca00</color>-->
-<!--    <color name="colorDisable">#cfa200</color>-->
+    <!--    <color name="colorDisable">#cfa200</color>-->
 
     <color name="colorEnable">#a70100</color>
     <color name="colorDisable">#000000</color>
@@ -68,4 +60,6 @@
 
     <color name="mainLogoColor">#E49C0C</color>
     <color name="mainSubTitleColor">#DDD</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>

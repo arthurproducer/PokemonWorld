@@ -7,7 +7,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class PokemonRepositoryImpl(
-    val pokemonService: PokemonService
+    private val pokemonService: PokemonService
 ) : PokemonRepository {
 
     override fun getPokemonDetails(

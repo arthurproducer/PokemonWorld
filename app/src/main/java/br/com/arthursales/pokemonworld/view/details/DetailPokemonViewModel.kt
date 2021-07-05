@@ -83,7 +83,7 @@ class DetailPokemonViewModel(
     }
 
 
-    fun getType(listOfTypesResponse: List<TypesResponse>?, slot : Int): String{
+    private fun getType(listOfTypesResponse: List<TypesResponse>?, slot : Int): String{
         var type = ""
         listOfTypesResponse?.forEach {typeResponse ->
         if(typeResponse.slot == slot){
@@ -97,7 +97,7 @@ class DetailPokemonViewModel(
         return type
     }
 
-    fun getStats(listOfStatsResponse: List<StatsResponse>?, name : String): Int{
+    private fun getStats(listOfStatsResponse: List<StatsResponse>?, name : String): Int{
         var baseStats = 0
         listOfStatsResponse?.forEach {statsPokemon ->
             if(statsPokemon.stat.name.equals(name)){

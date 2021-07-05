@@ -29,4 +29,12 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_rank_tier">RankTierActivity</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="ranking_overused">RANKING MAIS USADOS</string>
+    <string name="exit">SAIR</string>
+    <string name="developer_by">DESENVOLVIDO POR ARTHUR SALES\nPara o Itaú</string>
+    <string name="my_favorites">MEUS POKEMONS FAVORITOS</string>
+    <string name="list_all_pokemon">VER TODOS POKÉMONS</string>
 </resources>

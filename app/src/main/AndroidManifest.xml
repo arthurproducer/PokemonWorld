@@ -15,12 +15,16 @@
             android:supportsRtl="true"
             android:theme="@style/FullScreen">
         <activity
+                android:name="com.arthursales.smogon.rankTier.RankTierActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:label="@string/title_activity_rank_tier"
+                android:theme="@style/FullscreenTheme"></activity>
+        <activity
                 android:name=".view.main.MainActivity"
                 android:launchMode="singleTop" />
         <activity
                 android:name=".view.main.BottomListsActivity"
                 android:parentActivityName=".view.main.MainActivity" />
-
         <activity android:name=".view.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +32,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.details.DetailPokemonActivity"/>
+        <activity android:name=".view.details.DetailPokemonActivity" />
     </application>
 
 </manifest>

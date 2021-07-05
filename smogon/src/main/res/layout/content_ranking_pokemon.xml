@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+            android:id="@+id/imgBackFirst"
+            android:layout_width="363dp"
+            android:layout_height="150dp"
+            android:background="@drawable/background_rank_top"
+            app:layout_constraintBottom_toBottomOf="@+id/imgForeFirst"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgForeFirst" />
+
+    <ImageView
+            android:id="@+id/imgForeFirst"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/foreground_rank_top"
+            app:layout_constraintBottom_toBottomOf="@+id/imgFirstPoke"
+            app:layout_constraintEnd_toEndOf="@+id/imgBackFirst"
+            app:layout_constraintTop_toTopOf="@+id/imgFirstPoke" />
+
+    <ImageView
+            android:id="@+id/imgFirstPoke"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:alpha="0.9"
+            app:layout_constraintEnd_toEndOf="@+id/imgBackFirst"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/tytar248" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="#1"
+            android:textColor="@color/colorAccent"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imgFirstPoke"
+            app:layout_constraintHorizontal_bias="0.569"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgBackFirst" />
+
+    <ImageView
+            android:id="@+id/imgBackSecond"
+            android:layout_width="363dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_rank_top"
+            app:layout_constraintEnd_toEndOf="@+id/imgBackFirst"
+            app:layout_constraintStart_toStartOf="@+id/imgBackFirst"
+            app:layout_constraintTop_toBottomOf="@+id/imgForeFirst" />
+
+    <ImageView
+            android:id="@+id/imgForeSecond"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/foreground_rank_top"
+            app:layout_constraintEnd_toEndOf="@id/imgBackSecond"
+            app:layout_constraintTop_toBottomOf="@+id/imgForeFirst" />
+
+    <ImageView
+            android:id="@+id/imgSecondPoke"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:alpha="0.9"
+            app:layout_constraintEnd_toEndOf="@id/imgForeSecond"
+            app:layout_constraintTop_toTopOf="@+id/imgForeSecond"
+            app:srcCompat="@drawable/heatran485" />
+
+    <ImageView
+            android:id="@+id/imgBackThird"
+            android:layout_width="363dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_rank_top"
+            app:layout_constraintStart_toStartOf="@+id/imgBackFirst"
+            app:layout_constraintTop_toBottomOf="@+id/imgForeSecond" />
+
+    <ImageView
+            android:id="@+id/imgForeThird"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/foreground_rank_top"
+            app:layout_constraintEnd_toEndOf="@id/imgBackSecond"
+            app:layout_constraintTop_toBottomOf="@+id/imgForeSecond" />
+
+    <ImageView
+            android:id="@+id/imgThirdPoke"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:alpha="0.9"
+            app:layout_constraintEnd_toEndOf="@id/imgForeThird"
+            app:layout_constraintTop_toTopOf="@+id/imgForeThird"
+            app:srcCompat="@drawable/jirachi385" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

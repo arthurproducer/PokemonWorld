@@ -60,7 +60,7 @@ class ListPokemonFragment : Fragment() {
         })
 
         listPokemonViewModel.listPokemon.observe(this, Observer {
-            rvPokemons.adapter = ListPokemonAdapter(it, picasso) { pokemon ->
+            rvRankingPokemon.adapter = ListPokemonAdapter(it, picasso) { pokemon ->
                 val intent = Intent(activity, DetailPokemonActivity::class.java)
                 intent.putExtra(
                     "POKEMON",
@@ -70,7 +70,7 @@ class ListPokemonFragment : Fragment() {
                 Log.i("POKEMON", pokemon.url.substringAfter("pokemon/").substringBefore("/"))
                 startActivity(intent)
             }
-            rvPokemons.layoutManager = GridLayoutManager(context, 3)
+            rvRankingPokemon.layoutManager = GridLayoutManager(context, 3)
         })
 
         btNext.setOnClickListener {

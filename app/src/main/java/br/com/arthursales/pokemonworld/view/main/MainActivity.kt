@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import br.com.arthursales.pokemonworld.R
+import com.arthursales.smogon.rankTier.RankTierActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -19,6 +20,11 @@ class MainActivity : AppCompatActivity() {
 
         btFavorites.setOnClickListener {
             startActivity(Intent(this, BottomListsActivity::class.java))
+            //TODO passar um bundle que informa qual parte da BottomList deve aparecer
+        }
+
+        btRanking.setOnClickListener {
+            startActivity(Intent(this, RankTierActivity::class.java))
         }
 
         btClose.setOnClickListener {
