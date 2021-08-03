@@ -1,13 +1,17 @@
 package com.arthursales.smogon.view.rankTier
 
-import android.util.Log
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.arthursales.smogon.models.SmogonResponse
 import com.arthursales.smogon.repository.SmogonRepository
 import kotlinx.coroutines.*
+import java.time.Year
+import java.util.*
 import java.util.concurrent.ConcurrentLinkedQueue
+import kotlin.collections.ArrayList
 
 
 class RankTierViewModel(private val smogonRepository: SmogonRepository) : ViewModel() {
@@ -18,62 +22,71 @@ class RankTierViewModel(private val smogonRepository: SmogonRepository) : ViewMo
     private val smogonOUList = ConcurrentLinkedQueue<SmogonResponse?>()
 
     fun getAllOUGen4PokeData() {
-        //TODO fazer chamadas com todos os nomes do array
-        //TODO colocar um for para que passe na chamada até que todos os nomes da lista do array tenham sido verificados
         isLoading.value = true
         viewModelScope.launch {
             val jobs: List<Job> = getAllOUGen4Poke().map { poke ->
-                viewModelScope.launch  {
-                    Log.i("POKEMON_FOR_GETSMOGON","${this.coroutineContext} + ${Thread.currentThread().name} + ${poke.pokemon}")
-                    getSmogonData(poke.rank,poke.pokemon)
-                    delay(6000L)
+                viewModelScope.launch {
+                    getSmogonData(poke.pokemon)
+                    delay(8000L)
                 }
             }
             jobs.joinAll()
-            Log.i("POKEMON_AFTER_JOINALL","$smogonOUList")
-            smogonData.value = smogonOUList.toMutableList()
+            smogonData.value = smogonOUList.sortedBy {
+                it?.rank
+            }.toMutableList()
             isLoading.value = false
         }
+    }
 
-//            val job = viewModelScope.launch {
-//                getAllOUGen4Poke().forEachIndexed { index, poke ->
-//                    isLoading.value = true
-//                    Log.i("POKEMON_FOR_GETSMOGON","$index + ${poke.pokemon}")
-//                    val res = async {getSmogonData(index,poke.pokemon)}
-//                    val list = res.await()
-//                    Log.i("POKEMON_LIST_ASYNC","$list")
-//
-//                    withContext(Dispatchers.Main){
-//                        list.let {
-//                            smogonOUList.value?.add(it)
-//                            Log.i("POKEMON_SAVE_SmogonMAIN", "$it")
-//                        }
-//                    }
-//                }
-//            }
-
+    @RequiresApi(Build.VERSION_CODES.O)
+    fun getAllOUGen4PokeDataByMonthAndYear() {
+        isLoading.value = true
+        viewModelScope.launch {
+            val jobs: List<Job> = getAllOUGen4Poke().map { poke ->
+                viewModelScope.launch {
+                    getSmogonDataByMonthAndYear(poke.pokemon,Calendar.getInstance().get(Calendar.MONTH),Year.now().value)
+                    delay(8000L)
+                }
+            }
+            jobs.joinAll()
+            smogonData.value = smogonOUList.sortedBy {
+                it?.rank
+            }.toMutableList()
+            isLoading.value = false
         }
+    }
 
-    fun getSmogonData(id: Int, pokeName : String) {
+    private fun getSmogonData(pokeName: String) {
         smogonRepository.getSmogonData(
-             pokeName,
+            pokeName,
             onComplete = {
                 smogonOUList.add(it)
-                Log.i("POKEMON_JOB", "${Thread.currentThread().name}+ $id + $it")
-                Log.i("POKEMON_COMPLETE_SMOGON","$smogonOUList")
             },
             onError = {
-                    messageError.value = it.message
-                Log.i("POKEMON_ERROR_SMOGON", "${it.message}")
+                messageError.value = it.message
             }
         )
     }
 
-    private fun getAllOUGen4Poke() : ArrayList<SmogonResponse>{
+    private fun getSmogonDataByMonthAndYear(pokeName: String, month: Int, year: Int) {
+        smogonRepository.getSmogonDataByMonthAndYear(
+            pokeName,
+            month,
+            year,
+            onComplete = {
+                smogonOUList.add(it)
+            },
+            onError = {
+                messageError.value = it.message
+            }
+        )
+    }
+
+    private fun getAllOUGen4Poke(): ArrayList<SmogonResponse> {
         val listOfOverusedPokeGen4 = arrayListOf<SmogonResponse>()
-        listOfOverusedPokeGen4.add(SmogonResponse("","Tyranitar",0,""))
-        listOfOverusedPokeGen4.add(SmogonResponse("","Jirachi",1,""))
-        listOfOverusedPokeGen4.add(SmogonResponse("","Heatran",2,""))
+        listOfOverusedPokeGen4.add(SmogonResponse("", "Tyranitar", 0, ""))
+        listOfOverusedPokeGen4.add(SmogonResponse("", "Jirachi", 1, ""))
+        listOfOverusedPokeGen4.add(SmogonResponse("", "Heatran", 2, ""))
         return listOfOverusedPokeGen4
     }
 

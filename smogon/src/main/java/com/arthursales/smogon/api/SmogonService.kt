@@ -9,4 +9,11 @@ interface SmogonService {
 
     @GET("/2020/11/gen4ou/1630/{pokeName}")
     fun getSmogonData(@Path("pokeName") pokeName: String) : Call<SmogonResponse>
+
+    @GET("/{year}/{month}/gen4ou/1630/{pokeName}")
+    fun getSmogonDataByMonthAndYear(
+        @Path("pokeName") pokeName: String,
+        @Path("month") month: Int,
+        @Path("year") year: Int
+    ) : Call<SmogonResponse>
 }

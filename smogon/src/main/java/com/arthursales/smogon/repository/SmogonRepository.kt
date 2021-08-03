@@ -8,4 +8,12 @@ interface SmogonRepository {
         onComplete: (SmogonResponse?) -> Unit,
         onError: (t: Throwable) -> Unit
     )
+
+    fun getSmogonDataByMonthAndYear(
+        pokeName: String,
+        month: Int,
+        year: Int,
+        onComplete: (SmogonResponse?) -> Unit,
+        onError: (t: Throwable) -> Unit
+    )
 }
