@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         package="br.com.arthursales.pokemonworld">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,12 +14,8 @@
             android:label="@string/app_name"
             android:roundIcon="@mipmap/snorlax_others"
             android:supportsRtl="true"
+            tools:replace="android:name"
             android:theme="@style/FullScreen">
-        <activity
-                android:name="com.arthursales.smogon.rankTier.RankTierActivity"
-                android:configChanges="orientation|keyboardHidden|screenSize"
-                android:label="@string/title_activity_rank_tier"
-                android:theme="@style/FullscreenTheme"></activity>
         <activity
                 android:name=".view.main.MainActivity"
                 android:launchMode="singleTop" />

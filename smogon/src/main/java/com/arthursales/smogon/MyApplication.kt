@@ -1,17 +1,17 @@
-package br.com.arthursales.pokemonworld
+package com.arthursales.smogon
 
 import android.app.Application
-import br.com.arthursales.pokemonworld.di.networkModule
-import br.com.arthursales.pokemonworld.di.repositoryModule
-import br.com.arthursales.pokemonworld.di.viewModelModule
-import com.arthursales.smogon.SmogonInitializer
-import com.arthursales.smogon.SmogonKoinComponent
+import com.arthursales.smogon.di.networkModule
+import com.arthursales.smogon.di.repositoryModule
+import com.arthursales.smogon.di.viewModelModule
 import com.facebook.stetho.Stetho
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 
 class MyApplication : Application() {
+
+    //TODO tratar corretamente o Koin ao usar lib
 
     override fun onCreate() {
         super.onCreate()

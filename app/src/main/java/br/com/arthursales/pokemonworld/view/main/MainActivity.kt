@@ -4,7 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import br.com.arthursales.pokemonworld.R
-import com.arthursales.smogon.rankTier.RankTierActivity
+import com.arthursales.smogon.SmogonInitializer
+import com.arthursales.smogon.view.rankTier.RankTierActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -24,11 +25,19 @@ class MainActivity : AppCompatActivity() {
         }
 
         btRanking.setOnClickListener {
-            startActivity(Intent(this, RankTierActivity::class.java))
+            initModule()
+            //startActivity(Intent(this, RankTierActivity::class.java))
         }
 
         btClose.setOnClickListener {
             finish()
         }
+    }
+
+    fun initModule(){
+        SmogonInitializer
+            .application(application)
+            .build()
+            .start()
     }
 }

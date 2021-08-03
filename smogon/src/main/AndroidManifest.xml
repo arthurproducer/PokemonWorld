@@ -1,2 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.arthursales.smogon" />
+        package="com.arthursales.smogon">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+        <activity
+                android:name=".view.rankTier.RankTierActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+
+</application>
+</manifest>
