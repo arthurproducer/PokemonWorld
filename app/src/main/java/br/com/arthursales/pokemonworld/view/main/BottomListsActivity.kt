@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentTransaction
 import br.com.arthursales.pokemonworld.R
 import br.com.arthursales.pokemonworld.view.listFavoritePokemon.ListFavoritePokemonFragment
 import br.com.arthursales.pokemonworld.view.listpokemon.ListPokemonFragment
+import br.com.arthursales.pokemonworld.view.teams.PokemonTeamsFragment
 import kotlinx.android.synthetic.main.activity_bottom_lists.*
 import kotlinx.android.synthetic.main.toolbar.*
 
@@ -23,6 +24,7 @@ class BottomListsActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.action_world -> loadFragment(ListPokemonFragment())
                 R.id.action_favorites -> loadFragment(ListFavoritePokemonFragment())
+                R.id.action_teams -> loadFragment(PokemonTeamsFragment())
             }
             true
         }

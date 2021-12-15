@@ -21,9 +21,9 @@ import org.koin.android.viewmodel.ext.android.viewModel
 
 class ListPokemonFragment : Fragment() {
 
-    val listPokemonViewModel : ListPokemonsViewModel by viewModel()
+    private val listPokemonViewModel: ListPokemonViewModel by viewModel()
 
-    val picasso: Picasso by inject()
+    private val picasso: Picasso by inject()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,35 +35,70 @@ class ListPokemonFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        listPokemonViewModel.getPokemons()
+        initializeListPokemonObserving()
 
         listPokemonViewModel.isLoading.observe(this, Observer {
-            if(it == true) {
+            if (it == true) {
                 containerLoading.visibility = View.VISIBLE
             } else {
                 containerLoading.visibility = View.GONE
             }
-
         })
 
         listPokemonViewModel.messageError.observe(this, Observer {
-            if(it != "") {
+            if (it != "") {
                 Toast.makeText(context, it, Toast.LENGTH_LONG).show()
             }
         })
 
-        listPokemonViewModel.pokemons.observe(this, Observer {
-            rvPokemons.adapter = ListPokemonsAdapter(it, picasso) {
-                val intent = Intent(activity, DetailPokemonActivity::class.java)
-                intent.putExtra("POKEMON", it.url.substringAfter("pokemon/").substringBefore("/"))
-                intent.putExtra("SCREEN","GENERAL_LIST")
-                Log.i("POKEMON",it.url.substringAfter("pokemon/").substringBefore("/"))
-                startActivity(intent)
-//                finish()
-            }
-            rvPokemons.layoutManager = GridLayoutManager(context, 3)
+        listPokemonViewModel.next.observe(this, Observer {
+            btNext.isEnabled = !it.isNullOrEmpty()
         })
 
+        listPokemonViewModel.previous.observe(this, Observer {
+            btPrevious.isEnabled = !it.isNullOrEmpty()
+        })
+
+        listPokemonViewModel.listPokemon.observe(this, Observer {
+            rvRankingPokemon.adapter = ListPokemonAdapter(it, picasso) { pokemon ->
+                val intent = Intent(activity, DetailPokemonActivity::class.java)
+                intent.putExtra(
+                    "POKEMON",
+                    pokemon.url.substringAfter("pokemon/").substringBefore("/")
+                )
+                intent.putExtra("SCREEN", "GENERAL_LIST")
+                Log.i("POKEMON", pokemon.url.substringAfter("pokemon/").substringBefore("/"))
+                startActivity(intent)
+            }
+            rvRankingPokemon.layoutManager = GridLayoutManager(context, 3)
+        })
+
+        btNext.setOnClickListener {
+            val limit = listPokemonViewModel.next.value?.substringAfter("limit=")
+            val offset = listPokemonViewModel.next.value?.substringAfter("offset=")
+                ?.substringBefore('&')
+            listPokemonViewModel.getAllPokemon(offset?.toInt(), limit?.toInt())
+        }
+
+        btPrevious.setOnClickListener {
+            val limit = listPokemonViewModel.previous.value?.substringAfter("limit=")
+            val offset = listPokemonViewModel.previous.value?.substringAfter("offset=")
+                ?.substringBefore('&')
+
+            listPokemonViewModel.getAllPokemon(offset?.toInt(), limit?.toInt())
+            //TODO Tratar retorno com botão anterior no final da lista, quando limit é menor do que 100
+        }
+    }
+
+    private fun initializeListPokemonObserving() {
+        if (listPokemonViewModel.previous.value.isNullOrEmpty()) {
+            listPokemonViewModel.getAllPokemon(OFFSET_100_POKEMON, LIMIT_100_POKEMON)
+        }
+    }
+
+    companion object {
+        const val OFFSET_100_POKEMON = 0
+        const val LIMIT_100_POKEMON = 100
     }
 
 }

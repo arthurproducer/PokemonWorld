@@ -1,0 +1,172 @@
+=== [gen7doublesou] Copy of Untitled 1 ===
+
+Swampert (F) @ Expert Belt  
+Ability: Torrent  
+Level: 73  
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 5 Atk  
+- Wide Guard  
+- Scald  
+- Ice Beam  
+- Earth Power  
+
+Talonflame (F) @ Flyinium Z  
+Ability: Gale Wings  
+Shiny: Yes  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Brave Bird  
+- Tailwind  
+- Flare Blitz  
+- Protect  
+
+Dragonite @ Weakness Policy  
+Ability: Multiscale  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Fire Punch  
+- Dragon Claw  
+- Extreme Speed  
+- Dragon Dance  
+
+Bisharp @ Focus Sash  
+Ability: Defiant  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Iron Head  
+- Sucker Punch  
+- Swords Dance  
+- Poison Jab  
+
+Tyranitar-Mega @ Tyranitarite  
+Ability: Sand Stream  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Crunch  
+- Rock Slide  
+- Protect  
+- Dragon Dance  
+
+Togekiss @ Safety Goggles  
+Ability: Serene Grace  
+EVs: 236 HP / 192 Def / 20 SpD / 60 Spe  
+Calm Nature  
+IVs: 0 Atk  
+- Air Slash  
+- Follow Me  
+- Tailwind  
+- Roost  
+
+
+=== [gen7] Untitled 2 ===
+
+Gengar-Mega @ Gengarite  
+Ability: Shadow Tag  
+EVs: 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+
+Alakazam-Mega @ Alakazite  
+Ability: Trace  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+
+Terrakion  
+Ability: Justified  
+EVs: 252 Spe  
+Jolly Nature  
+
+Talonflame  
+Ability: Flame Body  
+EVs: 252 Spe  
+IVs: 0 Atk  
+- Tailwind  
+
+Greninja-Ash  
+Ability: Battle Bond  
+EVs: 252 Spe  
+Timid Nature  
+
+
+=== [gen7doublesou] Untitled 1 ===
+
+Swampert (F) @ Expert Belt  
+Ability: Torrent  
+Level: 73  
+EVs: 252 HP / 252 SpA  
+Modest Nature  
+IVs: 5 Atk  
+- Wide Guard  
+- Scald  
+- Ice Beam  
+- Earth Power  
+
+Talonflame (F) @ Flyinium Z  
+Ability: Gale Wings  
+Shiny: Yes  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Brave Bird  
+- Tailwind  
+- Flare Blitz  
+- Protect  
+
+Terrakion @ Lum Berry  
+Ability: Justified  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- X-Scissor  
+- Rock Slide  
+- Close Combat  
+- Quick Guard  
+
+Dragonite @ Weakness Policy  
+Ability: Multiscale  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Fire Punch  
+- Dragon Claw  
+- Extreme Speed  
+- Dragon Dance  
+
+Bisharp @ Focus Sash  
+Ability: Defiant  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Iron Head  
+- Sucker Punch  
+- Swords Dance  
+- Poison Jab  
+
+Alakazam-Mega @ Alakazite  
+Ability: Trace  
+Level: 50  
+EVs: 108 HP / 252 SpA / 82 SpD / 68 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Psychic  
+- Protect  
+- Recover  
+
+
+=== [gen7uu] Pesquisas ===
+
+Charmander  
+Ability: Blaze  
+
+Goodra  
+Ability: Sap Sipper  
+IVs: 0 Atk  
+
+Swampert  
+Ability: Damp  
+IVs: 0 Atk  
+
+Silvally-Rock @ Rock Memory  
+Ability: RKS System  
+IVs: 0 Atk  
+
+

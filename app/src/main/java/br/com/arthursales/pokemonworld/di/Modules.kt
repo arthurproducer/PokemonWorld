@@ -5,10 +5,13 @@ import br.com.arthursales.pokemonworld.api.PokemonService
 import br.com.arthursales.pokemonworld.api.interceptor.AuthInterceptor
 import br.com.arthursales.pokemonworld.repository.PokemonRepository
 import br.com.arthursales.pokemonworld.repository.PokemonRepositoryImpl
+import br.com.arthursales.pokemonworld.repository.PokemonTeamsRepository
+import br.com.arthursales.pokemonworld.repository.PokemonTeamsRepositoryImpl
 import br.com.arthursales.pokemonworld.view.details.DetailPokemonViewModel
 import br.com.arthursales.pokemonworld.view.listFavoritePokemon.ListFavoritePokemonViewModel
-import br.com.arthursales.pokemonworld.view.listpokemon.ListPokemonsViewModel
+import br.com.arthursales.pokemonworld.view.listpokemon.ListPokemonViewModel
 import br.com.arthursales.pokemonworld.view.splash.SplashViewModel
+import br.com.arthursales.pokemonworld.view.teams.PokemonTeamsViewModel
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.squareup.picasso.OkHttp3Downloader
 import com.squareup.picasso.Picasso
@@ -30,13 +33,16 @@ val networkModule = module {
 
 val repositoryModule = module {
     single<PokemonRepository> { PokemonRepositoryImpl(get()) }
+    single<PokemonTeamsRepository> {PokemonTeamsRepositoryImpl(get())}
 }
 
 val viewModelModule = module {
     viewModel { SplashViewModel(get()) }
     viewModel { DetailPokemonViewModel(get()) }
-    viewModel { ListPokemonsViewModel(get()) }
+    viewModel { ListPokemonViewModel(get()) }
     viewModel { ListFavoritePokemonViewModel() }
+    viewModel { PokemonTeamsViewModel(get()) }
+
 }
 
 

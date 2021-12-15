@@ -11,4 +11,6 @@
     <dimen name="rounded_button_padding">10dp</dimen>
     <dimen name="rounded_button_stroke_width">1dp</dimen>
 
+    <dimen name="fab_margin">16dp</dimen>
+
 </resources>

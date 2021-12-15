@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".view.rankTier.RankTierActivity">
+
+    <ImageView
+            android:id="@+id/imgLogoPokemon"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_pokemon" />
+
+    <include
+            android:id="@+id/ranking_tabs_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            layout="@layout/ranking_tabs_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogoPokemon" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRankingPokemon"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/dummy_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ranking_tabs_layout"
+            tools:itemCount="6"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_ranking_pokemon"
+            android:visibility="visible"
+            tools:spanCount="3" />
+
+    <include
+            android:id="@+id/content_ranking_pokemon"
+            layout="@layout/content_ranking_pokemon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/dummy_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogoPokemon"
+            app:layout_constraintVertical_bias="0.502" />
+
+    <Button
+            android:id="@+id/dummy_button"
+            style="?metaButtonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/more_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <include layout="@layout/include_loading"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

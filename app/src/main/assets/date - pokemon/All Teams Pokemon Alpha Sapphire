@@ -1,0 +1,328 @@
+1 -> === [gen6ou] Battle Box ===
+
+Togekiss @ Safety Goggles
+Ability: Serene Grace
+Level: 85
+Gender: M
+EVs: 0 Atk / 0 Def / 0 Spe
+IVs: 31 HP /31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Calm Nature
+- Air Slash
+- Tailwind
+- Follow Me
+- Roost
+HP: 316
+ATTACK: 104
+DEFENSE: 234
+SP.ATK: 235
+SP.DEF: 253
+SPEED: 180
+Date: 14/01/2019
+
+Dragonite @ Weakness Policy
+Ability: Multiscale
+Level: 89
+Gender: M
+EVs: 0 HP / 0 Def / 0 SpD / 0 Spe
+IVs: 31 HP /31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Adamant Nature
+IVs: 0 Atk
+- Fire Punch
+- Dragon Claw
+- Extreme Speed
+- Dragon Dance
+HP: 336
+ATTACK: 313
+DEFENSE: 201
+SP.ATK: 189
+SP.DEF: 261
+SPEED: 174
+Date: 29/07/2016
+
+Bisharp @ Focus Sash
+Ability: Defiant
+Level: 89
+Gender: F
+EVs: 0 HP / 0 Def / 0 Spe
+IVs: 31 HP /31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe 
+Adamant Nature
+- Iron Head
+- Sucker Punch
+- Swords Dance
+- Poison Jab
+HP: 316
+ATTACK: 342
+DEFENSE: 210
+SP.ATK: 106
+SP.DEF: 159
+SPEED: 157
+Date: 29/07/2016
+
+Tyranitar @ Tyranitarite
+Ability: Sand Stream
+Level: 88
+Gender: F
+EVs: 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP /31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe 
+Adamant Nature
+- Rock Slide
+- Dragon Dance
+- Crunch
+- Protect
+HP: 301
+ATTACK: 355
+DEFENSE: 225
+SP.ATK: 168
+SP.DEF: 209
+SPEED: 195
+Date: 14/01/2019
+
+Talonflame @ Choice Band
+Shiny
+Ability: Gale Wings
+Level: 93
+Gender: F
+EVs: 0 HP / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP /31 Atk / 0 Def / 31 SpA / 31 SpD / 31 Spe 
+Adamant Nature
+- Flare Blitz
+- Steel Wing
+- U-turn
+- Brave Bird
+HP: 276
+ATTACK: 267
+DEFENSE: 139
+SP.ATK: 153
+SP.DEF: 162
+SPEED: 326
+Date: 09/08/2015
+
+Swampert @ Expert Belt
+Ability: Torrent
+Level: 91
+Gender: F
+EVs: 0 HP / 0 Def / 0 SpD
+IVs: 31 HP /31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Modest Nature
+- Earth Power
+- Scald
+- Wide Guard
+- Ice Beam
+HP: 364
+ATTACK: 209
+DEFENSE: 203
+SP.ATK: 262
+SP.DEF: 197
+SPEED: 145
+Date: 28/07/2016
+
+2 -> === [gen6ou] Single OU First Team ===
+
+Clefable @ Leftvores
+OT:  Arthur
+Ability: Unaware
+Level: 99
+Gender: F
+EVs: 248 HP / 252 Def /  8 SpD
+IVs: 31 HP /0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Calm Nature
+- Moonblast
+- Heal Belt
+- Wish
+- Protect
+HP: 389
+ATTACK: 155
+DEFENSE: 242
+SP.ATK: 223
+SP.DEF: 236
+SPEED: 154
+Date: 20/08/2015
+
+Snorlax @ Chesto Berry
+OT:  Arthur
+Ability: Thick Fat
+Level: 99
+Gender: M
+EVs: 0 HP / 0 Def / 0 SpD / 0 Spe
+IVs: 31 HP /31 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe 
+Relaxed Nature
+- Stockpile
+- Power-Up Punch
+- Rest
+- Body Slam
+HP: 518
+ATTACK: 253
+DEFENSE: 221
+SP.ATK: 163
+SP.DEF: 280
+SPEED: 60
+Date: 26/08/2016
+
+Venusaur @ Venusarite
+OT:  Arthur
+Ability: Chlorophyll
+Level: 94
+Gender: M
+EVs: 0 HP / 0 Def / 0 Spe
+IVs: 31 HP /31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe 
+Relaxed Nature
+- Sleep Powder
+- Synthesis
+- Earthquake
+- Giga Drain
+HP: 342
+ATTACK: 188
+DEFENSE: 273
+SP.ATK: 223
+SP.DEF: 222
+SPEED: 156
+Date: 11/08/2015
+
+Skarmory @ Shed Shell
+OT:  Arthur
+Ability: Sturdy
+Level: 91
+Gender: M
+EVs: 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP /31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe 
+Impish Nature
+- Spikes
+- Roost
+- Brave Bird
+- Whirlwind
+HP: 299
+ATTACK: 178
+DEFENSE: 379
+SP.ATK: 81
+SP.DEF: 166
+SPEED: 160
+Date: 09/08/2015
+
+Heatran @ Power Herb
+GERMAN
+OT:  Delizzar
+Ability: Flash Fire
+Level: 98
+Gender: F
+EVs: 0 HP / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 0 HP /0 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe 
+Modest Nature
+- Magma Storm
+- Earth Power
+- Taunt
+- Solar Beam
+HP: 304
+ATTACK: 185
+DEFENSE: 243
+SP.ATK: 356
+SP.DEF: 244
+SPEED: 248
+Date: 27/12/2014
+
+Gyarados @ Leftovers
+OT:  Arthur
+Ability: Intimidate
+Level: 92
+Gender: F
+EVs: 0 HP / 0 Def / 0 SpD
+IVs: 31 HP /31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Jolly Nature
+- Bounce
+- Waterfall
+- Substitute
+- Dragon Dance
+HP: 325
+ATTACK: 309
+DEFENSE: 180
+SP.ATK: 128
+SP.DEF: 217
+SPEED: 254
+Date: 24/08/2016
+
+3 -> === [gen6ou] Single OU Others Options ===
+
+Clefable @ Leftvores
+OT:  Arthur
+ID No.: 03954
+Ability: Unaware
+Level: 71
+Gender: F
+EVs: 248 HP / 252 Def /  8 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Bold Nature
+- Flamethrower
+- Calm Mind
+- Moonlight
+- Moonblast
+HP: 281
+ATTACK: 113
+DEFENSE: 192
+SP.ATK: 161
+SP.DEF: 156
+SPEED: 112
+Date: 28/10/2015
+
+Snorlax @ Chesto Berry
+OT:  Arthur
+ID No.: 03954
+Ability: Immunity
+Level: 75
+Gender: M
+EVs: 0 HP / 0 Def / 0 SpD / 0 Spe
+IVs: 0 HP /31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe 
+Impish Nature
+- Stockpile
+- Power-Up Punch
+- Rest
+- Crunch
+HP: 388
+ATTACK: 193
+DEFENSE: 168
+SP.ATK: 112
+SP.DEF: 213
+SPEED: 73
+Date: 26/08/2016
+
+Zapdos @ Expert Belt
+OT:  Feefee
+ID No. 44070
+Ability: Pressure
+Level: 75
+Gender: N/A
+EVs: 0 HP / 0 Def / 0 Spe
+IVs: 31 HP /0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Bold Nature
+- ThunderBolt
+- Roar
+- Thuder Wave
+- Roost
+HP: 289
+ATTACK: 126
+DEFENSE: 180
+SP.ATK: 225
+SP.DEF: 191
+SPEED: 182
+Date: 24/10/2014
+
+Magnezone @ Choice Scarf
+Shiny
+OT:  Duzzle
+ID No.: 13625
+Ability: Magnet Pull
+Level: 100
+Gender: N/A
+EVs: 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP /0 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe 
+Timid Nature
+- Volt Switch
+- Flash Cannon
+- Thunderbolt
+- Hidden Power ()
+HP: 281
+ATTACK: 157
+DEFENSE: 267
+SP.ATK: 358
+SP.DEF: 216
+SPEED: 239
+Date: 28/04/2016
+

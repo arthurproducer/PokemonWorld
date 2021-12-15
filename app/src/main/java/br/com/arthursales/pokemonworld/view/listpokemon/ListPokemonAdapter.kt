@@ -10,11 +10,11 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.pokemon_list_item.view.*
 
 
-class ListPokemonsAdapter(
-    val pokemons: List<PokemonGenericResponse>,
-    val picasso: Picasso,
-    val clickListener: (PokemonGenericResponse) -> Unit
-) : RecyclerView.Adapter<ListPokemonsAdapter.PokemonViewHolder>() {
+class ListPokemonAdapter(
+    private val pokemons: List<PokemonGenericResponse>,
+    private val picasso: Picasso,
+    private val clickListener: (PokemonGenericResponse) -> Unit
+) : RecyclerView.Adapter<ListPokemonAdapter.PokemonViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PokemonViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.pokemon_list_item, parent, false)
@@ -25,19 +25,22 @@ class ListPokemonsAdapter(
     }
     override fun onBindViewHolder(holder: PokemonViewHolder, position: Int) {
         val pokemon = pokemons[position]
-        holder.bindView(pokemon,position+1, picasso, clickListener)
+        holder.bindView(pokemon, picasso, clickListener)
     }
 
     class PokemonViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bindView(pokemon: PokemonGenericResponse,
-                     position: Int,
                      picasso: Picasso,
                      clickListener: (PokemonGenericResponse) -> Unit) = with(itemView) {
+            val number = pokemon.url.substringAfter("pokemon/").substringBefore('/')
+            tvPokemonNumber.text = number
             tvPokemonName.text = pokemon.name
-            tvPokemonNumber.text = position.toString()
-            picasso.load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${position}.png").into(ivPokemon)
+//            if(!pokemon.name.substringAfter('-',"").isNullOrEmpty()) {
+//                number += '-' + pokemon.name.substringAfter('-')
+//            }//TODO Tratar diferentes formas
 
+            picasso.load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${number}.png").into(ivPokemon)
             setOnClickListener { clickListener(pokemon) }
         }
     }

@@ -17,15 +17,15 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        splashViewModel.checkHealth()
+//        splashViewModel.checkHealth()
 
-        splashViewModel.messageError.observe(this, Observer {
-            if(it == "") {
+//        splashViewModel.messageError.observe(this, Observer {
+//            if(it == "") {
                 startActivity(Intent(this, MainActivity::class.java))
-                finish()
-            } else {
-                Toast.makeText(this, it, Toast.LENGTH_LONG).show()
-            }
-        })
+//                finish()
+//            } else {
+//                Toast.makeText(this, it, Toast.LENGTH_LONG).show()
+//            }
+//        })
     }
 }

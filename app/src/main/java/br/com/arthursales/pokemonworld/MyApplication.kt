@@ -4,6 +4,8 @@ import android.app.Application
 import br.com.arthursales.pokemonworld.di.networkModule
 import br.com.arthursales.pokemonworld.di.repositoryModule
 import br.com.arthursales.pokemonworld.di.viewModelModule
+import com.arthursales.smogon.SmogonInitializer
+import com.arthursales.smogon.SmogonKoinComponent
 import com.facebook.stetho.Stetho
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
