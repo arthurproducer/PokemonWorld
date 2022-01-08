@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/previous_tab_group"
-            app:constraint_referenced_ids="previous_tab_layout,previous_tab_month,previous_tab_status" />
+            app:constraint_referenced_ids="previous_tab_layout,previous_tab_month" />
 
     <View
             android:id="@+id/previous_tab_layout"
@@ -42,32 +42,15 @@
             android:id="@+id/previous_tab_month"
             android:layout_width="0dp"
             android:layout_height="24dp"
-            android:layout_marginTop="8dp"
             android:gravity="center"
-            android:textSize="12sp"
             android:importantForAccessibility="no"
-            app:layout_constraintBottom_toTopOf="@+id/previous_tab_status"
+            android:text="novembro"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/previous_tab_layout"
             app:layout_constraintStart_toStartOf="@id/previous_tab_layout"
             app:layout_constraintTop_toTopOf="@id/previous_tab_layout"
-            app:layout_constraintVertical_chainStyle="packed"
-            android:text="novembro"
-        />
-
-    <TextView
-            android:id="@+id/previous_tab_status"
-            android:layout_width="0dp"
-            android:layout_height="20dp"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"
-            android:textSize="12sp"
-            android:importantForAccessibility="no"
-            app:layout_constraintBottom_toBottomOf="@+id/previous_tab_layout"
-            app:layout_constraintEnd_toEndOf="@+id/previous_tab_layout"
-            app:layout_constraintStart_toStartOf="@id/previous_tab_layout"
-            app:layout_constraintTop_toBottomOf="@id/previous_tab_month"
-            android:text="paga"
-        />
+            app:layout_constraintVertical_chainStyle="packed" />
 
     <View
             android:id="@+id/selected_tab_layout"
@@ -84,38 +67,22 @@
             android:id="@+id/selected_tab_month"
             android:layout_width="0dp"
             android:layout_height="24dp"
-            android:layout_marginTop="8dp"
             android:gravity="center"
-            android:textSize="14sp"
             android:importantForAccessibility="no"
-            app:layout_constraintBottom_toTopOf="@+id/selected_tab_status"
+            android:text="dezembro"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/separator"
             app:layout_constraintEnd_toEndOf="@+id/selected_tab_layout"
             app:layout_constraintStart_toStartOf="@+id/selected_tab_layout"
             app:layout_constraintTop_toTopOf="@+id/selected_tab_layout"
-            app:layout_constraintVertical_chainStyle="packed"
-            android:text="dezembro"
-            />
-
-    <TextView
-            android:id="@+id/selected_tab_status"
-            android:layout_width="0dp"
-            android:layout_height="20dp"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"
-            android:textSize="12sp"
-            android:importantForAccessibility="no"
-            app:layout_constraintBottom_toBottomOf="@+id/selected_tab_layout"
-            app:layout_constraintEnd_toEndOf="@+id/selected_tab_layout"
-            app:layout_constraintStart_toStartOf="@id/selected_tab_layout"
-            app:layout_constraintTop_toBottomOf="@id/previous_tab_month"
-            android:text="fechada"
-            />
+            app:layout_constraintVertical_chainStyle="packed" />
 
     <androidx.constraintlayout.widget.Group
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/next_tab_group"
-            app:constraint_referenced_ids="next_tab_layout,next_tab_month,next_tab_status" />
+            app:constraint_referenced_ids="next_tab_layout,next_tab_month" />
 
     <View
             android:id="@+id/next_tab_layout"
@@ -132,32 +99,15 @@
             android:id="@+id/next_tab_month"
             android:layout_width="0dp"
             android:layout_height="24dp"
-            android:layout_marginTop="8dp"
             android:gravity="center"
-            android:textSize="12sp"
             android:importantForAccessibility="no"
-            app:layout_constraintBottom_toTopOf="@+id/next_tab_status"
-            app:layout_constraintEnd_toEndOf="@+id/next_tab_layout"
-            app:layout_constraintStart_toStartOf="@id/next_tab_layout"
-            app:layout_constraintTop_toTopOf="@id/next_tab_layout"
-            app:layout_constraintVertical_chainStyle="packed"
             android:text="janeiro"
-            />
-
-    <TextView
-            android:id="@+id/next_tab_status"
-            android:layout_width="0dp"
-            android:layout_height="20dp"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"
-            android:textSize="12sp"
-            android:importantForAccessibility="no"
+            android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@+id/next_tab_layout"
             app:layout_constraintEnd_toEndOf="@+id/next_tab_layout"
             app:layout_constraintStart_toStartOf="@id/next_tab_layout"
-            app:layout_constraintTop_toBottomOf="@id/next_tab_month"
-            android:text="aberta"
-            />
+            app:layout_constraintTop_toTopOf="@id/next_tab_layout"
+            app:layout_constraintVertical_chainStyle="packed" />
 
     <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/next_button"

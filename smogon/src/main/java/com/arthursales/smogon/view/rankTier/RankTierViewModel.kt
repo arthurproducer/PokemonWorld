@@ -1,12 +1,17 @@
 package com.arthursales.smogon.view.rankTier
 
 import android.os.Build
+import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.arthursales.smogon.models.SmogonRankPokemonResponse
 import com.arthursales.smogon.models.SmogonResponse
-import com.arthursales.smogon.repository.SmogonRepository
+import com.arthursales.smogon.repository.SmogonDetailsRepository
+import com.arthursales.smogon.repository.SmogonRankRepository
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.*
 import java.time.Year
 import java.util.*
@@ -14,12 +19,16 @@ import java.util.concurrent.ConcurrentLinkedQueue
 import kotlin.collections.ArrayList
 
 
-class RankTierViewModel(private val smogonRepository: SmogonRepository) : ViewModel() {
+class RankTierViewModel(
+    private val smogonDetailsRepository: SmogonDetailsRepository,
+    private val smogonRankRepository: SmogonRankRepository
+) : ViewModel() {
 
     private val messageError = MutableLiveData<String>()
     val isLoading = MutableLiveData<Boolean>()
     val smogonData = MutableLiveData<MutableList<SmogonResponse?>>()
     private val smogonOUList = ConcurrentLinkedQueue<SmogonResponse?>()
+
 
     fun getAllOUGen4PokeData() {
         isLoading.value = true
@@ -34,6 +43,21 @@ class RankTierViewModel(private val smogonRepository: SmogonRepository) : ViewMo
             smogonData.value = smogonOUList.sortedBy {
                 it?.rank
             }.toMutableList()
+            isLoading.value = false
+        }
+    }
+
+    fun getTop10RankPokeData() {
+        isLoading.value = true
+        Log.d("pokemontagloading", isLoading.value.toString())
+        viewModelScope.launch {
+            val job = viewModelScope.launch {
+                Log.d("pokemontagscope", smogonData.value.toString())
+                getSmogonRankData()
+                delay(8000L)
+            }
+            job.join()
+            smogonData.value = smogonOUList.toMutableList()
             isLoading.value = false
         }
     }
@@ -57,7 +81,7 @@ class RankTierViewModel(private val smogonRepository: SmogonRepository) : ViewMo
     }
 
     private fun getSmogonData(pokeName: String) {
-        smogonRepository.getSmogonData(
+        smogonDetailsRepository.getSmogonData(
             pokeName,
             onComplete = {
                 smogonOUList.add(it)
@@ -69,7 +93,7 @@ class RankTierViewModel(private val smogonRepository: SmogonRepository) : ViewMo
     }
 
     private fun getSmogonDataByMonthAndYear(pokeName: String, month: Int, year: Int) {
-        smogonRepository.getSmogonDataByMonthAndYear(
+        smogonDetailsRepository.getSmogonDataByMonthAndYear(
             pokeName,
             month,
             year,
@@ -82,11 +106,26 @@ class RankTierViewModel(private val smogonRepository: SmogonRepository) : ViewMo
         )
     }
 
+    fun  getSmogonRankData() {
+        smogonRankRepository.getSmogonRankData(
+            onComplete = { smogonData ->
+                Log.i("pokemontag", smogonData.toString())
+                smogonData.let { pokemon ->
+                        smogonOUList.addAll(pokemon)
+                }
+            },
+            onError = {
+                messageError.value = it.localizedMessage
+            }
+        )
+    }
+
+
     private fun getAllOUGen4Poke(): ArrayList<SmogonResponse> {
         val listOfOverusedPokeGen4 = arrayListOf<SmogonResponse>()
-        listOfOverusedPokeGen4.add(SmogonResponse("", "Tyranitar", 0, ""))
-        listOfOverusedPokeGen4.add(SmogonResponse("", "Jirachi", 1, ""))
-        listOfOverusedPokeGen4.add(SmogonResponse("", "Heatran", 2, ""))
+        listOfOverusedPokeGen4.add(SmogonResponse("", "Tyranitar", 0, "",183))
+        listOfOverusedPokeGen4.add(SmogonResponse("", "Jirachi", 1, "",203))
+        listOfOverusedPokeGen4.add(SmogonResponse("", "Heatran", 2, "",123))
         return listOfOverusedPokeGen4
     }
 

@@ -2,7 +2,7 @@ package com.arthursales.smogon.repository
 
 import com.arthursales.smogon.models.SmogonResponse
 
-interface SmogonRepository {
+interface SmogonDetailsRepository {
      fun getSmogonData(
         pokeName: String,
         onComplete: (SmogonResponse?) -> Unit,

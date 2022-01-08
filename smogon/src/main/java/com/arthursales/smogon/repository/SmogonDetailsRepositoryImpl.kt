@@ -1,21 +1,21 @@
 package com.arthursales.smogon.repository
 
-import com.arthursales.smogon.api.SmogonService
+import com.arthursales.smogon.api.SmogonDetailsService
 import com.arthursales.smogon.models.SmogonResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class SmogonRepositoryImpl(
-    private val smogonService: SmogonService
-) : SmogonRepository {
+class SmogonDetailsRepositoryImpl(
+    private val smogonDetailsService: SmogonDetailsService
+) : SmogonDetailsRepository {
 
     override fun getSmogonData(
         pokeName: String,
         onComplete: (SmogonResponse?) -> Unit,
         onError: (t: Throwable) -> Unit
     ) {
-        smogonService.getSmogonData(pokeName)
+        smogonDetailsService.getSmogonData(pokeName)
             .enqueue(object : Callback<SmogonResponse> {
                 override fun onFailure(call: Call<SmogonResponse>, t: Throwable) {
                     onError(t)
@@ -42,7 +42,7 @@ class SmogonRepositoryImpl(
         onComplete: (SmogonResponse?) -> Unit,
         onError: (t: Throwable) -> Unit
     ) {
-        smogonService.getSmogonDataByMonthAndYear(pokeName,month,year)
+        smogonDetailsService.getSmogonDataByMonthAndYear(pokeName,month,year)
             .enqueue(object : Callback<SmogonResponse> {
                 override fun onFailure(call: Call<SmogonResponse>, t: Throwable) {
                     onError(t)

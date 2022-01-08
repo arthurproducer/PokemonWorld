@@ -44,12 +44,11 @@ class RankTierViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)  {
 //        next_tab_month.text = "Dezembro"
 //        next_tab_status.text = pokemon?.tier
 
-        //TODO tratar como lista no Adapter
         txtThirdNumber.text = pokemon?.rank.toString()
         txtThirdName.text = pokemon?.pokemon
-        txtThirdUsage.text = pokemon?.usage
+        txtThirdUsage.text = pokemon?.usage.plus("%")
 
-        picasso.load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png").into(imgThirdPoke)
+        picasso.load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon?.dex}.png").into(imgThirdPoke)
 
         //setOnClickListener { clickListener(pokemon) }
     }

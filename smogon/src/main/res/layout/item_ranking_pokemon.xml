@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -37,14 +38,15 @@
             android:id="@+id/txtThirdNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:fontFamily="sans-serif-condensed-medium"
             android:text="#3"
             android:textColor="@color/colorAccent"
-            android:textSize="25sp"
+            android:textSize="36sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/txtThirdName"
-            app:layout_constraintHorizontal_bias="0.569"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/imgBackThird"
             app:layout_constraintTop_toTopOf="@+id/imgBackThird" />
 
@@ -52,30 +54,26 @@
             android:id="@+id/txtThirdName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:fontFamily="sans-serif-condensed-medium"
             android:text="Jirachi"
             android:textColor="@color/colorAccent"
-            android:textSize="20sp"
+            android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/txtThirdNumber"
-            app:layout_constraintEnd_toStartOf="@+id/imgForeThird"
-            app:layout_constraintHorizontal_bias="0.569"
-            app:layout_constraintStart_toStartOf="@+id/txtThirdUsage"
+            app:layout_constraintStart_toEndOf="@+id/txtThirdNumber"
             app:layout_constraintTop_toTopOf="@+id/txtThirdNumber" />
 
     <TextView
             android:id="@+id/txtThirdUsage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:fontFamily="sans-serif-condensed-medium"
             android:text="53.90513%"
             android:textColor="@color/colorAccent"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/imgThirdPoke"
-            app:layout_constraintHorizontal_bias="0.569"
-            app:layout_constraintStart_toStartOf="@+id/imgBackThird"
-            app:layout_constraintTop_toBottomOf="@id/txtThirdNumber" />
+            app:layout_constraintEnd_toEndOf="@+id/txtThirdName"
+            app:layout_constraintStart_toStartOf="@+id/txtThirdName"
+            app:layout_constraintTop_toBottomOf="@+id/txtThirdName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="more_button">Recarregar</string>
+    <string name="game_button">RGBY</string>
+    <string name="year_button">2021</string>
+    <string name="tier_button">GEN1 OU</string>
+
 </resources>

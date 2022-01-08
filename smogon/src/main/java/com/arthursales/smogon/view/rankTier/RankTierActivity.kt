@@ -33,7 +33,7 @@ class RankTierActivity : AppCompatActivity(), SmogonKoinComponent {
         setContentView(R.layout.activity_rank_tier)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        rankTierViewModel.getAllOUGen4PokeData()
+        rankTierViewModel.getTop10RankPokeData()
 
         var animation = AnimationUtils.loadAnimation(this, R.anim.ttb)
         animateAllImages(animation)

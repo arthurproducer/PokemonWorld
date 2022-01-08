@@ -1,10 +1,13 @@
 package com.arthursales.smogon.di
 
 import android.content.Context
-import com.arthursales.smogon.api.SmogonService
+import com.arthursales.smogon.api.SmogonDetailsService
+import com.arthursales.smogon.api.SmogonRankService
 import com.arthursales.smogon.api.interceptor.AuthInterceptor
-import com.arthursales.smogon.repository.SmogonRepository
-import com.arthursales.smogon.repository.SmogonRepositoryImpl
+import com.arthursales.smogon.repository.SmogonDetailsRepository
+import com.arthursales.smogon.repository.SmogonDetailsRepositoryImpl
+import com.arthursales.smogon.repository.SmogonRankRepository
+import com.arthursales.smogon.repository.SmogonRankRepositoryImpl
 import com.arthursales.smogon.view.rankTier.RankTierViewModel
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import com.squareup.picasso.OkHttp3Downloader
@@ -21,23 +24,26 @@ import java.util.concurrent.TimeUnit
 val networkModule = module {
     single<Interceptor> { AuthInterceptor() }
     single { createOkhttpClient(get()) }
-    single { createNetworkClient(get()).create(SmogonService::class.java) }
+    single { createNetworkClient(get(),"https://smogon-usage-stats.herokuapp.com").create(SmogonDetailsService::class.java) }
+    single { createNetworkClient(get(),"https://usage-server.herokuapp.com").create(SmogonRankService::class.java) }
     single { createPicassoAuth(get(), get()) }
 }
 
 val repositoryModule = module {
-    single<SmogonRepository> { SmogonRepositoryImpl(get()) }
+    single<SmogonDetailsRepository> { SmogonDetailsRepositoryImpl(get()) }
+    single<SmogonRankRepository> { SmogonRankRepositoryImpl(get(),get()) }
+
 }
 
 val viewModelModule = module {
-    viewModel { RankTierViewModel(get()) }
+    viewModel { RankTierViewModel(get(),get()) }
 
 }
 
-private fun createNetworkClient(okHttpClient: OkHttpClient): Retrofit {
+private fun createNetworkClient(okHttpClient: OkHttpClient, baseUrl: String): Retrofit {
     return Retrofit.Builder()
         .client(okHttpClient)
-        .baseUrl("https://smogon-usage-stats.herokuapp.com")
+        .baseUrl(baseUrl)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 }
