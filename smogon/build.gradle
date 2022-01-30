@@ -57,6 +57,10 @@ dependencies {
 
     implementation "org.koin:koin-android:2.0.1"
 
+    implementation 'com.airbnb.android:lottie:3.0.7'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.8'
+
     //Lista
     implementation "androidx.recyclerview:recyclerview:1.0.0"
 

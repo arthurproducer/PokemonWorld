@@ -46,7 +46,7 @@ class RankTierViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)  {
 
         txtThirdNumber.text = pokemon?.rank.toString()
         txtThirdName.text = pokemon?.pokemon
-        txtThirdUsage.text = pokemon?.usage.plus("%")
+        txtThirdUsage.text = pokemon?.usage_pct.toString().plus("%")
 
         picasso.load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon?.dex}.png").into(imgThirdPoke)
 

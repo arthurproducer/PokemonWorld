@@ -123,9 +123,9 @@ class RankTierViewModel(
 
     private fun getAllOUGen4Poke(): ArrayList<SmogonResponse> {
         val listOfOverusedPokeGen4 = arrayListOf<SmogonResponse>()
-        listOfOverusedPokeGen4.add(SmogonResponse("", "Tyranitar", 0, "",183))
-        listOfOverusedPokeGen4.add(SmogonResponse("", "Jirachi", 1, "",203))
-        listOfOverusedPokeGen4.add(SmogonResponse("", "Heatran", 2, "",123))
+        listOfOverusedPokeGen4.add(SmogonResponse("", "Tyranitar", 0, 0.0,183))
+        listOfOverusedPokeGen4.add(SmogonResponse("", "Jirachi", 1, 0.0,203))
+        listOfOverusedPokeGen4.add(SmogonResponse("", "Heatran", 2, 0.0,123))
         return listOfOverusedPokeGen4
     }
 
